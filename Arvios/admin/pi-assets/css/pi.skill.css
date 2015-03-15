@@ -1,0 +1,122 @@
+.percent {
+    color: #5b4c5c;
+    display: inline-block;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 118px;
+    z-index: 2;
+}
+
+.pi_charts {
+    display: inline-block;
+    height: 118px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    text-align: center;
+    width: 118px;
+}
+
+.pi_wrap_button {
+    margin: 20px 0;
+}
+.pi_charts canvas {
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.pi-form .pi_title{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 17px;
+    line-height: 27px;
+    color: #5b4c5c;
+    margin-top: 15px;
+}
+
+.pi-form .pi_des{
+    color: #897f8a;
+    font-size: 15px;
+    line-height: 26px;
+    text-align: center;
+}
+.pi-form {
+    position: relative;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+    -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+}
+.skill-del {
+    display: none;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    background: #0088cc;
+    text-decoration: none;
+    color: #fff;
+}
+.skill-del:hover {
+    color: #fff;
+    background: #ef7674;
+}
+.pi-form:hover .skill-del {
+    display: block;
+}
+.pi-form input {
+    margin-bottom: 10px;
+}
+.pi-form input,
+.pi-form textarea {
+    background: transparent;
+    border-radius: 3px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.pi-form .ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br,
+.pi-form .ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl,
+.pi-form .ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr,
+.pi-form .ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+    border-radius: 3px;
+}
+.pi_slider {
+    margin-bottom: 20px;
+}
+.pi-form .ui-widget-content {
+    background-image: none;
+    border: 0;
+    background-color: #ef7674;
+    height: 0.4em;
+}
+.pi-form .ui-slider-handle {
+    background-image: none;
+    border: 0;
+    background-color: #ef7674;
+    border-radius: 50%;
+    top: -0.4em;
+    outline: 0;
+    cursor: pointer;
+}
+.pi-form .ui-slider-handle:active {
+    outline: 0;
+}
+
+.pricing-table {
+    background: none repeat scroll 0 0 #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 0 0 2px #de5f4e;
+    list-style: outside none none;
+    margin-left: 0;
+    margin-right: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    transition: all 0.5s linear 0s;
+}

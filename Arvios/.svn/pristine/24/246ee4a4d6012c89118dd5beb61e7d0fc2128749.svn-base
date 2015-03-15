@@ -1,0 +1,316 @@
+<?php
+
+class piAboutMe extends piCore 
+{
+	public function __construct()
+	{
+		add_action('init', array($this, 'register_aboutme'));
+		add_action( 'add_meta_boxes', array($this,'pi_create_about_settings'), 10, 2 );
+		add_action('save_post', array($this, 'pi_save_data'));
+		add_action('admin_enqueue_scripts', array($this, 'pi_enqueu_scripts'));
+	}
+
+	public function pi_save_data($postID)
+	{
+		if (!current_user_can('edit_post', $postID) ) return; 
+ 
+        if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return;
+
+        if ( !isset($_POST['post_type']) || empty($_POST['post_type']) ) return;
+        
+        
+        if  ( $_POST['post_type'] == 'pi_about' ) :
+        	
+        	$data  = isset($_POST['aboutme']) ? $_POST['aboutme'] : array();
+        	 
+	        $data = $this->pi_unslashed_before_update($data);
+
+	        // $data = json_encode($data);
+
+	    	update_post_meta($postID, "_pi_aboutme", $data);
+
+    	 
+        
+        	$data = isset($_POST['pi_skill']) ? $_POST['pi_skill'] : array();
+        	// $intro = isset($_POST['pi_skill_intro']) ? $_POST['pi_skill_intro'] : array();
+
+	        $data = $this->pi_unslashed_before_update($data);
+
+	      
+	    	update_post_meta($postID, "_pi_skill", $data);
+	    	// updapi_post_meta($postID, "_pi_skill_intro", $intro);
+
+    	endif;
+	}
+
+	public function register_aboutme()
+	{
+		$piAboutMe 	= 	array
+							(	
+								'labels' 			=> array('name'=>_x('About Me', 'Post type genereal name', piCore::LANG), 'singular_name'=>_x('About us', 'Post type genereal name', piCore::LANG)),
+						        'hierarchical'      => true,
+						        'public'            => true,
+						        'has_archive'       => false,
+						        'rewrite'           => array('slug'=>'about-me', 'with_front'=>false),
+						        'supports'          => array('title'),
+						        'can_export'        => true,
+						        'menu_icon'         => 'dashicons-smiley',
+						        'show_ui'           => true,
+					    	);
+		register_post_type('pi_about', $piAboutMe);
+	}
+
+
+	public function pi_enqueu_scripts()
+	{
+		global $typenow;
+
+		if ($typenow == 'pi_about') :
+			$url = get_template_directory_uri() . '/admin/pi-assets/';
+			wp_register_style("pi_about", $url . "css/pi.ourteam.css", array(), "1.0");
+			wp_enqueue_style("pi_about");
+
+			wp_register_style('pi_skill', $url . 'css/pi.skill.css', array(), '1.0');
+			wp_enqueue_style('pi_skill');
+			wp_enqueue_script('jquery-ui-slider');
+
+			wp_register_script('pi_plugin_easypiechar', $url . 'js/jquery.easypiechart.js', array(), '2.1.1', true);
+			wp_enqueue_script('pi_plugin_easypiechar');
+
+			wp_register_script('pi_skills', $url . 'js/pi.skills.js', array(), '1.0', true);
+			wp_enqueue_script('pi_skills');
+		endif;
+	}
+
+	public function pi_create_about_settings()
+	{
+		add_meta_box
+		( 
+            'pi-about', 
+            __( 'Infomation', piCore::LANG ),
+            array($this, 'pi_about_builder'),
+            'pi_about',
+            'normal',
+            'default'
+        );
+
+        // Skills
+        add_meta_box
+		( 
+            'pi-skills',
+            __( 'Skills', piCore::LANG ),
+            array($this, 'pi_skills_builder'),
+            'pi_about',
+            'normal',
+            'default'
+        );
+	}
+
+
+	public function pi_about_builder()
+	{
+		global $post;
+
+		// $def = self::$teaConfigs['admin']['post_type']['aboutme'];
+		
+		$aboutme = get_post_meta($post->ID, "_pi_aboutme", true);
+		// $aboutme = $aboutme ? wp_unslash($aboutme) : '';
+		$piAboutMe = !empty($aboutme) ? $aboutme : array('enable_intro'=>1, 'photo'=>'', 'name'=>'', 'position'=>'', 'intro'=>'', 'resume_cv'=>'');
+
+
+
+		// $teaaboutme = wp_parse_args($aboutme, $def); 
+		
+		// $intro 		= preg_replace('/<\/p>rn<p>/', '</p><p>', $teaaboutme['intro']);
+		$intro          = $piAboutMe['intro'];
+
+		?>
+			<!-- <div class="panel-heading">
+				<div class="panel-options"> </div>
+			</div> -->
+ 
+			<div class="panel-body"> 
+				<div class="clearfix pi-group wrap-flag">
+					<div class="pi-label">
+						<label for="pi-enable-intro">Enable</label>
+					</div>
+					<div class="pi-wrapsettings">
+						<!-- <input type="hidden" id="pi-enable-intro" 	class="" name="aboutme[enable_intro]"  value="0" /> -->
+					 	<input type="checkbox" id="pi-enable-intro" class="pi_switch_checkbox" name="aboutme[enable_intro]"  value="1" <?php echo isset($piAboutMe['enable_intro']) && !empty($piAboutMe['enable_intro']) ? 'checked' : ''; ?> />
+					</div>
+				</div>
+
+				<div class="clearfix pi-group">
+					<div class="pi-label">
+						<label>Your Image</label>
+						<p>Upload your image</p>
+					</div>
+					
+					<div class="pi-wrapsettings">
+
+						<div class="form-avatar">
+							<a class="upload-image js_upload" href="#" data-insertto=".lux-gallery" data-method="html" data-use="find">
+								<div class="lux-gallery pi-aboutme is-border-none img-circle">
+									<img  src="<?php echo !empty($piAboutMe['photo'])  ? esc_url(wp_get_attachment_url($piAboutMe['photo'])) : get_template_directory_uri() . '/admin/pi-assets/img/addpeople.png'; ?>" alt="<?php echo get_post_meta($piAboutMe['photo'], '_wp_attachment_image_alt', true) ?>">
+									
+								</div>
+							</a>
+							<input type="hidden" value="<?php echo $piAboutMe['photo'] ?>" name="aboutme[photo]">
+							<?php if ( !empty($piAboutMe['photo'] ) ) : ?>
+								<button class="button pi-button button-primary js_remove_image siblings" data-placeholder="<?php echo get_template_directory_uri() . '/admin/pi-assets/img/addpeople.png'; ?>">Remove</button>
+							<?php endif; ?>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="clearfix pi-group">
+					<div class="pi-label">
+						<label><?php _e('Name', piCore::LANG) ?></label>
+					</div>
+
+					<div class="pi-wrapsettings">
+						<input type="text" name="aboutme[name]" value="<?php echo esc_attr($piAboutMe['name']) ?>">
+					</div>
+				</div>
+
+				<div class="clearfix pi-group">
+					<div class="pi-label">
+						<label><?php _e('Position', piCore::LANG) ?></label>
+					</div>
+					<div class="pi-wrapsettings">
+						<input class="form-control" type="text" name="aboutme[position]" value="<?php echo esc_attr($piAboutMe['position']) ?>">
+					</div>
+				</div>
+
+				<div class="clearfix pi-group pi-has-editor">
+					<div class="pi-label">
+						<label><?php _e('Small Intro', piCore::LANG) ?></label>
+					</div>
+					<div class="pi-wrapsettings">
+						<?php 
+						 	wp_editor( $intro, "pi-aboutmeintro", array('media_buttons'=>false, 'textarea_name'=>'aboutme[intro]', 'textarea_rows'=>5, 'drag_drop_upload'=>false, 'wpautop'=>false) );
+						?>
+					</div>
+				</div>
+
+				<div class="clearfix pi-group">
+					<div class="pi-label">
+						<label><?php _e('Resume CV', piCore::LANG) ?></label>
+					</div>
+					<div class="pi-wrapsettings has-upload">
+						<input type="text" name="aboutme[resume_cv]" placeholder="<?php _e('Enter your Resume CV url', piCore::LANG) ?>" value="<?php echo !empty($piAboutMe['intro']) ? esc_url($piAboutMe['resume_cv']) : ''; ?>">
+						<button type="button" class="js_attachment button button-primary blue-btn btn btn-info">Upload</button>
+					</div>
+				</div>
+			</div>						
+		<?php 
+	}
+
+	public function pi_skills_builder()
+	{
+		global $post;
+
+		$aDef = array
+				(
+					'pi_skill'=>array
+									(	
+										'enable_skill' => 1,
+										0	   =>	array(
+														'percent'=>50, 
+														'skill'  =>'Wordpress',
+														'des'	 =>'Donec accumsan ligula vitae mag na curabitur id'
+														)
+									)
+				);
+		
+
+		$piaSkills = get_post_meta($post->ID, '_pi_skill', true);
+
+		
+
+		$piaSkills = $piaSkills ? $piaSkills  : $aDef['pi_skill'];
+
+		$piaSkills = $piaSkills && is_array($piaSkills) ? $piaSkills : array();
+
+		$max = count($piaSkills);
+
+		?>
+		<div class="fl-wrapper">
+			<div class="container-12-fluid">
+
+				<div class="clearfix pi-group wrap-flag">
+					<div class="pi-label">
+						<label for="pi-enable-skill">Enable</label>
+					</div>
+					<div class="pi-wrapsettings">
+						<!-- <input type="hidden" id="pi-enable-skill" 	class="" name="pi_skill[enable_skill]"  value="0" /> -->
+					 	<input type="checkbox" id="pi-enable-skill" class="pi_switch_checkbox" name="pi_skill[enable_skill]"  value="1" <?php echo isset($piaSkills['enable_skill']) && !empty($piaSkills['enable_skill']) ? 'checked' : ''; ?>  />
+					</div>
+				</div>
+
+				<div id="pi_skills" class="container-12-row pi_append_here">
+				<?php 
+
+				if ( isset($piaSkills['enable_skill']) )
+				{
+					array_shift($piaSkills);
+				}
+
+				foreach ($piaSkills as $k => $aData) :
+					$piSliderId = uniqid("pi_slider_");
+				?>
+				
+			 		<div class="medium-4 pi-delete">
+	 					<div class="pi-form">
+	 						<a class="skill-del del-exp-btn" href="#" title="Delete"><i class="dashicons dashicons-no"></i></a>
+	 						<div class="pi_charts" data-percent="<?php echo $aData['percent'] ?>"><span class="percent"><?php echo $aData['percent'] ?>%</span></div>
+	 						<div id="<?php echo $piSliderId ?>" class="pi_slider"></div>
+ 							<script type="text/javascript">
+ 							jQuery(document).ready(function(){
+ 								jQuery("#<?php echo $piSliderId ?>").slider(
+ 								{
+ 									min: 0, 
+ 									max: 100, 
+ 									value: <?php echo $aData['percent'] ?>, 
+ 									// stop: function(event, ui)
+ 									// {
+ 									// 	jQuery(this).next().next().attr("value", ui.value);
+ 									// 	jQuery(this).prev().data('easyPieChart').update(ui.value);
+ 									// 	jQuery(this).prev().find(".percent").text(ui.value + '%');
+ 									// },
+ 									change: function(event, ui)
+ 									{
+ 										jQuery(this).next().next().attr("value", ui.value);
+ 										jQuery(this).prev().data('easyPieChart').update(ui.value);
+ 										jQuery(this).prev().find(".percent").text(ui.value + '%');
+ 									}
+ 								});
+ 							})
+	 						</script>
+			 				<input type="text" class="" name="pi_skill[<?php echo $k ?>][percent]" placeholder="Percent" value="<?php echo esc_attr($aData['percent']) ?>">  <br>
+			 				<input type="text" class="pi_skill_value" name="pi_skill[<?php echo $k ?>][skill]" placeholder="Skill" value="<?php echo esc_attr($aData['skill']) ?>">  <br>
+			 				<textarea name="pi_skill[<?php echo $k ?>][des]"><?php echo esc_textarea($aData['des']) ?></textarea>
+
+				 		</div>
+			 		</div>	
+			 	
+				<?php 
+				endforeach;
+				?>
+				</div>
+
+				<div class="container-12-fluid pi_wrap_button">
+					<div class="container-12-row">
+		 				<div class="medium-12">
+	 						<button  type="button" class="button button-primart pi_addmore fl-btn-top" data-type="skill" data-currentmaxorder="<?php echo ($max) ?>">Add</button>
+		 				</div>	
+		 			</div>
+				</div>
+
+			</div>
+		</div>
+		<?php 
+	}
+
+}

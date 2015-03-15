@@ -1,0 +1,194 @@
+#customize-control-pi_save_theme_options-theme_options-logo-upload .customize-image{
+	background-color: #ddd;
+} 
+.customize-image{
+	max-width: 90%;
+	border: 1px solid #ddd;
+}
+
+.pi-customize-title{
+ 	-moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: linear-gradient(to bottom, #f5f5f5, #eee) repeat scroll 0 0 #f3f3f3;
+    border-color: #dfdfdf -moz-use-text-color #dbdbdb;
+    border-image: none;
+    border-style: solid none;
+    border-width: 1px 0;
+    box-shadow: 0 1px 0 0 #fff inset, 0 1px 1px rgba(0, 0, 0, 0.05);
+    color: #999;
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1;
+    margin: 0 -20px;
+    padding: 8px 20px;
+    text-shadow: 0 1px 0 #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.image-wrap .attachment{
+    width: 100px;
+    height: 80px;
+    position: relative;
+}
+
+.image-wrap .pi-remove{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: none repeat scroll 0 0 rgba(46, 54, 63, 0.6);
+    color: #fff;
+    font-size: 18px;
+    padding: 5px 5px 0;
+    position: absolute;
+    right: 8px;
+    top: 7px;
+}
+
+.pi-remove .dashicons{
+    color: #ff295c;
+}
+
+.image-wrap img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*SortAble*/
+.wo-sortable{
+    width: 200px;
+    max-width: 200px;
+    /*position: relative;*/
+}
+.ui-sortable-helper{
+    border: 1px dotted;
+    z-index: 10000
+}
+
+.ui-item{
+    border: 0 none;
+    color: #FFFFFF;
+    padding: 10px 30px;
+}
+.js_section_order > li,
+.pi-conected-sortable > .item-wrapper .pi-item {
+    background-color: #0088cc;
+    border-radius: 3px;
+    display: block;
+    color: #fff;
+    padding: 10px 10px 10px 30px;
+    position: relative;
+    cursor: move;
+}
+.pi-conected-sortable > .item-wrapper {
+    max-width: 200px;
+    opacity: 1;
+    height: auto;
+    margin: 5px 0 !important;
+    padding: 0 !important;
+}
+.pi-conected-sortable .item-wrapper .pi-item {
+    border: 0px solid #000 !important;
+    width: 100%;
+    height: auto;
+    display: block;
+    text-align: left;
+    padding: 10px 10px 10px 30px;
+    margin-bottom: 7px;
+    float: none;
+    line-height: 20px;
+    font-size: 14px;
+}
+.pi-conected-sortable .item-wrapper .pi-item span {
+    display: inline;
+    position: static;
+}
+.pi-conected-sortable .item-wrapper .pi-item i {
+    float: none;
+    display: inline;
+    margin: 0;
+    width: auto;
+}
+.pi-conected-sortable .item-wrapper .pi-item i:before {
+    color: rgba(0,0,0,0);
+}
+.pi-conected-sortable .item-wrapper .pi-item i {
+    background-image: url("../images/ui-icons_ffffff_256x240.png");
+    background-position: -128px -48px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 16px;
+    left: 10px;
+    position: absolute;
+    top: 11px;
+    width: 16px;
+}
+.pi-conected-sortable .section-order {
+    display: none;
+}
+.pi-conected-sortable > .item-wrapper .ui-icon,
+.js_section_order > li .ui-icon {
+    position: absolute;
+    top: 11px;
+    left: 10px;
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    background-image: url("../images/ui-icons_ffffff_256x240.png");
+    background-repeat: no-repeat;
+}
+.js_section_order > li .ui-icon-arrowthick {
+    background-position: -128px -48px;
+};
+.js_section_order > .ui-sortable-helper {
+    border: 1px dotted #ccc;
+    background-color: #ffa500;
+}
+
+.hidden{
+    display: none !important;
+}
+
+.h-btn {
+  display: inline-block;
+  outline: none;
+  font-family: "Raleway", cursive;
+  font-size: 13px;
+  font-weight: 600;
+  background: none;
+  color: #fff;
+  border: 0;
+  background-color: #00c8ff;
+  text-align: center;
+  text-shadow: none;
+  box-shadow: none;
+  text-indent: 1px;
+  padding: 10px 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.h-btn:hover {
+  background-color: #222;
+  color: #fff;
+}
+#customize-controls a {
+  display: block;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: #555;
+}
+#customize-controls a.active,
+#customize-controls a:hover {
+  color: #00c8ff;
+}

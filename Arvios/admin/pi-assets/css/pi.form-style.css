@@ -1,0 +1,258 @@
+.pi-group {
+	padding:32px 0px 32px 0;
+	-webkit-box-sizing:border-box; 
+	-moz-box-sizing:border-box; 
+	box-sizing:border-box; 
+	border-bottom:1px dashed #e1e1e1;
+	position:relative;
+	background:#fff;
+	clear:both;
+	border-bottom:none !important;
+	border-bottom:1px solid #fafafa;
+}
+
+
+.pi-label > strong {
+	font-size: 16px;
+	margin-bottom: 9px;
+    font-family: "Open Sans",Arial,sans-serif;
+    display:block;
+	font-size: small;
+}
+
+.pi-label label{
+    color: #222222;
+    font-size: 13px;
+}
+
+.pi-label p{
+    color: #939393;
+    font-size: 12px;
+    margin: 8px 0 0;
+}
+
+.pi-label > span {
+	display: block;
+	color: #939292;
+	font-size:14px;
+	font-style:italic;
+	line-height: 21px;
+}
+.pi-label{
+	float:left !important;
+	width:40% !important;
+}
+.pi-label strong{
+	font-weight:normal  !important;
+	margin:0 !important;
+	font-size:15px;
+	line-height: 20px;
+	color:#3D3D3D !important;
+}
+
+.pi-wrapsettings{
+	position:relative;
+}
+
+.pi-wrapsettings{
+	width:57%;
+	float:right !important;
+}
+.pi-wrapsettings input[type=text]{
+	padding:6px 15px;
+	width:100% !important;
+	font: 12px/20px Arial, Helvetica, sans-serif;
+}
+
+.pi-wrapsettings textarea{
+	width:100%;
+}
+.pi-wrapsettings .checkbox-field,
+.pi-wrapsettings .textarea-field,
+.pi-wrapsettings .select-field,
+.pi-wrapsettings .radio-field,
+.pi-wrapsettings .text-field {
+	font-size: small;
+	border-radius:0px !important;
+}
+
+
+
+.container-select 
+{
+	font-size: 1.5em;
+}
+
+.container-select.small 
+{
+	font-size: .7em;
+}
+
+.container-select select
+{
+	font-size: inherit; /* inherit size from .custom-dropdown */
+	padding: .5em; /* add some space*/
+	margin: 0; /* remove default margins */
+}
+
+.container-select .white 
+{
+	background-color: #fff;
+	color: #444;    
+}	
+
+
+
+.container-select 
+{
+	position: relative;
+	display: block;
+	vertical-align: middle;
+}
+
+.container-select select 
+{
+	padding-right: 2.5em; /* accommodate with the pseudo elements for the dropdown arrow */				
+	border: 0;
+	border-radius: 3px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;    
+}
+
+.container-select::before,
+.container-select::after 
+{
+	content: "";
+	position: absolute;
+	pointer-events: none;
+}
+
+.container-select::after 
+{ /*  Custom dropdown arrow */
+	content: "\25BC";
+	height: 1em;
+	font-size: .625em;
+	line-height: 1;
+	right: 1.2em;
+	top: 50%; margin-top: -.5em;
+}
+
+.container-select::before 
+{ /*  Custom dropdown arrow cover */
+	width: 2em;
+	right: 0; top: 0; bottom: 0;
+	border-radius: 0 3px 3px 0;
+	background: #FFF !important;
+	border: 1px solid #9ca0a3
+}
+
+.container-select select[disabled] 
+{
+	color: rgba(0,0,0,.3);
+}
+
+.container-select.disabled::after 
+{
+	color: rgba(0,0,0,.1);
+}
+
+/* White dropdown style */
+.container-select.white::before 
+{
+	top: .5em; bottom: .5em;
+	background-color: #fff;
+	/*border-left: 1px solid rgba(0,0,0,.1);*/
+	border: 1px solid 
+}
+
+.container-select.white::after 
+{
+	color: rgba(0,0,0,.9);
+}					
+
+/* Emerald dropdown style */
+.container-select::before 
+{
+	background-color: #1aa181;
+}
+
+.container-select::after 
+{
+	color: rgba(0,0,0,.4);
+}
+
+
+/* Red dropdown style */
+.container-select.red::before 
+{
+	background-color: #d53a22;
+}
+
+.container-select.red::after 
+{
+	color: rgba(0,0,0,.4);
+}
+
+/* FF only temporary & ugly fixes */
+/* the "appearance: none" applied on select still shows a dropdown arrow on Firefox */
+/* https://bugzilla.mozilla.org/show_bug.cgi?id=649849 */
+@-moz-document url-prefix() 
+{
+	.container-select select { padding-right: .9em }
+	.container-select select { padding-right: 1.3em }
+	.container-select select { padding-right: .5em }
+}	
+
+}
+
+
+.container-select {
+	display: inline-block
+}        
+
+.element-select{
+	width: 100% !important;
+	height: 34px !important;
+    border-color: -moz-use-text-color -moz-use-text-color -moz-use-text-color #d9d9d9 !important;
+    border-left: 1px solid #d9d9d9 !important;
+ 	border-top: 1px solid #d9d9d9 !important;
+  	border-bottom: 1px solid #d9d9d9 !important;
+    border-style: none none none solid !important;
+    border-width: medium medium medium 1px !important;
+    border: 1px solid #ddd;
+    box-shadow: none !important;
+    background:  url("../images/select_bg4.jpg") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+    font-size: 15px !important;
+    outline-style: none !important
+}
+.container-select{
+	width: 100% !important
+}
+
+.container-textarea{
+	/*border: 1px solid #9ca0a3;*/
+	/*width: 100%;*/
+
+}
+
+.container-textarea textarea{
+	height: 100px
+}
+
+.pi-has-editor .pi-wrapsettings{
+	width: 100% !important
+}
+
+.pi-wrapsettings.has-upload input[type="text"]{
+	width: 75% !important
+}
+.pi-iconname.pi-input{
+	width: 150px !important;
+	margin-left: 37px
+}
+.pi-input{
+   	font: 12px/20px Arial,Helvetica,sans-serif;
+    padding: 6px 15px;
+    width: 100% !important;
+}

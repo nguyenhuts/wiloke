@@ -1,0 +1,140 @@
+<div id="contact" class="inner-tabs-panel">
+    <div class="inner-content"> 
+        <div class="panel">
+        <div class="panel-heading">
+            <div class="panel-title"> Contact <code class="help">Slug : #contact</code>
+                <p class="help">Allow use tags : &lt;span>, &lt; br />,  &lt;i>, &lt;b> </p>
+            </div>
+        </div>  
+
+        <div class="panel-body wo-flag">
+            <div class="form-group">
+                <div class="control-button">
+                    <div class="slider">
+                        <input type="checkbox" class="toggle-settings pi_switch_button" id="enable-contact" name="theme_options[contact][enable]" value="1" <?php echo  (isset($aContact['enable']) && !empty ($aContact['enable']) ) ? 'checked' : ''; ?>>
+                        <!-- <label class="form-label" for="enable-aboutus">Enable About</label> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="panel-body">
+            <div class="form-group">
+                <label class="form-label"><?php _e('Title', 'wiloke'); ?></label>
+                <div class="controls">
+                    <input type="text" class="form-control" name="theme_options[contact][title]" value="<?php echo isset($aContact['title']) ? esc_attr($aContact['title']) : '';  ?>">
+                </div>
+            </div>
+
+            <div class="form-group">
+                    <label class="form-label"><?php _e('Description', 'wiloke'); ?></label>
+                    <p class="help"><?php _e('Allow use tags : &lt;span>, &lt; br />,  &lt;i>, &lt;b>', 'wiloke'); ?></p>
+                    <div class="controls">
+                        <textarea class="form-control" name="theme_options[contact][description]"><?php  echo isset($aContact['description']) ? esc_textarea($aContact['description']) : ""; ?></textarea>
+                    </div>
+            </div>
+        </div>
+
+        <div class="panel-body"> 
+            <div class="form-group wo-flag">
+                <div class="slider">
+                    <input type="checkbox" id="enable-contactform" class="toggle-settings pi_switch_button" name="theme_options[contact][contact_form]" value="1" <?php echo  (isset($aContact['contact_form']) && !empty ($aContact['contact_form']) ) ? 'checked' : ''; ?>>
+                     <label class="form-label" for="enable-contactform"><?php _e('Contact Form', 'wiloke'); ?></label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="form-label"><?php _e('Contact Form 7', 'wiloke'); ?></label>
+                <div class="controls">
+                    <?php
+                    if (!is_plugin_active('contact-form-7/wp-contact-form-7.php'))
+                    {
+                        echo '<span class="help">You need <code> Contact Form 7 </code> plugin installed</span>';
+                    }else{
+                        $contactForm7 = get_posts( array('post_type'=>'wpcf7_contact_form') );
+
+                        if ( !empty($contactForm7) && !is_wp_error($contactForm7) ) :
+                        ?>
+                    <!--     <input type="text" name="theme_options[contact][section3][contactform7_shortcode]" placeholder="Insert Contact Form7 Shortcode" value="<?php echo isset($aContact['section3']['contactform7_shortcode']) ? htmlentities(stripslashes($aContact['section3']['contactform7_shortcode'])) : "";  ?>" /> -->
+                    <?php
+                            echo '<select name="theme_options[contact][contactform7_shortcode]">';
+                            foreach ($contactForm7  as $contactForm) : setup_postdata($contactForm);
+                                $checked = isset($aContact['contactform7_shortcode']) && ($aContact['contactform7_shortcode'] == $contactForm->ID) ? 'selected' : '';
+                                ?>
+                                <option value="<?php echo $contactForm->ID ?>" <?php echo $checked; ?>><?php echo get_the_title($contactForm->ID) ?></option>
+                                <?php
+                            endforeach;
+                            echo '</select>';
+                        else :
+                            echo 'Opp! You  haven\'t had any post yet. Click <a target="_blank" href="'.admin_url('admin.php').'?page=wpcf7"></a> to create';
+                        endif;
+                    }
+                    ?>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel-body">
+            <div class="form-group wo-flag">
+                <div class="slider">
+                    <input type="checkbox" id="enable-googlemap" class="toggle-settings pi_switch_button" name="theme_options[contact][enablegooglemap]" value="1" <?php echo  (isset($aContact['enablegooglemap']) && !empty ($aContact['enablegooglemap']) ) ? 'checked' : ''; ?>>
+                    <label class="form-label" for="enable-googlemap"><?php _e('Enable Googlemap', 'wiloke'); ?></label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="form-label"><?php _e('Position', 'wiloke'); ?></label>
+                <div class="controls">
+                     <input type="text" name="theme_options[contact][googlemap][latitude]" value="<?php echo isset($aContact['googlemap']['latitude']) ? $aContact['googlemap']['latitude'] : '';  ?>" placeholder="Latitude"> <span style="position: relative; top: 9px; margin: 0 10px;"> X </span><input type="text" name="theme_options[contact][googlemap][longitude]" value="<?php echo isset($aContact['googlemap']['longitude']) ? $aContact['googlemap']['longitude'] : '';  ?>" placeholder="Longitude">
+                </div>
+                <code class="help"><?php _e('Click', 'wiloke'); ?> <a href="http://itouchmap.com/latlong.html" target="_blank"><?php _e('here', 'wiloke'); ?></a><?php _e('to get Latude and Longitude', 'wiloke'); ?></code>
+            </div>
+        </div>
+
+        <div class="panel-body">
+            <div class="form-group wo-flag"> 
+                <div class="slider">
+                    <input type="checkbox" id="enable-contactdetail" class="toggle-settings pi_switch_button" name="theme_options[contact][contact_detail]" value="1" <?php echo  (isset($aContact['contact_detail']) && !empty ($aContact['contact_detail']) ) ? 'checked' : ''; ?>>
+                    <label class="form-label" for="enable-contactdetail"><?php _e('Contact Info', 'wiloke'); ?></label>
+                </div>
+            </div>
+
+            <div class="wrap form-table">
+                <div class="form-group pi-parent contact-wrap">
+                    <?php 
+                        
+                        if ( isset($aContact['info']) && !empty($aContact['info'])  ) :
+                            foreach ($aContact['info'] as $k => $info) :
+                    ?>
+                        <p class="pi_contactinfo">
+                            <a class="js_add_icon" href="#" title="Change Icon">
+                                <i class="<?php echo isset($aContact['info_icon'][$k]) ? $aContact['info_icon'][$k] : 'fa fa-refresh'; ?>"></i>
+                            </a>
+                            <input type="hidden" name="theme_options[contact][info_icon][]" value="<?php echo isset($aContact['info_icon'][$k]) ? $aContact['info_icon'][$k] : 'fa fa-refresh'; ?>">
+                            <input type="text" name="theme_options[contact][info][]" placeholder="Info" value="<?php echo  esc_attr($info) ?>">
+                            <a href="#" class="js_delete_item" title="Delete"><i class="fa fa-times"></i></a>
+                        </p>
+                        <?php 
+                                endforeach;
+                            else :
+                        ?>
+                        <p class="pi_contactinfo">
+                            <a class="js_add_icon" href="#"><i class="fa fa-refresh"></i></a>
+                            <input type="hidden" name="theme_options[contact][info_icon][]" value="fa fa-refresh">
+                            <input type="text" name="theme_options[contact][info][]" placeholder="Info" value="">
+                            <a href="#" class="js_delete_item"><i class="fa fa-times"></i></a>
+                        </p>
+                        <?php 
+                            endif; 
+                        ?>
+                        <button type="button button-primary" class="button js_add_info_contact"><?php _e("Add", 'wiloke') ?></button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel-body">
+        <?php $this->pi_section_background('contact', $aContact); ?>
+        </div>
+
+        </div>
+    </div>
+</div>

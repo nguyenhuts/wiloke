@@ -1,0 +1,82 @@
+<?php 
+  if ( apply_filters('pi_is_section_enable', 'blog') ) :
+?>
+<?php 
+  do_action("pi_hercules_before_blog");
+  $background = apply_filters('pi_get_background', 'blog');
+?>
+
+<!-- BLOG -->
+<section id="blog" class="blog-section" data-background='<?php echo esc_attr($background) ?>'>
+
+  <div class="container">
+
+   
+    <div class="st-heading text-center">
+      <?php apply_filters( 'pi_the_heading', 'blog' ); ?>
+      <?php apply_filters( 'pi_the_description', 'blog' ); ?>
+    </div>
+    
+    <div class="row">
+      <div class="st-body">
+       
+        <?php  
+
+          $showPosts = apply_filters('pi_get_data', 'blog');
+          if ( !$showPosts )
+          {
+            $showPosts = get_option('posts_per_page');
+          }
+
+          $args = array("posts_per_page"=>$showPosts, "post_status"=>"publish");
+          $query = new WP_Query($args);
+          $piBlogId = get_option("_pi_page_id");
+        ?>
+        <div id="masonry" class="col-sm-12 col-md-12 col-xs-12">
+ 
+            <div class="blog-grid">
+            <?php 
+              while ( $query->have_posts() ) : $query->the_post();
+            ?>         
+              <div class="grid-item col-xs-12 col-sm-6 col-md-4">   
+
+                  <div class="post">
+                    <?php echo pi_post_media($post->ID); ?>
+                    <!-- .entry-header -->          
+                    <div class="post-title">
+                      <?php echo apply_filters('pi_post_formats_icon', ''); ?>
+                      <h3 class="title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
+                    </div>
+                    <!-- .entry-content -->
+                    <?php echo pi_get_the_date($post->ID); ?>
+                 </div>
+
+              </div>
+            <?php 
+              endwhile;
+              wp_reset_query();
+            ?>
+            </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+   <?php if ( $piBlogId && !empty($piBlogId) ) : ?>
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-md-12 col-lg-12 pi-wrap-blogbutton text-center">
+          <a class="h-btn" href="<?php  echo get_permalink($piBlogId)?>"><?php _e('View All Posts', piCore::LANG) ?></a>
+      </div>
+    </div>
+    <?php endif; ?>
+   </div>
+</section>
+
+<?php 
+  do_action("pi_hercules_after_blog");
+?>
+<?php 
+endif;
+?>

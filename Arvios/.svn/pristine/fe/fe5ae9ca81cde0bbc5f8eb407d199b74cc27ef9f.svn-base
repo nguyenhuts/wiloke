@@ -1,0 +1,40 @@
+<div id="portfolio" class="inner-tabs-panel">
+    <div class="inner-content">
+        <div class="panel"> 
+
+            <div class="panel-heading">
+                <div class="panel-title"> Portfolio <code class="help">Slug : #portfolio</code></div>
+            </div>  
+        
+             <div class="panel-body wo-flag">
+                 <div class="form-group"> 
+                    <div class="control-button">
+                        <div class="slider">
+                            <input type="checkbox" id="enable-portfolio" class="toggle-settings pi_switch_button" name="theme_options[portfolio][enable]" value="1" <?php echo  (isset($aPortfolio['enable']) && !empty ($aPortfolio['enable']) ) ? 'checked' : ''; ?>>
+                            <!-- <label class="form-label" for="enable-portfolio">Enable Portfolio</label> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-body">
+                <div class="form-group">
+                    <label class="form-label">Title</label>
+                    <div class="controls">
+                        <input type="text" class="form-control" name="theme_options[portfolio][title]" value="<?php echo isset($aPortfolio['title']) ? esc_attr($aPortfolio['title']) : ''; ?>">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label"> Description</label>
+                    <div class="controls">
+                        <textarea type="text" class="form-control" name="theme_options[portfolio][description]"><?php echo isset($aPortfolio['description']) ? esc_textarea($aPortfolio['description']) : ''; ?></textarea>
+                    </div>
+                </div>
+
+                <?php $this->pi_section_background('portfolio', $aPortfolio, 'color'); ?>
+
+            </div>
+        </div>
+    </div>
+</div>

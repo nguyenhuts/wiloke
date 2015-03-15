@@ -1,0 +1,222 @@
+<div class="inner-content">
+    <div class="container-12-fluid">
+        <div class="container-12-row">
+            <div class="large-12">
+
+                <div class="panel">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                           <?php _e("Preload", piCore::LANG) ?> 
+                        </div>
+                    </div>
+
+                    <div class="panel-body wo-flag"> 
+                        <div class="form-group">
+                            <div class="control-button">
+                                <div class="slider">
+                                    <input type="checkbox" id="enable-preload" class="toggle-settings pi_switch_button"  name="theme_options[preload][enable]" value="1" <?php echo  (isset($aOptions['preload']['enable']) && !empty ($aOptions['preload']['enable']) ) ? 'checked' : ''; ?> >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="panel">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                           <?php _e("Logo", piCore::LANG) ?>
+                        </div>
+                    </div>
+                    <div class="panel-body wo-flag"> 
+                        <div class="form-group">
+                            <div class="control-button">
+                                <div class="slider">
+                                    <input type="checkbox" id="enable-header" class="toggle-settings pi_switch_button"  name="theme_options[logo][enable]" value="1" <?php echo  (isset($aLogo['enable']) && !empty ($aLogo['enable']) ) ? 'checked' : ''; ?> >
+                                    <!-- <label for="enable-header">Enable Header</label> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel-body">
+                        <label class="form-label"><?php _e("Logo Type", piCore::LANG) ?></label>
+                        <?php 
+                            $aLogoType = isset($aLogo['type']) ? $aLogo['type'] : 'upload';
+
+                            $aSettings = array("text"=>"Text", "upload"=>"Upload an image"); 
+                        ?>
+                        <div class="form-control">
+                            <select name="theme_options[logo][type]" class="wo-logo-type">
+                                <?php 
+                                    foreach ($aSettings as $key => $value) :
+                                        $selected = $key == $aLogoType ? 'selected' : '';
+                                    ?>
+                                    <option value="<?php echo $key ?>" <?php echo esc_attr($selected) ?> ><?php echo esc_attr($value) ?></option>
+                                    <?php 
+                                    endforeach;
+                                ?>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="form-control logo-text">
+                            <div class="controls">
+                                <input type="text" class="form-control" name="theme_options[logo][text]" value="<?php echo isset($aLogo['text']) ? esc_attr($aLogo['text']) : ''; ?>" placholder="Logo">
+                            </div>
+                        </div>
+
+                        <div class="form-control logo-text">
+                            <div class="controls">
+                                <input type="text" class="form-medium color-picker pi_color_picker" name="theme_options[logo][logo_color]" value="<?php echo isset($aLogo['logo_color']) ? esc_attr($aLogo['logo_color']) : '#fff'; ?>">
+                            </div>
+                        </div>
+
+                        <div class="form-group upload-logo">
+                            <?php $logoImage = isset($aLogo['logo_nav']) && !empty($aLogo['logo_nav']) ? $aLogo['logo_nav'] : $adminImages  . 'logo-nav.png'; ?>
+                            <div class="image-wrap wrap-logo">
+                                <span><img src="<?php echo esc_url($logoImage); ?>" ></span>
+                            </div>
+                            <br>
+                            <a class="btn btn-white upload-img" data-insertlink=".wo-insert-link" data-append=".image-wrap"><?php _e("Get image", piCore::LANG) ?></a>
+                            <input class="insertlink" type="hidden" value="<?php echo  esc_url($logoImage); ?>" name="theme_options[logo][logo_nav]">
+                            <p class="help"><?php _e("This logo will be displayed at the navigation", piCore::LANG) ?></p>
+                        </div>
+                        
+                        <div class="form-group upload-logo">
+                            <?php $logoImage = isset($aLogo['s_logo']) && !empty($aLogo['s_logo']) ? $aLogo['s_logo'] : $adminImages  . 'logo.png'; ?>
+                            <div class="image-wrap wrap-logo">
+                                <span><img src="<?php echo esc_url($logoImage); ?>" ></span>
+                            </div>
+                            <br>
+                            <a class="btn btn-white upload-img" data-insertlink=".wo-insert-link" data-append=".image-wrap"><?php _e("Get image", piCore::LANG) ?></a>
+                            <input class="insertlink" type="hidden" value="<?php echo  esc_url($logoImage); ?>" name="theme_options[logo][s_logo]">
+                            <p class="help"><?php _e("This logo will be displayed on header background", piCore::LANG) ?></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                           <?php _e("Favicon & Touch", piCore::LANG) ?> 
+                        </div>
+                    </div>
+
+                    <div class="panel-body wo-flag"> 
+                        <div class="form-group">
+                            <div class="control-button">
+                                <div class="slider">
+                                    <input type="checkbox" id="enable-header" class="toggle-settings pi_switch_button"  name="theme_options[favicon_touch][enable]" value="1" <?php echo  (isset($aFT['enable']) && !empty ($aFT['enable']) ) ? 'checked' : ''; ?> >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel-body">
+                        <h4><?php _e("Favicon", piCore::LANG) ?></h4>
+                        <div class="form-group">
+                            <?php $logoImage = isset($aFT['favicon']) && !empty($aFT['favicon']) ? $aFT['favicon'] : $adminImages  . 'favicon.ico'; ?>
+                            <div class="image-wrap wrap-logo">
+                                <span><img src="<?php echo esc_url($logoImage); ?>" ></span>
+                            </div>
+                            <br>
+                            <a class="btn btn-white upload-img" data-insertlink=".wo-insert-link" data-append=".image-wrap"><?php _e("Get image", piCore::LANG) ?></a>
+                            <input class="insertlink" type="hidden" value="<?php echo  esc_url($logoImage); ?>" name="theme_options[favicon_touch][favicon]">
+                        </div>
+                        
+                        <h4><?php _e("Touch", piCore::LANG) ?></h4>
+                         <div class="form-group">
+                            <?php $logoImage = isset($aFT['touch']) && !empty($aFT['touch']) ? $aFT['touch'] : $adminImages  . 'touch.png'; ?>
+                            <div class="image-wrap wrap-logo">
+                                <span><img src="<?php echo esc_url($logoImage); ?>" ></span>
+                            </div>
+                            <br>
+                            <a class="btn btn-white upload-img" data-insertlink=".wo-insert-link" data-append=".image-wrap"><?php _e("Get image", piCore::LANG) ?></a>
+                            <input class="insertlink" type="hidden" value="<?php echo  esc_url($logoImage); ?>" name="theme_options[favicon_touch][touch]">
+                        </div>
+
+
+                    </div>
+                </div> 
+                <div class="panel">
+
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                           <?php _e("Blog Options", piCore::LANG) ?>
+                        </div>
+                    </div>
+
+<!--                     <div class="panel-body">
+                        <div class="form-group">
+                            <label for="form-label"><?php _e("Number of words", piCore::LANG) ?></label>
+                            <div class="controls">
+                               <input type="text" class="form-control"  name="theme_options[blog][number_of_words]" value="<?php echo  (isset($aBlog['number_of_words']) && !empty ($aBlog['number_of_words']) ) ? esc_attr($aBlog['number_of_words']) : 50; ?>" >
+                                <code class="help"><?php _e("Number of words in blog listing", piCore::LANG) ?></code>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="panel-body">
+                         <div class="form-group">
+                            <div class="slider controls">
+                                <input type="checkbox" id="enable-sharingbox" name="theme_options[blog][sharingbox]" value="1" <?php echo  (isset($aBlog['sharingbox']) && !empty ($aBlog['sharingbox']) ) ? 'checked' : ''; ?>>
+                                <label for="enable-sharingbox"><?php _e("Display sharing box", piCore::LANG) ?></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel wo-footer-socials-network">
+
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                           <?php _e("Social Networks", piCore::LANG) ?>
+                        </div>
+                    </div>
+                    
+                    <div class="panel-body">
+                         <div class="form-group">
+                            <h4 for="form-label"><?php _e("Display at", piCore::LANG) ?></h4>
+                            <div class="slider controls">
+                                <input type="checkbox" id="social-display-at-header" name="theme_options[social][display][header]" value="1" <?php echo  (isset($aSocial['display']['header']) && !empty ($aSocial['display']['header']) ) ? 'checked' : ''; ?>>
+                                <label for="social-display-at-header"><?php _e("Header", piCore::LANG) ?></label>
+                            </div>
+                            <div class="slider controls">
+                                <input type="checkbox" id="social-display-at-footer" name="theme_options[social][display][footer]" value="1" <?php echo  (isset($aSocial['display']['footer']) && !empty ($aSocial['display']['footer']) ) ? 'checked' : ''; ?>>
+                                <label for="social-display-at-footer"><?php _e("Footer", piCore::LANG) ?></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel-body"> 
+                        <h4 for="form-label"><?php _e("Social", piCore::LANG) ?></h4>
+                        <?php 
+                            if ( isset($aSocial['social_link']) && !empty($aSocial['social_link'])  ) :
+                                foreach ($aSocial['social_link'] as $k => $info) :
+                        ?>
+                        <p class="pi_contactinfo">
+                            <a class="js_add_icon thickbox" href="#TB_inline&width=600&height=500&inlineId=table-fa" title="Change Icon">
+                                <i class="<?php echo isset($aSocial['social_icon'][$k]) ? $aSocial['social_icon'][$k] : 'fa fa-refresh'; ?>"></i>
+                            </a>
+                            <input type="hidden" name="theme_options[social][social_icon][]" value="<?php echo isset($aSocial['social_icon'][$k]) ? $aSocial['social_icon'][$k] : 'fa fa-refresh'; ?>">
+                            <input type="text" name="theme_options[social][social_link][]" placeholder="Link" value="<?php echo  esc_url($info) ?>">
+                            <a href="#" class="js_delete_item" title="Delete"><i class="fa fa-times"></i></a>
+                        </p>
+                        <?php 
+                                endforeach;
+                            else :
+                        ?>
+                        <p class="pi_contactinfo">
+                            <a class="js_add_icon thickbox" href="#TB_inline&width=600&height=500&inlineId=table-fa">
+                                <i class="fa fa-refresh"></i>
+                            </a>
+                            <input type="hidden" name="theme_options[social][social_icon][]" value="fa fa-refresh">
+                            <input type="text" name="theme_options[social][social_link][]" placeholder="Link" value="">
+                            <a href="#" class="js_delete_item"><i class="fa fa-times"></i></a>
+                        </p>
+                        <?php 
+                            endif; 
+                        ?>
+                        <button type="button button-primary" class="button js_add_social"><?php _e("Add", piCore::LANG) ?></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

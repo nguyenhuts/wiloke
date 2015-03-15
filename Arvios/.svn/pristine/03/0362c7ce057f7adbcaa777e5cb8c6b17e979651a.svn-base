@@ -1,0 +1,193 @@
+<?php
+
+class piExperience extends piCore
+{
+	public function __construct()
+	{
+		add_action('init', array($this, 'register_experience'));
+		add_action('add_meta_boxes', array($this,'pi_create_experience_settings'), 10, 2 );
+		add_action('save_post', array($this, 'pi_save_data'));
+		add_action('admin_enqueue_scripts', array($this, "pi_enqueue_scripts"));
+		// add_action('admin_footer-')
+	}
+
+	public function pi_save_data($postID)
+	{
+		if (!current_user_can('edit_post', $postID) ) return;
+
+        if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return;
+
+        if ( !isset($_POST['post_type']) || empty($_POST['post_type']) ) return;
+        
+        
+        if  ( $_POST['post_type'] == 'pi_experience' ) :
+        
+        	$data = isset($_POST['pi_experience']) ? $_POST['pi_experience'] : array();
+
+	        $data = $this->pi_unslashed_before_update($data);
+
+	    	update_post_meta($postID, "_pi_experience", $data);
+
+    	endif; 
+	}
+
+	public function pi_enqueue_scripts()
+	{
+		global $typenow;
+
+		if ($typenow == 'pi_experience') :
+			$piUrl = get_template_directory_uri() . '/admin/pi-assets/';
+			
+			wp_register_style('pi_plugin_googlefont', 'http://fonts.googleapis.com/css?family=Montserrat:400,700', array(), '1.0');
+			wp_enqueue_style("pi_plugin_googlefont");
+
+			wp_register_style('pi_plugin_fontawesome', $piUrl . 'css/font-awesome.min.css', array(), '4.0.2');
+			wp_enqueue_style("pi_plugin_fontawesome");
+
+			wp_register_style("pi_experience", $piUrl . "css/pi.experience.css", array('plugin_grid'), "1.0");
+			wp_enqueue_style("pi_experience");
+			
+		endif;
+	}
+
+	public function register_experience()
+	{
+		$piexperience 	= 	array
+							(	
+								'labels' 			=> array('name'=>_x('Experience', 'Post type genereal name', self::LANG), 'singular_name'=>_x('Experience', 'Post type genereal name', self::LANG)),
+						        'hierarchical'      => true,
+						        'public'            => true,
+						        'has_archive'       => false,
+						        'rewrite'           => array('slug'=>'experience', 'with_front'=>false),
+						        'supports'          => array('title'),
+						        'can_export'        => true,
+						        'menu_icon'         => 'dashicons-chart-bar',
+						        'show_ui'           => true,
+					    	);
+
+		register_post_type('pi_experience', $piexperience);	
+	}
+
+	public function pi_create_experience_settings()
+	{
+		add_meta_box
+		( 
+            'pi-experience',
+            __( 'Experience', piCore::LANG ),
+            array($this, 'pi_experience_builder'),
+            'pi_experience',
+            'normal',
+            'default'
+        );
+	}
+
+	public function pi_experience_builder()
+	{
+		global $post;
+		$aDef = array
+		(
+			"pi_experience"=>array
+							(
+								0 => array
+									(
+										"icon"=>"fa fa-refresh fa-5x",
+										// "to"=>"",
+										"experience"=>"",
+										// "des"=>"",
+										"small_intro"=>""
+									),
+
+							)
+		); 
+
+		$aExperience = get_post_meta($post->ID, "_pi_experience", true);
+
+		$aExperience = $aExperience ? $aExperience : $aDef['pi_experience'];
+
+		$max = count($aExperience);
+		?>
+		<!-- <div class="fl-wrapper">
+		
+			<div class="container-12-fluid pi_append_here"> -->
+			<div class="panel-body">
+				<table class="form-table">	
+					<tbody>
+				<?php 
+				foreach ($aExperience as $k => $aData) :
+					
+				?>
+		 			<!-- <div class="container-12-row exp-row pi-delete panel-body"> -->
+					<tr class="table-row tab-item pi-parent">
+						<td>
+							<a href="#" class="pi-toggle inner is_active" data-target=".pi_accordion" data-method="next"><i class="fa fa-minus-square-o"></i></a>
+							<div class="pi-wrap-content pi_accordion">
+
+								<div class="clearfix pi-group">
+									<div class="pi-label">
+										<strong>Time Period</strong>
+									</div>
+								 	<div class="pi-wrapsettings pi-hard">
+										<input type="text" class="js_date_picker" name="pi_experience[<?php echo $k ?>][from]" value="<?php echo isset($aData['from']) ? esc_attr($aData['from']) : ''; ?>"> To 
+										<input type="text" class="js_date_picker" name="pi_experience[<?php echo $k ?>][to]" value="<?php echo isset($aData['to']) ? esc_attr($aData['to']) : ''; ?>"> 
+									</div>
+								</div>
+
+								<div class="clearfix pi-group">
+									<div class="pi-label">
+										<strong>Company</strong>
+										<p>Where have you worked ?</p>
+									</div>
+								 	<div class="pi-wrapsettings">
+										<input name="pi_experience[<?php echo $k ?>][company]" value="<?php echo isset($aData['company']) ? esc_attr($aData['company']) : ''; ?>" class="text-field" type="text">
+									</div>
+								</div>
+
+								<div class="clearfix pi-group">
+									<div class="pi-label">
+										<strong>Position</strong>
+									</div>
+								 	<div class="pi-wrapsettings">
+										<input name="pi_experience[<?php echo $k ?>][position]" value="<?php echo isset($aData['position']) ? esc_attr($aData['position']) : ''; ?>" class="text-field" type="text">
+									</div>
+								</div>
+
+								<div class="clearfix pi-group">
+									<div class="pi-label">
+										<strong>Small Intro</strong>
+									</div>
+								 	<div class="pi-wrapsettings">
+										<textarea name="pi_experience[<?php echo $k ?>][description]"><?php echo isset($aData['description']) ? esc_textarea($aData['description']) : ''; ?></textarea>
+									</div>
+								</div>
+
+								<a class=" button button-primary pi-detele-tab" data-count=".row-item"  href="JavaScript:void(0)">Remove</a>
+							</div>
+						</td>
+					</tr>
+				 		
+			 	<?php 
+			 	endforeach;
+			 	?>
+			 			<tr class="table-row pi-wrap-add">
+							<td class="wrap-add-tabs">
+								<a href="JavaScript:void(0)" data-name="pi_experience" class=" button button-primary  pi-add-tabs">Add New</a>
+							</td>
+						</tr>
+
+		 			</tbody>
+				</table>
+
+	 		<!-- <div class="container-12-fluid pi_wrap_button">
+				<div class="container-12-row">
+	 				<div class="medium-12">
+	 					<button  type="button" class="button pi_addmore fl-btn-top" data-type="expertise" data-currentmaxorder="<?php echo ($max) ?>">Add</button>
+	 				</div>	
+	 			</div>
+			</div> -->
+
+		 </div>
+
+		<?php
+	}
+
+}

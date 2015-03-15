@@ -1,0 +1,57 @@
+<?php 
+if ( apply_filters('pi_is_section_enable', 'services') ) :
+?>
+<?php 
+  do_action("pi_hercules_before_services");
+  $background = apply_filters('pi_get_background', 'services');
+?>
+<section id="services" class="service" data-background='<?php echo esc_attr($background) ?>'>
+  
+  <div class="container">
+    <div class="st-heading text-center">
+        <?php apply_filters( 'pi_the_heading', 'services' ); ?>
+        <?php apply_filters( 'pi_the_description', 'services' ); ?> 
+    </div>
+  
+    <div class="row">
+
+      <div class="st-body">
+      <?php  
+        $getID = apply_filters('pi_get_data', 'services'); if ( $getID ) : $piaData = get_post_meta($getID, "_pi_services", true); 
+        if ( !empty($piaData) ) :
+            $count = count($piaData);
+            if ( $count == 3 )
+            { 
+              $col = "col-sm-4";
+            }else
+            {
+              $col = "col-sm-3";
+            }
+
+            foreach ( $piaData as $data ) :
+      ?>  
+        <div class="col-sm-6 col-lg-3 <?php echo esc_attr($col); ?>">
+          <div class="service-item text-center"> 
+            <?php printf(__(('<div class="item-head"><h4 class="h4">%s</h4><hr class="he-divider"></div>'), piCore::LANG), (wp_unslash($data['service'])) ); ?>
+            <?php printf(__(('<div class="item-content"><p>%s</p></div>'), piCore::LANG), (wp_unslash($data['small_intro'])) ); ?>              
+            <?php 
+                if ( !empty($data['link']) ) :
+            ?>
+             <div class="item-foot"><a href="<?php echo esc_url($data['link']); ?>" class="h-btn"><?php !empty($data['moreinfo']) ? printf(__(('%s'), piCore::LANG), (wp_unslash($data['moreinfo'])) ) : _e('more info', piCore::LANG) ; ?></a></div>
+            <?php 
+                endif;
+            ?>
+          </div>
+        </div> 
+      <?php  endforeach; endif; endif; ?> 
+      </div>
+    </div> 
+  </div>   
+       
+</section> 
+<?php 
+  do_action("pi_hercules_after_services");
+?>
+<?php 
+endif;
+?>

@@ -1,0 +1,56 @@
+<?php get_header(); ?>
+<?php pi_blog_header($post->ID); ?>	
+
+<!-- BLOG CONTENT -->
+<section id="post-<?php the_ID(); ?>" <?php post_class("blog-wrap"); ?>>
+	<div class="container">
+		<div class="row"> 
+			
+			<div class="col-md-10 col-md-offset-1">
+				<?php  while( have_posts() ) : the_post();  ?>
+				<div class="blog-single blog-list">
+
+                    <div class="post post-single">
+
+                    	<?php pi_post_media($post->ID, false, 'full', 'portfolio'); ?>
+						<div class="post-title">
+                            <h2 class="h4 title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                        </div>
+                        <!-- Meta data --> 
+                        <?php pi_get_meta_data(); ?>
+                        
+                        <!-- Content -->
+                        <div class="post-body">
+							<?php the_content(); ?>
+							<?php 
+								wp_link_pages(); 
+							?>
+							<?php edit_post_link('Edit this entry.', '<br /><p class="edit-this">', '</p>'); ?>
+                        </div>
+						
+						<!-- Tags -->
+						<div class="pi-wrap-sharing-tag">
+							
+							<?php if ( has_tag() ) : ?>
+			                <div class="tags-wrap">
+			                	<i class="fa fa-tag"></i>
+			                	<div class="tag">
+								<?php  the_tags();  ?>
+								</div>
+			                </div> <!-- /post-tags -->
+			            	<?php endif; ?>
+			            	<?php pi_sharing_box(); ?>
+		            	</div>
+
+					</div>
+					<?php comments_template(); ?>
+                </div>
+            	<?php endwhile; ?>
+			</div>
+
+
+		</div>
+	</div>
+</section>
+
+<?php get_footer(); ?>

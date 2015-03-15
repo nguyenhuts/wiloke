@@ -1,0 +1,165 @@
+<?php
+
+class piAboutUs extends piCore 
+{
+	public function __construct()
+	{
+		add_action('init', array($this, 'register_aboutus'));
+		add_action('add_meta_boxes', array($this,'pi_create_about_settings'), 10, 2 );
+		add_action('save_post', array($this, 'pi_save_data'));
+		add_action('admin_enqueue_scripts', array($this, 'pi_enqueu_scripts'));
+	} 
+
+	public function pi_save_data($postID)
+	{
+		if (!current_user_can('edit_post', $postID) ) return;
+
+        if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return;
+
+        if ( !isset($_POST['post_type']) || empty($_POST['post_type']) ) return;
+        
+        
+        if  ( $_POST['post_type'] == 'pi_aboutus' ) :
+        	$data  = isset($_POST['aboutus']) ? $_POST['aboutus'] : array();
+        	$data = $this->pi_unslashed_before_update($data);
+	    	update_post_meta($postID, "_pi_aboutus", $data);
+    	endif;
+	}
+
+	public function register_aboutus()
+	{
+		$teAboutus 	= 	array
+							(	
+								'labels' 			=> array('name'=>_x('About Us', 'Post type genereal name', 'wiloke'), 'singular_name'=>_x('About Us', 'Post type genereal name', 'wiloke')),
+						        'hierarchical'      => true,
+						        'public'            => true,
+						        'has_archive'       => false,
+						        'rewrite'           => array('slug'=>'about-us', 'with_front'=>false),
+						        'supports'          => array('title'),
+						        'can_export'        => true,
+						        'menu_icon'         => 'dashicons-groups',
+						        'show_ui'           => true,
+					    	);
+		register_post_type('pi_aboutus', $teAboutus);
+	}
+
+
+	public function pi_enqueu_scripts()
+	{
+		global $typenow;
+
+		if ($typenow == 'pi_aboutus') :
+
+			$piUrl = get_template_directory_uri() . '/admin/pi-assets/';
+
+			wp_register_style('pi_plugin_fontawesome', $piUrl . 'css/font-awesome.min.css', array(), '4.0.2');
+			wp_enqueue_style("pi_plugin_fontawesome");
+
+			
+			wp_register_style("pi_aboutus", $piUrl . "css/pi.ourteam.css", array(), "1.0");
+			wp_enqueue_style("pi_aboutus");
+			
+		endif;
+
+	}
+
+	public function pi_create_about_settings()
+	{
+		add_meta_box
+		( 
+            'pi-aboutus',
+            __( 'Intro', 'wiloke' ),
+            array($this, 'pi_about_builder'),
+            'pi_aboutus',
+            'normal',
+            'default'
+        );
+
+	}
+
+
+
+	public function pi_about_builder()
+	{
+		global $post;
+
+		// $def = self::$teaConfigs['admin']['post_type']['aboutus'];
+		
+		$aAboutus 	= get_post_meta($post->ID, "_pi_aboutus", true);
+		// $aAboutus = $aAboutus ? wp_unslash($aAboutus) : '';?
+		$piAboutUs 	= !empty($aAboutus) ? $aAboutus : array('enable_intro'=>1, 'photo'=>'', 'title'=>'', 'description'=>'', 'intro'=>'', 'email'=>'');
+
+		$intro     	= htmlspecialchars_decode($piAboutUs['intro']);
+
+		?>
+			<div class="panel-body">
+
+
+				<div class="clearfix pi-group">
+					<div class="pi-label">
+						<label><?php  _e('Upload image', 'wiloke'); ?></label>
+					</div>
+					
+					<div class="pi-wrapsettings">
+
+						<div class="form-avatar">
+							<a class="upload-image js_upload" href="#" data-insertto=".lux-gallery" data-method="html" data-use="find">
+								<div class="lux-gallery pi-aboutme is-border-none img-circle">
+									<img class="img-circle" src="<?php echo !empty($piAboutUs['photo'])  ? esc_url(wp_get_attachment_url($piAboutUs['photo'])) : get_template_directory_uri() . '/admin/pi-assets/img/addpeople.png'; ?>" alt="<?php echo get_post_meta($piAboutUs['photo'], '_wp_attachment_image_alt', true) ?>">
+								</div>
+							</a> 
+
+							<input type="hidden" value="<?php echo $piAboutUs['photo'] ?>" name="aboutus[photo]">
+							<?php if ( !empty($piAboutUs['photo'] ) ) : ?>
+							<button class="button pi-button button-primary js_remove_image siblings" data-placeholder="<?php echo get_template_directory_uri() . '/admin/pi-assets/img/addpeople.png'; ?>">Remove</button>
+							<?php endif; ?>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="clearfix pi-group">
+					<div class="pi-label">
+						<label><?php _e('Title', 'wiloke') ?></label>
+					</div>
+
+					<div class="pi-wrapsettings">
+						<input type="text" name="aboutus[title]" value="<?php echo esc_attr($piAboutUs['title']) ?>">
+					</div> 
+				</div>
+
+				<div class="clearfix pi-group">
+					<div class="pi-label">
+						<label><?php _e('Description', 'wiloke') ?></label>
+					</div>
+					<div class="pi-wrapsettings">
+						<input class="form-control" type="text" name="aboutus[description]" value="<?php echo esc_attr($piAboutUs['description']) ?>">
+					</div>
+				</div>
+
+				<div class="clearfix pi-group pi-has-editor">
+					<div class="pi-label">
+						<label><?php _e('Small Intro', 'wiloke') ?></label>
+					</div>
+					<div class="pi-wrapsettings">
+						<!-- <textarea name=""  cols="30" rows="10"><?php echo esc_textarea($intro) ?></textarea> -->
+						<?php wp_editor($intro, "aboutus_intro", array("textarea_name"=>"aboutus[intro]")); ?>
+					</div>
+				</div>
+	
+				<div class="clearfix pi-group">
+					<div class="pi-label">
+						<label><?php _e('Email contact', 'wiloke') ?></label>
+					</div>
+
+					<div class="pi-wrapsettings">
+						<input type="text" name="aboutus[email]" value="<?php echo esc_attr($piAboutUs['email']) ?>">
+					</div> 
+				</div>
+
+			</div>			
+		<?php 
+	}
+
+
+}

@@ -1,0 +1,87 @@
+<?php
+
+$piaConfigs = array
+(
+	'admin'=>array
+			(
+				'script'=>array
+						(
+							 
+						),
+				'post_type'=>array
+							(
+								'aboutus'=>array('photo'=>'', 'name'=>'', 'position'=>'', 'intro'=>'', 'resume_cv')
+							) 
+			),
+	'widgets' => array( 
+		'pi-sidebar' => array
+		(
+				
+			'search' => array 
+			(
+				0, 
+				array('title'=>'Search...'),
+			),
+
+			'categories'  => array
+			( 
+				0,
+				array('title'=>'Categories')
+			),
+
+			'recent-posts' => array
+			(
+				0, 
+				array('title'=>'Recent Posts', 'number'=>5)
+			),
+
+			'calendar'	=> array
+			(
+				0, 
+				array('title'=>'Calendar')
+				// array('tweet_title'=>'Latest Tweets', 'tweet_consemmer_key'=>'14XiEso9DKiEkhdejwvfLA', 'tweet_consemmer_secret'=>'K1IcprfP7ZtHW9SM9pag9YWJ0jUWi6vAWZ3hX2FvspI', 'tweet_access_token'=>'234626957-zSPIRl4nvdXvzffaXjZUZNVFxleenIQjOS2B749p', 'tweet_secret_access_token'=>'PAiDJWzd1nqVm2pzMnnFeY5OW1OiCieXSqkivO6PUM', 'tweet_username'=>'megadrupal', 'tweet_delay_time'=>3000, 'tweet_number_of_tweet'=>2)
+			),
+
+			'tag_cloud'	=> array
+			(
+				0,
+				array('title'=>'Tag Cloud', 'taxonomy'=>'post_tag')
+			),
+
+			'te_flickr_feed' => array
+			(
+				0,
+				array('title'=>'Flickr', 'flickr_id'=>'7520746@N06', 'number_of_photo'=>6)
+			),
+			
+			'text'		=> array
+			( 
+				0,
+				array('text'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ')
+			)
+ 
+		)
+	),
+	'sections' => array(
+	 	'aboutus', 'skills', 'team', 'services', 'portfolio', 'clients', 'testimonial', 'blog', 'contact'
+	),
+	'sections_name'=>array(
+		'About', 'Skills', 'Team', 'Services', 'Works', 'Clients', 'Testimonial', 'Blog', 'Contact Us'
+	),
+	'options' => array 
+	(
+		'filename' 		=> 'hercules-options.php',
+		'keyoptions'    => 'pi_save_theme_options'
+	),
+	'menus'   => array(
+		'menu_id' 	=> 'hercules_menu',
+		'menu_name'	=> 'Hercules Menu'
+	),
+	'posts_id' => array
+	(
+		'pi_about'=>48,
+		'pi_experience'=>45,	
+	),
+	'custom_color'=>'custom.css',
+	'custom_main' => 'yellow.css'
+);

@@ -1,0 +1,127 @@
+
+::-moz-selection {
+  background-color: #fbb034;
+}
+::selection {
+  background-color: #fbb034;
+}
+
+.preloader .ball,
+.footer .social a:hover:before, .footer .social a:hover:after,
+.contact_info .pi-social-zone a:hover .fa,
+.pagination > span.current,
+.pagination > a.current,
+.blog-grid .grid-item .post .post-meta .dd,
+.client-item .item-content h4:after,
+.portfolio-item .caption h2:after,
+#filters ul li.select-filter .h-btn:before,
+#filters ul li.select-filter .h-btn:after,
+.service-item:hover .h-btn:hover:before,
+.service-item:hover .h-btn:hover:after,
+.pi-navigation .close-menu span:hover:before,
+.pi-navigation .close-menu span:hover:after,
+.pi-navigation .open-menu:hover .item:before,
+.pi-navigation .open-menu:hover .item:after,
+.pi-navigation .open-menu:hover .item,
+.pi-navigation .nav li.active > a:after,
+.pi-navigation .nav li.current-menu-item > a:after,
+.pi-navigation .nav li:hover > a:after,
+header.header .head-social a:hover:before,
+header.header .head-social a:hover:after,
+.owl-carousel .owl-controls .owl-pagination .owl-page.active > span,
+mark, .mark,
+.social a:hover:before, .social a:hover:after,
+.h-btn:hover:before, .h-btn:hover:after,
+.h-btn:hover:before, .h-btn:hover:after,
+html .bg-color {
+  background-color: #fbb034;
+}
+
+.detail-project .fa,
+.footer .social a:hover .fa,
+.footer .scroll-top:hover .fa,
+.footer p a,
+.contact_info .pi-social-zone .fa,
+.contact_info p a:hover,
+.contact_info .fa,
+.contact-form form input[type="submit"]:hover,
+.widget_calendar table tbody td a,
+.tagcloud a:hover,
+.widget_meta ul li a:hover,
+.widget_pages ul li a:hover,
+.widget_recent_comments ul li a:hover,
+.widget_nav_menu ul li a:hover,
+.widget_categories ul li a:hover,
+.widget_recent_entries ul li a:hover,
+.widget_archive ul li a:hover,
+#comments .commentlist .comment-foot a,
+#comments .commentlist .comment-box cite a:hover,
+.pagination > span:hover,
+.pagination > a:hover,
+.about-author .author-social a:hover .fa,
+.tags-wrap .tag a,
+.pi_sticky .post-title h2:before,
+.blog-wrap .post-meta a,
+.blog-list .post .post-title h2 a:hover,
+.breadcrumb-wrap .breadcrumb li a:hover,
+.blog-grid .grid-item .post .post-title h3 a:hover,
+.blog-section .bg-static ~ div .blog-grid .grid-item .post .post-title h3:hover,
+.blog-section .bg-parallax ~ div .blog-grid .grid-item .post .post-title h3:hover,
+.client-item .item-content .link .fa,
+.client-item .item-content .link:hover,
+.portfolio-item .caption .tag ul li a:hover,
+.portfolio-item .caption .tag ul li:after,
+.portfolio-item .caption .tag .fa,
+.portfolio-item .caption h2 a:hover,
+.service-item:hover .h-btn:hover a,
+.service-item:hover .h-btn:hover input,
+.service-item:hover .h-btn:hover button,
+.service-item .item-head .h4,
+.team-item .caption span,
+.team .bg-static ~ div .owl-carousel .owl-controls .owl-buttons > div:hover,
+.team .bg-parallax ~ div .owl-carousel .owl-controls .owl-buttons > div:hover,
+.story .wellcome .h2,
+.search-box.active .toggle-search .fa,
+.search-box .toggle-search:hover .fa,
+.pi-navigation .nav li.active > a,
+.pi-navigation .nav li.current-menu-item > a,
+.pi-navigation .nav li:hover > a,
+.controls-sm span .fa,
+.controls-video .play .fa,
+header.header .head-social a:hover .fa,
+.owl-carousel .owl-controls .owl-buttons > div:hover,
+.social a:hover .fa,
+.h-btn:hover a, .h-btn:hover input, .h-btn:hover button {
+	color: #fbb034;
+}
+
+.footer .social a:hover .fa,
+.contact_info .pi-social-zone .fa,
+.contact-form form input[type="submit"]:hover,
+.tagcloud a:hover,
+.pagination > span.current,
+.pagination > a.current,
+.pagination > span:hover,
+.pagination > a:hover,
+.about-author .author-social a:hover .fa,
+.blog-grid .grid-item .post:hover .post-media > div,
+.portfolio-item .caption .item-icon:after,
+.service-item,
+.search-box .search-form,
+.controls-sm span .fa,
+.controls-video .play .fa,
+.owl-carousel .owl-controls .owl-pagination .owl-page.active > span,
+blockquote,
+.social a:hover .fa {
+	border-color: #fbb034;
+}
+
+.h-btn:hover a, .h-btn:hover input, .h-btn:hover button,
+#filters ul li.select-filter .h-btn a,
+.service-item:hover .h-btn:hover a,
+.service-item:hover .h-btn:hover input,
+.service-item:hover .h-btn:hover button
+header.header .head-social a:hover .fa {
+  border-right-color: #fbb034;
+  border-bottom-color: #fbb034;
+}

@@ -1,0 +1,361 @@
+<?php
+
+class piOurClients extends piCore 
+{
+	public function __construct()
+	{
+		add_action('init', array($this, 'register_ourclients'));
+		add_action('add_meta_boxes', array($this,'pi_create_about_settings'), 10, 2 );
+		add_action('save_post', array($this, 'pi_save_data'));
+		add_action('admin_enqueue_scripts', array($this, 'pi_enqueu_scripts'));
+	}
+ 
+	public function pi_save_data($postID)
+	{ 
+		if (!current_user_can('edit_post', $postID) ) return;
+
+        if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return;
+
+        if ( !isset($_POST['post_type']) || empty($_POST['post_type']) ) return;
+        
+         
+        if  ( $_POST['post_type'] == 'pi_ourclients' ) :
+  			
+        	$data  = isset($_POST['pi_ourclients']) ? $_POST['pi_ourclients'] : array();
+        	$data = $this->pi_unslashed_before_update($data);
+	    	update_post_meta($postID, "_pi_ourclients", $data);
+
+        	$data  = isset($_POST['pi_testimonial']) ? $_POST['pi_testimonial'] : array();
+        	$data = $this->pi_unslashed_before_update($data);
+	    	update_post_meta($postID, "_pi_testimonial", $data);
+
+    	endif;
+	}
+
+	public function register_ourclients()
+	{
+		$teAboutus 	= 	array
+							(	
+								'labels' 			=> array('name'=>_x('Clients', 'Post type genereal name', piCore::LANG), 'singular_name'=>_x('Client', 'Post type genereal name', piCore::LANG)),
+						        'hierarchical'      => true,
+						        'public'            => true,
+						        'has_archive'       => false,
+						        'rewrite'           => array('slug'=>'our-clients', 'with_front'=>false),
+						        'supports'          => array('title'),
+						        'can_export'        => true,
+						        'menu_icon'         => 'dashicons-smiley',
+						        'show_ui'           => true,
+					    	);
+		register_post_type('pi_ourclients', $teAboutus);
+	}
+
+
+	public function pi_enqueu_scripts()
+	{
+		global $typenow;
+
+		if ($typenow == 'pi_ourclients') :
+
+			$piUrl = get_template_directory_uri() . '/admin/pi-assets/';
+
+			wp_register_style('pi_plugin_fontawesome', $piUrl . 'css/font-awesome.min.css', array(), '4.0.2');
+			wp_enqueue_style("pi_plugin_fontawesome");
+
+			
+			wp_register_style("pi_aboutus", $piUrl . "css/pi.ourteam.css", array(), "1.0");
+			wp_enqueue_style("pi_aboutus");
+
+			wp_register_style('pi_skill', $piUrl . 'css/pi.skill.css', array(), '1.0');
+			wp_enqueue_style('pi_skill');
+			wp_enqueue_script('jquery-ui-slider');
+
+			wp_register_script('pi_plugin_easypiechar', $piUrl . 'js/jquery.easypiechart.js', array(), '2.1.1', true);
+			wp_enqueue_script('pi_plugin_easypiechar');
+
+			wp_register_script('pi_skills', $piUrl . 'js/pi.skills.js', array(), '1.0', true);
+			wp_enqueue_script('pi_skills');
+			
+		endif;
+
+	}
+
+	public function pi_create_about_settings()
+	{
+
+
+       	add_meta_box
+		( 
+            'pi-ourclients',
+            __( 'Clients', piCore::LANG ),
+            array($this, 'pi_clients'),
+            'pi_ourclients',
+            'normal',
+            'default'
+        );
+
+        add_meta_box
+		( 
+            'pi-testimonial',
+            __( 'Testimonial', piCore::LANG ),
+            array($this, 'pi_tetimonial'),
+            'pi_ourclients',
+            'normal',
+            'default'
+        );
+
+
+	}
+
+	public function pi_clients()
+	{
+		global $post;
+		$aDef = array
+		(
+			"pi_ourclients"=>array
+							(
+								'enable_ourclients'=>1,
+								0 => array
+									(
+										"photo"=>"",
+										'client'=>"",
+										'small_intro'=>"",
+										"website" =>""
+									),
+
+							)
+		); 
+
+		$aClients = get_post_meta($post->ID, "_pi_ourclients", true);
+		$aClients = $aClients ? $aClients : $aDef['pi_ourclients'];
+
+
+	  
+		?>
+		 <table class="form-table">  
+                    <tbody>
+                     	<tr class="table-row tab-item ">
+							<td>
+								<div class="clearfix pi-group">			
+									<div class="pi-label">
+										<label for="pi-enable-ourclients">Enable</label>
+									</div>
+									<div class="pi-wrapsettings">
+										 <input type="checkbox" id="pi-enable-ourclients" class="pi_switch_checkbox" name="pi_ourclients[enable_ourclients]"  value="1" <?php echo isset($aClients['enable_ourclients']) && !empty($aClients['enable_ourclients']) ? 'checked' : ''; ?> />
+									</div>
+								</div>
+							</td>
+						</tr> 
+	                <?php 
+                  
+                    
+                   
+
+                	if ( isset($aClients['enable_ourclients']) )
+			        {
+			            array_shift($aClients);
+			        }
+		         	$max = count($aClients);
+
+                    foreach ($aClients as $k => $aData) :
+                ?>
+                        <!-- <div class="container-12-row exp-row pi-delete panel-body"> -->
+                        <tr class="table-row tab-item pi-parent">
+                            <td>
+                                <a href="#" class="pi-toggle inner is_active" data-target=".pi_accordion" data-method="next"><i class="fa fa-minus-square-o"></i></a>
+                                <div class="pi-wrap-content pi_accordion">
+
+                                    <div class="clearfix pi-group"> 
+                                        <div class="pi-label">
+                                            <label><?php _e('Photo', piCore::LANG) ?></label>
+                                        </div>
+                                        <div class="pi-wrapsettings">
+                                            <div class="form-avatar">
+                                                <a class="upload-image js_upload" href="#" data-insertto=".lux-gallery" data-method="html" data-use="find">
+                                                    <div class="lux-gallery pi-ourclient is-border-none">
+                                                        <img  src="<?php echo !empty($aData['photo'])  ? wp_get_attachment_url($aData['photo']) : "http://placehold.it/250x150"; ?>">
+                                                    </div>
+                                                </a>
+                                                <input type="hidden" value="<?php echo $aData['photo'] ?>" name="pi_ourclients[<?php echo $k ?>][photo]">
+                                                <?php if ( !empty($aData['photo'] ) ) : ?>
+                                                <button class="button pi-button button-primary js_remove_image siblings" data-placeholder="http://placehold.it/250x150">Remove</button>
+                                                <?php endif; ?>
+                                            </div>
+                                        </div>
+                                    </div>  
+									
+									<div class="clearfix pi-group">
+                                        <div class="pi-label">
+                                            <strong><?php _e('Client', piCore::LANG) ?></strong>
+                                        </div>
+                                        <div class="pi-wrapsettings">
+                                            <input name="pi_ourclients[<?php echo $k ?>][client]" value="<?php echo isset($aData['client']) && !empty($aData['client']) ? esc_attr($aData['client']) :''; ?>" class="text-field" type="text" placeholder="Your client name">
+                                        </div>
+                                    </div>
+
+                                    <div class="clearfix pi-group">
+                                        <div class="pi-label">
+                                            <strong><?php _e('Small Intro', piCore::LANG) ?></strong>
+                                        </div>
+                                        <div class="pi-wrapsettings">
+                                            <textarea name="pi_ourclients[<?php echo $k ?>][small_intro]"  class="text-field" type="text"><?php echo isset($aData['small_intro']) && !empty($aData['small_intro']) ? esc_textarea($aData['small_intro']) :''; ?></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="clearfix pi-group">
+                                        <div class="pi-label">
+                                            <strong><?php _e('Link', piCore::LANG) ?></strong>
+                                        </div>
+                                        <div class="pi-wrapsettings">
+                                            <input name="pi_ourclients[<?php echo $k ?>][link]" value="<?php echo isset($aData['link']) && !empty($aData['link']) ? esc_url($aData['link']) :''; ?>" class="text-field" type="text">
+                                        </div>
+                                    </div>
+                                 
+                                    <a class="pi-button button button-primary   pi-detele-tab" data-count=".row-item"  href="JavaScript:void(0)">Remove</a>
+                                            
+                                </div>                              
+                            </td>
+                        </tr>
+                            
+                <?php 
+                endforeach;
+                ?>
+                        <tr class="table-row pi-wrap-add">
+                            <td class="wrap-add-tabs">
+                                <a href="JavaScript:void(0)" class="pi-button button-primary button pi-add-tabs" data-name="pi_ourclients" data-img="http://placehold.it/250x150"><?php _e('Add New', piCore::LANG) ?></a>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+		<?php
+	}
+
+
+	public function pi_tetimonial()
+	{
+		global $post;
+		$aDef = array
+		(
+			"pi_testimonial"=>array
+							(	
+								'enable_testimonial' => 1,
+								'testimonial_title'	 => 'What Clients Say About Us',
+								0 => array
+									(
+										"author"=>"",
+										"website"=>"",
+										"testimonial" =>""
+									),
+
+							)
+		); 
+
+		$aTestimonial = get_post_meta($post->ID, "_pi_testimonial", true);
+		$aTestimonial = $aTestimonial ? $aTestimonial : $aDef['pi_testimonial'];
+
+		?>
+
+			<div class="panel-body">
+
+
+				<table class="form-table">	
+					<tbody>
+						<tr class="table-row tab-item ">
+							<td>
+								<div class="clearfix pi-group">			
+									<div class="pi-label">
+										<label for="pi-enable-tetimonial"><?php _e('Enable', piCore::LANG) ?></label>
+									</div>
+									<div class="pi-wrapsettings">
+										 <input type="checkbox" id="pi-enable-tetimonial" class="pi_switch_checkbox" name="pi_testimonial[enable_testimonial]"  value="1" <?php echo isset($aTestimonial['enable_testimonial']) && !empty($aTestimonial['enable_testimonial']) ? 'checked' : ''; ?> />
+									</div>
+								</div>
+							</td>
+						</tr>
+
+						<tr class="table-row tab-item ">
+							<td>
+								<div class="clearfix pi-group">			
+									<div class="pi-label">
+										<label><?php _e('Title', piCore::LANG) ?></label>
+									</div>
+									<div class="pi-wrapsettings">
+										 <input type="text"  name="pi_testimonial[testimonial_title]"  value="<?php echo esc_attr($aTestimonial['testimonial_title']) ?>" />
+									</div>
+								</div>
+							</td>
+						</tr>
+
+				<?php 
+				unset($aTestimonial['enable_testimonial']);
+				unset($aTestimonial['testimonial_title']);
+
+				foreach ($aTestimonial as $k => $aData) :
+
+				?>
+			 			<!-- <div class="container-12-row exp-row pi-delete panel-body"> -->
+						<tr class="table-row tab-item pi-parent">
+							<td>
+								<a href="#" class="pi-toggle inner is_active" data-target=".pi_accordion" data-method="next"><i class="fa fa-minus-square-o"></i></a>
+								<div class="pi-wrap-content pi_accordion">
+
+									
+
+									<div class="clearfix pi-group">
+										<div class="pi-label">
+											<strong><?php _e('Client say', piCore::LANG) ?></strong>
+										</div>
+									 	<div class="pi-wrapsettings">
+											<textarea name="pi_testimonial[<?php echo $k ?>][clientssay]"><?php echo isset($aData['clientssay']) ? esc_textarea($aData['clientssay']) : ''; ?></textarea>
+										</div>
+									</div>
+
+									<div class="clearfix pi-group">
+										<div class="pi-label">
+											<strong><?php _e('Author', piCore::LANG) ?></strong>
+										</div>
+									 	<div class="pi-wrapsettings">
+											<input name="pi_testimonial[<?php echo $k ?>][author]" value="<?php echo isset($aData['author']) ? esc_attr($aData['author']) : ''; ?>" type="text">
+										</div>
+									</div>
+
+									<div class="clearfix pi-group">
+										<div class="pi-label">
+											<strong><?php _e('website', piCore::LANG) ?></strong>
+										</div>
+									 	<div class="pi-wrapsettings">
+											<input name="pi_testimonial[<?php echo $k ?>][website]" type="text" value="<?php echo isset($aData['website']) ? esc_attr($aData['website']) : ''; ?>">
+										</div>
+									</div>
+
+									<a class="button button-primary   pi-detele-tab" data-count=".row-item"  href="JavaScript:void(0)"><?php _e('Remove', piCore::LANG) ?></a>
+											
+								</div>								
+							</td>
+						</tr>
+					 		
+			 	<?php 
+			 	endforeach;
+			 	?>
+			 			<tr class="table-row pi-wrap-add">
+							<td class="wrap-add-tabs">
+								<a href="JavaScript:void(0)" class="button button-primary fullwidth pi-add-tabs" data-name="pi_testimonial" data-img="<?php  echo  get_template_directory_uri() . '/admin/pi-assets/img/addpeople.png';   ?>">Add New</a>
+							</td>
+						</tr>
+
+		 			</tbody>
+				</table>
+
+	 		<!-- <div class="container-12-fluid pi_wrap_button">
+				<div class="container-12-row">
+	 				<div class="medium-12">
+	 					<button  type="button" class="button pi_addmore fl-btn-top" data-type="expertise" data-currentmaxorder="<?php echo ($max) ?>">Add</button>
+	 				</div>	
+	 			</div>
+			</div> -->
+
+		 </div>
+	<?php
+	}
+
+}

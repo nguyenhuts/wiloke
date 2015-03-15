@@ -1,0 +1,55 @@
+<?php get_header(); ?>
+
+<?php pi_breadcrumbs();  ?>
+
+    <!-- BLOG CONTENT -->
+    <section class="blog-wrap">
+
+        <div class="container">
+            <div class="row">
+                 <?php $sidebar =  ( isset(piThemeOptions::$piOptions['design']['choosidebar']) ) ? piThemeOptions::$piOptions['design']['choosidebar'] : ''; ?>
+                <?php if ( $sidebar == 'l-sidebar' ) : ?>
+                <?php get_sidebar();  ?>
+                <?php endif; ?>
+                <div class="<?php pi_sidebar_class($sidebar) ?>">
+                    <div class="blog-list">
+                       
+                    	<?php 
+                    		while( have_posts() ) : the_post();
+                    	?>
+					 	<!-- POST -->
+                        <div class="post post-single">
+							 <div class="post-title">
+                                <h2 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                            </div>
+                            <?php 
+                            	pi_get_meta_data();
+                            	pi_post_media($post->ID);
+                            ?>
+                            <div class="post-body">
+								<?php the_excerpt(); ?>
+                            </div>
+                            <div class="post-footer">
+                                <a href="<?php the_permalink(); ?>" class="h-btn"><?php _e('Read more', piCore::LANG); ?></a>
+                            </div>
+                        </div>
+                        <?php 
+                        	endwhile;
+                        ?>
+
+                        <!-- PAGINATION -->
+						<?php get_template_part("pagination"); ?>
+
+                    </div>
+                </div>
+                <?php if ( $sidebar == 'r-sidebar' ) : ?>
+                <?php get_sidebar();  ?>
+                <?php endif; ?>
+            </div>
+        </div>
+
+    </section>
+
+
+
+<?php get_footer(); ?>

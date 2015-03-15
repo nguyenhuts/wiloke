@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * Configs
+ */
+
+if ( !class_exists('piConfigs') )
+{
+	class piConfigs 
+	{
+		public static $piaConfigs  = array(
+			'sections' => array( 'land', 'about', 'skills', 'blog',  'map', 'clients', 'portfolio', 'services', 'team')
+		);
+	}
+} 
+

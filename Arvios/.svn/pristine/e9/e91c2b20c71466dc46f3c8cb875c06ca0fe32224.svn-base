@@ -1,0 +1,129 @@
+<div id="contact" class="inner-tabs-panel">
+    <div class="inner-content"> 
+        <div class="panel">
+        <div class="panel-heading">
+            <div class="panel-title"> Contact <code class="help">Slug : #contact</code>
+                <p class="help">Allow use tags : &lt;span>, &lt; br />,  &lt;i>, &lt;b> </p>
+            </div>
+        </div>  
+
+        <div class="panel-body wo-flag">
+            <div class="form-group">
+                <div class="control-button">
+                    <div class="slider">
+                        <input type="checkbox" class="toggle-settings pi_switch_button" id="enable-contact" name="theme_options[contact][enable]" value="1" <?php echo  (isset($aContact['enable']) && !empty ($aContact['enable']) ) ? 'checked' : ''; ?>>
+                        <!-- <label class="form-label" for="enable-aboutus">Enable About</label> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="panel-body">
+                <div class="form-group wo-flag">
+                    <div class="slider">
+                       
+                        <input type="checkbox" id="enable-contactform" class="toggle-settings" name="theme_options[contact][contact_form]" value="1" <?php echo  (isset($aContact['contact_form']) && !empty ($aContact['contact_form']) ) ? 'checked' : ''; ?>>
+                         <label class="form-label" for="enable-contactform">Enable Contact Form</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Contact Form 7</label>
+                    <div class="controls">
+                        <?php
+                        if (!is_plugin_active('contact-form-7/wp-contact-form-7.php'))
+                        {
+                            echo '<span class="help">You need <code> Contact Form 7 </code> plugin installed</span>';
+                        }else{
+                            $contactForm7 = get_posts( array('post_type'=>'wpcf7_contact_form') );
+
+                            if ( !empty($contactForm7) && !is_wp_error($contactForm7) ) :
+                            ?>
+                        <!--     <input type="text" name="theme_options[contact][section3][contactform7_shortcode]" placeholder="Insert Contact Form7 Shortcode" value="<?php echo isset($aContact['section3']['contactform7_shortcode']) ? htmlentities(stripslashes($aContact['section3']['contactform7_shortcode'])) : "";  ?>" /> -->
+                        <?php
+                                echo '<select name="theme_options[contact][contactform7_shortcode]">';
+                                foreach ($contactForm7  as $contactForm) : setup_postdata($contactForm);
+                                    $checked = isset($aContact['contactform7_shortcode']) && ($aContact['contactform7_shortcode'] == $contactForm->ID) ? 'selected' : '';
+                                    ?>
+                                    <option value="<?php echo $contactForm->ID ?>" <?php echo $checked; ?>><?php echo get_the_title($contactForm->ID) ?></option>
+                                    <?php
+                                endforeach;
+                                echo '</select>';
+                            else :
+                                echo 'Opp! You  haven\'t had any post yet. Click <a target="_blank" href="'.admin_url('admin.php').'?page=wpcf7"></a> to create';
+                            endif;
+                        }
+                        ?>
+                    </div>
+                </div>
+        </div>
+
+        <div class="panel-body">
+            <div class="form-group wo-flag"> 
+                <div class="slider">
+                    <input type="checkbox" id="enable-contactdetail" class="toggle-settings" name="theme_options[contact][contact_detail]" value="1" <?php echo  (isset($aContact['contact_detail']) && !empty ($aContact['contact_detail']) ) ? 'checked' : ''; ?>>
+                    <label class="form-label" for="enable-contactdetail">Enable Contact Info</label>
+                </div>
+            </div>
+
+            <div class="wrap form-table">
+                <div class="form-group pi-parent contact-wrap">
+                   
+                    <?php 
+                        $aInfo = array('contact_detail_title'=>'Title', 'email'=>'Email', 'phone'=>'Phone', 'mobile'=>'Mobile');
+
+                        foreach ( $aInfo as $key => $label ) :
+                    ?>
+                    <label class="form-label"><?php echo $label ?></label>
+                    <div class="controls">
+                        <input type="text" class="form-control" name="theme_options[contact][<?php echo $key ?>]" value="<?php echo isset($aContact[$key]) ? esc_attr($aContact[$key]) : ''; ?>">
+                    </div>
+                    <?php 
+                        endforeach; 
+                    ?>
+
+                    <label class="form-label">Address</label>
+                    <div class="controls">
+                        <textarea style="width: 100%" name="theme_options[contact][address]"><?php echo isset($aContact['address']) ? esc_textarea($aContact['address']) : ''; ?></textarea>  
+                    </div>
+
+                    <?php 
+                        $aInfo = array('facebook'=>'Facebook', 'google_plus'=>'Google+', 'twitter'=>'Twitter', 'linkedin'=>'Linkedin', 'dribbble'=>'Dribbble', 'youtube'=>'Youtube', 'skype'=>'Skype');
+                        foreach ( $aInfo as $key => $label ) :
+                    ?>
+                        <label class="form-label"><?php echo $label ?></label>
+                        <div class="controls">
+                            <input type="text" class="form-control" name="theme_options[contact][social][<?php echo $key ?>]" value="<?php echo isset($aContact['social'][$key]) ? esc_attr($aContact['social'][$key]) : ''; ?>">
+                        </div>
+                    <?php 
+                        endforeach;
+                    ?>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="panel-body">
+            <div class="form-group wo-flag">
+                <div class="slider">
+                    <input type="checkbox" id="enable-googlemap" class="toggle-settings" name="theme_options[contact][enablegooglemap]" value="1" <?php echo  (isset($aContact['enablegooglemap']) && !empty ($aContact['enablegooglemap']) ) ? 'checked' : ''; ?>>
+                    <label class="form-label" for="enable-googlemap">Enable Googlemap</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="form-label">Position</label>
+                <div class="controls">
+                     <input type="text" name="theme_options[contact][googlemap][latitude]" value="<?php echo isset($aContact['googlemap']['latitude']) ? $aContact['googlemap']['latitude'] : '';  ?>" placeholder="Latitude"> <span style="position: relative; top: 9px; margin: 0 10px;"> X </span><input type="text" name="theme_options[contact][googlemap][longitude]" value="<?php echo isset($aContact['googlemap']['longitude']) ? $aContact['googlemap']['longitude'] : '';  ?>" placeholder="Longitude">
+                </div>
+                <code class="help">Click <a href="http://itouchmap.com/latlong.html" target="_blank">here</a> to get Latude and Longitude</code>
+            </div>
+        </div>
+
+        <div class="panel-body">
+        <?php $this->pi_section_background('contact', $aContact); ?>
+        </div>
+
+        </div>
+    </div>
+</div>

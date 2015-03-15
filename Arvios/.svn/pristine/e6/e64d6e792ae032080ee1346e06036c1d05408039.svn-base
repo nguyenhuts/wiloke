@@ -1,0 +1,80 @@
+<?php if ( !is_404 () ) : ?>
+<!-- HEADER -->
+<header id="header" class="header">
+
+<!-- HOME MEDIA -->
+<?php 
+
+if ( pi_is_static_page() && is_page_template('homepage.php')   ) :
+?>
+<div class="head text-center">
+    <!-- LOGO -->
+    <?php pi_display_logo("logo"); ?>
+    <!-- END / LOGO -->
+
+    <!-- HEAD SOCIAL --> 
+    <?php  
+    if ( isset(piThemeOptions::$piOptions['social']['display']['header']) && !empty(piThemeOptions::$piOptions['social']['display']['header']) ) :
+        if ( isset(piThemeOptions::$piOptions['social']['social_link']) && !empty(piThemeOptions::$piOptions['social']['social_link']) ) :
+            pi_social("head-social"); 
+        endif;
+    endif;
+    ?>
+    <!-- END / HEAD SOCIAL -->
+</div>
+<?php
+    get_template_part("sections/land");
+endif;
+?>
+ 
+ 
+<!-- NAVIGATION -->
+<nav class="pi-navigation <?php pi_nav_menu(); ?>" data-menu-type="1300">
+    <div class="container">
+        <!-- LOGO NAV -->
+
+        <?php pi_display_logo(); ?>
+        <!-- END / LOGO NAV -->
+         
+        <!-- NAV --> 
+       
+        <?php  get_template_part("navigation"); ?>
+       
+        <!-- END / NAV -->
+
+        <!-- SEARCH -->
+        <div class="search-box">
+            <div class="toggle-search">
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="search-form">
+                <form method="get" action="<?php echo home_url(); ?>" role="search">
+                    <div class="form-item">
+                        <input type="text" name="s" class="search-input" placeholder="<?php _e('Search', piCore::LANG) ?>">
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="search-submit" role="button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- END / SEARCH -->
+
+
+        <!-- TOGGLE MENU MOBILE -->
+        <?php if ( has_nav_menu( piCore::$piaConfigs['menus']['menu_id'] ) ) :  ?>
+        <a href="#" class="open-menu">
+            <span class="item"></span>
+        </a>
+        <?php endif; ?>
+        <!-- END / TOGGLE MENU MOBILE -->
+    </div>
+</nav>
+<!-- END / NAVIGATION -->
+
+</header>
+
+<?php endif; ?>
+<!-- END / HEADER -->

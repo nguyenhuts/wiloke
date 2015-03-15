@@ -1,0 +1,137 @@
+<?php
+
+class piServices extends piCore
+{
+	public function __construct()
+	{
+		add_action('init', array($this, 'register_services'));
+		add_action('add_meta_boxes', array($this,'pi_create_services_settings'), 10, 2 );
+		add_action('save_post', array($this, 'pi_save_data'));
+		add_action('admin_enqueue_scripts', array($this, "pi_enqueue_scripts"));
+		// add_action('admin_footer-')
+	}
+
+	public function pi_save_data($postID)
+	{
+		if (!current_user_can('edit_post', $postID) ) return;
+
+        if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return;
+
+        if ( !isset($_POST['post_type']) || empty($_POST['post_type']) ) return;
+        
+        
+        if  ( $_POST['post_type'] == 'pi_services' ) :
+        
+        	$data = isset($_POST['pi_services']) ? $_POST['pi_services'] : array();
+
+	        $data = $this->pi_unslashed_before_update($data);
+
+	    	update_post_meta($postID, "_pi_services", $data);
+
+    	endif;
+	}
+
+	public function pi_enqueue_scripts()
+	{
+		global $typenow;
+
+		if ($typenow == 'pi_services') :
+			$piUrl = get_template_directory_uri() . '/admin/pi-assets/';
+			wp_register_style('pi_services', $piUrl . 'css/pi.skill.css', array(), '1.0');
+			wp_enqueue_style('pi_services');
+		endif;
+	}
+
+	public function register_services()
+	{
+		$piServices 	= 	array
+							(	
+								'labels' 			=> array('name'=>_x('Services', 'Post type genereal name', self::LANG), 'singular_name'=>_x('Service', 'Post type genereal name', self::LANG)),
+						        'hierarchical'      => true,
+						        'public'            => true,
+						        'has_archive'       => false,
+						        'rewrite'           => array('slug'=>'services', 'with_front'=>false),
+						        'supports'          => array('title'),
+						        'can_export'        => true,
+						        'menu_icon'         => 'dashicons-calendar-alt',
+						        'show_ui'           => true,
+					    	);
+
+		register_post_type('pi_services', $piServices);	
+	}
+
+	public function pi_create_services_settings()
+	{
+		add_meta_box
+		( 
+            'pi-services',
+            __( 'Our Services', piCore::LANG ),
+            array($this, 'pi_services_builder'),
+            'pi_services',
+            'normal',
+            'default'
+        );
+	}
+
+	public function pi_services_builder()
+	{
+		global $post;
+		$aDef = array
+		(
+			"pi_services"=>array
+							(
+								0 => array
+									(
+										"service"		=>	"Service",
+										"small_intro"	=>	"",
+										"moreinfo"		=>	"",
+										"link"			=>  ""
+									),
+
+							)
+		);
+
+		$aServices = get_post_meta($post->ID, "_pi_services", true);
+		$aServices = $aServices ? $aServices : $aDef['pi_services'];
+
+		$max = count($aServices);
+		?>
+		<div class="fl-wrapper">
+			<div class="container-12-fluid">
+			
+
+				<div class="container-12-row pi_append_here">
+				<?php 
+				foreach ($aServices as $k => $aData) :
+					$piSliderId = uniqid("pi_slider_");
+				?>
+				
+			 		<div class="medium-4 pi-delete te-delete pricing-table">
+	 					<div class="pi-form">
+	 						<a class="skill-del del-exp-btn" href="#" title="Delete"><i class="dashicons dashicons-no"></i></a>
+				 			<input type="text" class="pi_title" title="Service" name="pi_services[<?php echo $k ?>][service]" placeholder="Service" value="<?php echo esc_attr($aData['service']) ?>">  
+				 			<textarea class="pi_des" title="Small intro about service" name="pi_services[<?php echo $k ?>][small_intro]" placeholder="Small Intro"><?php echo esc_textarea($aData['small_intro']) ?></textarea>
+				 			<input type="text" title="Button name" class="pi_title" name="pi_services[<?php echo $k ?>][moreinfo]" placeholder="Button name, ex: More info" value="<?php echo esc_attr($aData['moreinfo']) ?>">  
+				 			<input type="text" title="Link to adress when click more info button" class="pi_title" name="pi_services[<?php echo $k ?>][link]" placeholder="Link to adress" value="<?php echo esc_attr($aData['link']) ?>">  
+				 		</div>
+			 		</div>	
+			 	
+				<?php 
+				endforeach;
+				?>
+				</div>
+
+				<div class="container-12-fluid pi_wrap_button">
+					<div class="container-12-row">
+		 				<div class="medium-12">
+	 						<button  type="button" class="button pi_addmore fl-btn-top" data-type="service" data-currentmaxorder="<?php echo ($max) ?>">Add</button>
+		 				</div>	
+		 			</div>
+				</div>
+
+			</div>
+		</div>
+		<?php
+	}
+
+}

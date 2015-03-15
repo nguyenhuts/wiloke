@@ -1,0 +1,67 @@
+<?php get_header(); ?>
+	
+<?php pi_breadcrumbs(); ?>
+
+<!-- BLOG CONTENT -->
+<section id="post-<?php the_ID(); ?>" <?php post_class("blog-wrap"); ?>>
+	<div class="container">
+		<div class="row"> 
+			
+			<?php $sidebar =  ( isset(piThemeOptions::$piOptions['design']['choosidebar']) ) ? piThemeOptions::$piOptions['design']['choosidebar'] : ''; ?>
+
+			<?php if ( $sidebar == 'l-sidebar' ) : ?>
+			<?php get_sidebar();  ?>
+			<?php endif; ?>
+
+			<div class="<?php pi_sidebar_class($sidebar) ?>">
+				<?php  while( have_posts() ) : the_post();  ?>
+				<div class="blog-single">
+
+                    <div class="post post-single">
+						<div class="post-title">
+                            <h1 class="title"><?php the_title(); ?></h1>
+                        </div>
+
+                        <!-- Meta data --> 
+                        <?php pi_get_meta_data(); ?>
+                        <?php pi_post_media($post->ID); ?>
+
+                        <!-- Content -->
+                        <div class="post-body">
+							<?php the_content(); ?>
+							<?php wp_link_pages(); ?>
+							<?php edit_post_link('Edit this entry.', '<br /><p class="edit-this">', '</p>'); ?>
+                        </div>
+						
+						<!-- Tags -->
+						<?php if ( has_tag() ) : ?>
+		                <div class="tags-wrap">
+		                	<i class="fa fa-tag"></i>
+		                	<div class="tag">
+							<?php  the_tags();  ?>
+							</div>    
+		                </div> <!-- /post-tags -->
+		            	<?php endif; ?>
+
+						<!-- Post author -->
+						<?php 
+							pi_post_author($post->post_author);
+						?>
+
+					</div>
+                 	<!-- COMMENTS -->
+					<?php comments_template(); ?>
+                </div>
+            	<?php endwhile; ?>
+
+			</div>
+
+			<?php if ( $sidebar == 'r-sidebar' ) : ?>
+			<?php get_sidebar();  ?>
+			<?php endif; ?>
+
+		</div>
+	</div>
+</section>
+
+<?php get_footer(); ?>

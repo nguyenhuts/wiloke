@@ -1,0 +1,111 @@
+  .exp-form input,
+  .exp-form textarea{
+    display: block;
+    width: 100%;
+  }
+  .exp-right {
+    /*border-left: 1px dashed #5b4c5c;*/
+    margin-left: 15px;
+    padding: 0 0px 40px 46px;
+    text-align: left;
+    position: relative;
+  }
+  .exp-right:before {
+    content: "";
+    display: block;
+    background: #fff;
+    width: 20px;
+    height: 20px;
+    /*border: 5px solid #5b4c5c;*/
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: -11px;
+    -webkit-transform: translateY(-30%);
+    -moz-transform: translateY(-30%);
+    transform: translateY(-30%);
+  }
+  input[type="text"].exp-from,
+  input[type="text"].exp-to,
+  input[type="text"].exp-title,
+  input[type="text"].exp-desc,
+  textarea.exp-content {
+    background: transparent;
+    border-radius: 3px;
+    margin-bottom: 5px;
+  }
+  .fl-btn-top {
+    margin-bottom: 20px !important;
+  }
+.del-exp-btn {
+  display: none;
+  color: #ff0000;
+  text-decoration: none;
+  position: absolute;
+  top: -20px; right: 0;
+}
+.exp-row {
+  padding-top: 20px;
+  margin-bottom: -20px;
+}
+.exp-row:hover .del-exp-btn {
+  display: inline-block;
+}
+  @media (max-width: 767px) {
+    .exp-right {
+      padding-left: 0;  
+      margin-left: 0;
+      margin-bottom: 15px;
+      border: 0;
+    }
+    .exp-right:before {
+      display: none;
+    }
+    .del-exp-btn {
+      top: -89px;
+    }
+  }
+
+  .expertiesico {
+    border-right: 1px solid #dcdcde;
+    margin-bottom: 58px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.expertiesico a.ico {
+    background-color: #ff554e;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    height: 120px;
+    text-align: center;
+    width: 120px;
+}
+
+.expertiesico a.ico i {
+    line-height: 120px;
+    color: #fff;
+}
+.fa-5x {
+    font-size: 5em;
+}
+.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+
+}
+.container-12-row.exp-row {
+    position: relative;
+}
+.pi-detele-tab{
+  bottom: 9px !important;
+  position: absolute !important;
+  right: 24px !important;
+}
+.pi-wrap-add{
+  margin-top: 45px
+}

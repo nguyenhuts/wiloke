@@ -1,0 +1,245 @@
+<?php
+
+class piPortfolio extends piCore
+{
+	public function __construct()
+	{
+		add_action('init', array($this, "pi_register_portfolio"));
+		add_action('add_meta_boxes', array($this, 'pi_create_settings'));
+		add_action('admin_enqueue_scripts', array($this, 'pi_enqueue_scripts'));
+		add_action('save_post', array($this, 'pi_save_data'));
+	}
+
+	public function pi_save_data($postID)
+	{
+		if (!current_user_can('edit_post', $postID) ) return;
+
+        if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return;
+
+        if ( !isset($_POST['post_type']) || empty($_POST['post_type']) ) return;
+        
+         
+        if  ( $_POST['post_type'] == 'pi_portfolio' ) : 
+        
+        	$data = isset($_POST['pi_portfolio']) ? $_POST['pi_portfolio'] : array();
+	    	update_post_meta($postID, "_pi_portfolio", $data);
+
+    	endif;
+	}
+ 
+	public function pi_enqueue_scripts()
+	{
+		global $typenow;
+
+		if ($typenow == 'pi_portfolio')
+		{
+			$piUrl = get_template_directory_uri() . '/admin/pi-assets/';
+			
+			wp_register_style('pi_plugin_fa', $piUrl . 'css/font-awesome.min.css', array(), '4.0.2');
+			wp_enqueue_style('pi_plugin_fa');
+			
+			wp_register_style('pi_portfolio', $piUrl . 'css/pi.portfolio.css', array(), '1.0');
+			wp_enqueue_style('pi_portfolio');
+
+			wp_register_script('pi_add_video', $piUrl . 'js/pi.add_video.js', array(), '1.0', true);
+			wp_enqueue_script('pi_add_video');
+
+			wp_register_script('pi_flickr', get_template_directory_uri() . '/assets/js/lib/jflickrfeed.min.js', array(), '1.0', true);
+			wp_enqueue_script('pi_flickr');
+
+			wp_register_script('pi_portfolio', $piUrl . 'js/pi.portfolio.js', array(), '1.0', true);
+			wp_enqueue_script('pi_portfolio');
+		}
+	}
+
+	public function pi_create_settings()
+	{
+		add_meta_box
+		(
+			'pi-porfolio',
+			__('Portfolio', piCore::LANG),
+			array($this, 'pi_setting_builder'),
+			'pi_portfolio',
+			'normal',
+			'default'
+		);
+	}
+
+	public function pi_setting_builder()
+	{
+		global $post;
+
+		$aDefault  = array('link'=>'#', 'image_id'=>'', 'media_type'=>'gallery', 'video_type'=>'', 'video_id'=>'', 'video_link'=>'', 'video_poster'=>'', 'flickr_id'=>'', 'flickr_limit'=>'', 'flickr_image_size'=>'', 'flickr_get_data'=>'');
+		$aPorfolio = get_post_meta($post->ID, '_pi_portfolio', true);
+		$instance = !empty($aPorfolio) ? $aPorfolio : $aDefault;
+	?>
+    	<div class="container-12-fluid">
+			<div class="container-12-row">
+				<div class="large-12">
+					<div class="body">
+						
+	              		<select name="pi_portfolio[media_type]" class="pi_media_type">
+	                    	<option value="video" data-target=".js_add_video" data-hide=".js_add_gallery, .js_add_flickr" <?php selected($instance['media_type'], 'video') ?>>Video</option>
+	                    	<option value="gallery" data-target=".js_add_gallery" data-hide=".js_add_video, .js_add_flickr" <?php selected($instance['media_type'], 'gallery') ?>>Gallery - (From Media)</option>
+	                    	<option value="flickr" data-target=".js_add_flickr" data-hide=".js_add_video, .js_add_gallery" <?php selected($instance['media_type'], 'flickr') ?>>Gallery - (Flickr)</option>
+	                    </select> 
+
+	               	 	<div class="form-group gallery-wrapper js_add_video">
+	                    	<label  class="form-label">Add Video - Youtube/Vimeo</label>
+	                    	<div class="controls wrap-upload bg-action">
+	                    		<input type="button"  class="blue-btn btn btn-info pi_addvideo" disabled value="Add">
+	                    		<input type="text" name="pi_portfolio[video_link]" class="pi_add_video pi_of_video" value="<?php echo !empty($instance['video_link']) ? esc_url($instance['video_link']) : ''; ?>" placeholder="Video Link">
+	                    		<input type="hidden" name="pi_portfolio[video_type]" class="pi_type pi_of_video" value="<?php echo esc_attr($instance['video_type']) ?>" placeholder="Video Type">
+	                    		<input type="hidden" name="pi_portfolio[video_id]" class="video_id pi_of_video" value="<?php echo esc_attr($instance['video_id']) ?>" placeholder="Video ID">
+	                    		<input type="hidden" name="pi_portfolio[video_poster]" class="video_poster pi_of_video" value="<?php echo esc_url($instance['video_poster']) ?>" placeholder="Video Poster">
+	                    	</div>
+	                    	<ul class="lux-gallery">
+	                    		<li class="attachment img-item width-300" data-id="video">
+	                    			<?php echo isset($instance['video_poster']) && !empty($instance['video_poster']) ?  '<img src="'.esc_url($instance['video_poster']).'" width="150" height="150">' : ''; ?>
+	                    			<a class="md-remove js_remove_video" href="#">
+										<i class="fa fa-times"></i>
+									</a>
+	                    		</li>
+	                    	</ul>
+	                    </div>
+
+	                    <div class="form-group gallery-wrapper js_add_gallery">
+	                    	
+	                    	<label class="form-label">Upload Images</label>
+	                    	<div class="controls wrap-upload bg-action">
+	                    		<input type="button" data-func="siblings" data-target=".lux-gallery" class="blue-btn btn btn-info upload-image multiple	 js_upload" value="Upload">
+	                    		<input type="text" class="box-image-id" name="pi_portfolio[image_id]" value="<?php echo isset($instance['image_id']) ? esc_attr($instance['image_id']) : $instance['image_id']; ?>">
+	                    	</div>
+	                    	<ul class="lux-gallery">
+	                    		<?php 
+	                    			if ( isset($instance['image_id']) && !empty($instance['image_id']) )  : 
+	                    				$parse = explode(",", $instance['image_id']);
+	                    				foreach ($parse as $id)
+	                    				{
+	                    					?>
+	                    					<li class="attachment img-item width-300" data-id="<?php echo $id; ?>">
+	                    						<?php 
+	                    							// if ( is_numeric($id) ) : 
+                    								echo  wp_get_attachment_image($id, 'thumbnail'); 
+	                    							// else :
+	                    								// echo '<img width="150" height="150" src="'.$instance['video_poster'].'">';
+	                    							// endif;
+	                    						?>
+												<a class="md-remove" href="#">
+													<i class="fa fa-times"></i>
+												</a>
+											</li>
+	                    					<?php 
+	                    				}
+	                    			endif;
+	                    		?>
+	                    	</ul>
+	                    </div>
+	
+						<div class="form-group gallery-wrapper js_add_flickr pi-flickr">
+							<div class="pi_block clearfix">
+								<div class="pi-label">
+									<h4>Flickr Id</h4>
+									<p><a href="http://idgettr.com/" target="_blank">Get Flickr Id</a></p>
+								</div>
+								<div class="pi-settings">
+									<input type="text" class="pi_flickr_info" data-key="flickr_id" name="pi_portfolio[flickr_id]" value="<?php echo isset($instance['flickr_id']) ? $instance['flickr_id'] : ''; ?>">
+								</div>
+							</div>
+							<div class="pi_block clearfix">
+								<div class="pi-label">
+									<h4>Limit</h4>
+									<p>How many items you want to loop through</p>
+								</div>
+								<div class="pi-settings">
+									<input type="text" class="pi_flickr_info" data-key="flickr_limit" name="pi_portfolio[flickr_limit]" value="<?php echo isset($instance['flickr_limit']) ? $instance['flickr_limit'] : ''; ?>">
+								</div>
+							</div>
+							<div class="pi_block clearfix">
+								<div class="pi-label">
+									<h4>Image Size</h4>
+								</div>
+								<div class="pi-settings">
+									<select name="pi_portfolio[flickr_image_size]" class="pi_flickr_changesize pi_flickr_info" data-key="flickr_image_size">
+										<?php 
+											$aFlickrSize = array("image_s"=>"Small", "image_t"=>"Thumbnail", "image_m"=>"Medium", "image"=>"Original", "image_b"=>"Big");
+
+											foreach ( $aFlickrSize as $size => $name ) : 
+												$selected = isset($instance['flickr_image_size']) && $size ==  $instance['flickr_image_size'] ? 'selected' : '';
+										?>
+											<option value="<?php echo $size; ?>" <?php echo $selected; ?>><?php echo $name ?></option>
+										<?php 
+											endforeach;
+										?>
+									</select>
+								</div>
+							</div>
+							<div class="pi_block clearfix">
+								<div class="bg-action">
+									<button class="button button-primary js_get_flickr">Get</button>
+									<button class="button button-primary js_toggle_image">Hide Image</button>
+								</div>
+							</div>
+							<div  class="pi-gallery clearfix">
+								<ul id="pi-show-image"></ul>
+							</div>
+							<div  class="hidden">
+								<input type="hidden" name="pi_portfolio[flickr_get_data]" id="flickr_re_data" value="<?php echo isset($instance['flickr_get_data']) ? wp_unslash($instance['flickr_get_data']) : ''; ?>">
+							</div>
+						</div>
+
+
+						<div class="form-group">
+	                        <label class="form-label">Link to your Portfolio</label>
+	                        <div class="controls">
+	                            <input type="text" value="<?php echo esc_url($instance['link']); ?>" name="pi_portfolio[link]" class="form-control">
+	                        </div>
+	                    </div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	<?php 
+	}
+
+	public function pi_register_portfolio()
+	{
+		$piPortfolio 	= 	array
+							(	
+								'labels' 			=> array('name'=>_x('Porfolio', 'Post type genereal name', self::LANG), 'singular_name'=>_x('Porfolio', 'Post type genereal name', self::LANG)),
+						        'hierarchical'      => true,
+						        'public'            => true,
+						        'has_archive'       => false,
+						        'rewrite'           => array('slug'=>'porfolio', 'with_front'=>false),
+						        'supports'          => array('title', 'thumbnail', 'editor', 'excerpt'),
+						        'can_export'        => true,
+						        'menu_icon'         => 'dashicons-list-view',
+						        'show_ui'           => true,
+					    	);
+
+		$piPortfolioCats = array
+						(
+                            'hierarchical'  =>  true,
+                            'labels'        =>  array('name' =>_x('Portfolio Categories', 'post type general name', self::LANG) ),
+                            'query_var'     =>  true,
+                            'rewrite'       =>  array('with_front' => false, 'hierarchical' =>false, 'slug' => 'porfolio-cats')               
+						);	
+		
+
+		register_post_type('pi_portfolio', $piPortfolio);
+		register_taxonomy('pi_portfolio_cats', 'pi_portfolio', $piPortfolioCats);			
+		register_taxonomy('portfolio_skill',array('pi_portfolio'), array(
+		    'hierarchical' => false,
+		    'label' => __('Skills', piCore::LANG),
+		    'show_ui' => true,
+		    'show_in_menu' => true,
+		    'show_in_nav_menus' =>  false,
+		    'show_in_nav'   => false,
+		    'show_admin_column' => false,
+		    'query_var' => true,
+		    'rewrite' => array( 'slug' => 'portfolio_skill' ),
+		));			
+	}
+}

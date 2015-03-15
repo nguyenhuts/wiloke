@@ -1,0 +1,204 @@
+<?php
+
+$piaConfigs = array
+(
+	'admin'=>array
+			(
+				'script'=>array
+						(
+							 
+						),
+				'post_type'=>array
+							(
+								'aboutus'=>array('photo'=>'', 'name'=>'', 'position'=>'', 'intro'=>'', 'resume_cv')
+							) 
+			),
+	'widgets' => array( 
+		'pi-sidebar' => array
+		(
+				
+			'search' => array 
+			(
+				0, 
+				array('title'=>'Search...'),
+			),
+
+			'categories'  => array
+			( 
+				0,
+				array('title'=>'Categories')
+			),
+
+			'recent-posts' => array
+			(
+				0, 
+				array('title'=>'Recent Posts', 'number'=>5)
+			),
+
+			'calendar'	=> array
+			(
+				0, 
+				array('title'=>'Calendar')
+				// array('tweet_title'=>'Latest Tweets', 'tweet_consemmer_key'=>'14XiEso9DKiEkhdejwvfLA', 'tweet_consemmer_secret'=>'K1IcprfP7ZtHW9SM9pag9YWJ0jUWi6vAWZ3hX2FvspI', 'tweet_access_token'=>'234626957-zSPIRl4nvdXvzffaXjZUZNVFxleenIQjOS2B749p', 'tweet_secret_access_token'=>'PAiDJWzd1nqVm2pzMnnFeY5OW1OiCieXSqkivO6PUM', 'tweet_username'=>'megadrupal', 'tweet_delay_time'=>3000, 'tweet_number_of_tweet'=>2)
+			),
+
+			'tag_cloud'	=> array
+			(
+				0,
+				array('title'=>'Tag Cloud', 'taxonomy'=>'post_tag')
+			),
+
+			'te_flickr_feed' => array
+			(
+				0,
+				array('title'=>'Flickr', 'flickr_id'=>'7520746@N06', 'number_of_photo'=>6)
+			),
+			
+			'text'		=> array
+			( 
+				0,
+				array('text'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ')
+			)
+ 
+		)
+	),
+	'sections' => array(
+	 	'aboutus', 'services', 'funfacts', 'idea', 'team', 'skills', 'portfolio', 'clients', 'testimonials', 'pricing', 'twitter',  'blog', 'contact'
+	),
+	'sections_name'=>array(
+		'About', 'Services', 'Fun Facts', 'Idea', 'Team', 'Skills', 'Portfolio',  'Clients', 'Testimonials', 'Pricing Table', 'Twitter', 'Blog', 'Contact Us'
+	),
+	'options' => array 
+	(
+		'filename' 		=> 'arvios-options.php',
+		'keyoptions'    => 'pi_save_theme_options'
+	),
+	'menus'   => array(
+		'menu_id' 	=> 'arvios_menu',
+		'menu_name'	=> 'Arvios Menu'
+	),
+	'posts_id' => array
+	(
+		'pi_about'=>48,
+		'pi_experience'=>45,	
+	),
+	'sidebar' => array("r-sidebar" => "Right sidebar", "l-sidebar"=>"Left sidebar", "no-sidebar"=>"No sidebar"),
+	'custom_color'=>'custom.css',
+	'custom_main' => 'yellow.css',
+	'theme_options'=>array(
+		'preload'=>array(
+			'enable'=>1
+		),
+		'logo'=>array(
+			'enable'=>1
+		),
+		'header'=>array(
+			'enable'=>1,
+			'title'=>'We are Wiloke',
+			'description'	=>'Our clients succeed online <br /> Say hello to <span>Wiloke</span>',
+			'type'=>'image_fixed'
+		),
+		'text_slider'=>array(
+			'title'=>array('Who We Are', 'Our Clients'),
+			'description'=>array('We are young team, We are ambitious, growing fast and commited to proving the best services!', 'We\'ve worked with some of the biggest brands on the planet. Are you next?')
+		),
+		'aboutus'	=>array(
+			'enable'=>1,
+			'title'=>'WELCOME TO ARVIOS',
+			'description'=>'With clients all over the world and expertise in everything digital,  we are ambitious, growing fast and committed to providing the best digital services.'
+		),
+		'services'=>array(
+			'enable'=>1,
+			'title'=>'SERVICES',
+			'description'=>'We create digital content that enhances your business,and benefits your customers.  From idea to execution,we love doing things better.'
+		),
+		'funfacts'=>array(
+			'enable'=>1,
+			'title'=>'Funfacts',
+			'description'=>'We do best our job for you',
+			'background'=>'image',
+			'bg_img'=>'http://placehold.it/2000x300&text=image',
+			'overlay'=>1,
+			'overlay_color'=>'rgba(0, 0, 0, 0.45)'
+		),
+		'idea'=>array(
+			'enable'=>1,
+			'title'=>'DO YOU HAVE AN IDEAS ?',
+			'description'=>'Mauris luctus aliquet nunc quis consectetur. Curabitur elit massa, consequat vel velit sit amet, scelerisque hendrerit mi.',
+			'label'=>'Contact Us',
+			'link'=>'#contact',
+			'background'=>'color'
+		),
+		'team'=>array(
+			'enable'=>1,
+			'title'=>'Our team',
+			'description'=>'We are a multidisciplinary team of developers, designers, strategists and marketing specialists.'
+		),
+		'skills'=>array(
+			'enable'=>1,
+			'title'=>'Our Skills',
+			'description'=>'Take a look our experience',
+			'background'=>'image',
+			'bg_img'=>'http://placehold.it/2000x750&text=image',
+			'overlay'=>1,
+			'overlay_color'=>'rgba(0, 0, 0, 0.45)'
+		),
+		'portfolio'=>array(
+			'enable'=>1,
+			'title'=>'Recent Work',
+			'description'=>'With clients all over the world and a passion  for everything digital, our work speaks for itself.'
+		),
+		'clients'=>array(
+			'enable'=>1,
+			'title'=>'Our Clients',
+			'description'=>'We proud that we work with this company\'s'
+		),
+		'testimonials'=>array(
+			'enable'=>1,
+			'title'=>'',
+			'description'=>'',
+			'bg_img'=>'http://placehold.it/2000x1600&text=image',
+			'overlay'=>1,
+			'overlay_color'=>'rgba(0, 0, 0, 0.45)'
+		),
+		'twitter'=>array(
+			'enable'=>1,
+			'title'=>'',
+			'description'=>'',
+			'bg_img'=>'http://placehold.it/2000x1600&text=image',
+			'overlay'=>1,
+			'overlay_color'=>'rgba(0, 0, 0, 0.45)'
+		),
+		'pricing'=>array(
+			'enable'=>1,
+			'title'=>'PRICING',
+			'description'=>'An eye for detail makes our works excellent'
+		),
+		'blog'=>array(
+			'enable'=>1,
+			'title'=>'OUR LATEST NEWS',
+			'description'=>'Our latest news and interesting stuff for you.',
+			'content'=>7,
+		),
+		'contact'=>array(
+			'enable'=>1,
+			'title'=>'Contact Us',
+			'description'=>'We’d love to hear from you!  Send us a message using the form below',
+			'enablegooglemap'=>1,
+			'googlemap'=>array('latitude'=>'21.542861', 'longitude'=>'105.647118', 'type'=>'ROADMAP'),
+			'contact_detail'=>1,
+			'info'=>array('+0000 987654321', '121 King Street, Melbourne Victoria 3000 Australia', '<a mailto="arvios@info.com">arvios@info.com</a>'),
+			'info_icon'=>array('fa fa-mobile', 'fa fa-map-marker', 'fa fa-envelope')
+		),
+		'footer'=>array(
+			'social_link'=>array('#', '#', '#'),
+			'social_icon'=>array('fa fa-facebook', 'fa fa-twitter', 'fa fa-dribbble', 'fa fa-youtube'),
+			'copyright'=>'© WE ARE ARVIOS. ALL RIGHTS RESERVED'
+		),
+		'posts_settings'=>array(
+			'enable'=>1,
+			'background'=>'http://placehold.it/2000x400&text=image'
+		)
+		
+	)
+);

@@ -1,0 +1,123 @@
+.photo img{
+    width: 170px;
+    max-width: 100%;
+    border: 1px solid black
+}
+
+.show-image .img-item{
+    /*border: 1px solid #000000;*/
+    float: left;
+    margin: 15px 15px 0;
+    width: 151px;
+    position: relative;
+}
+.pi_block{
+  margin-bottom: 10px;
+  display: block;
+}
+.pi-settings input{
+  width: 70%;
+}
+.img-item
+{
+    background-color: #ededed;
+    padding: 10px;
+}
+
+.show-image img{
+    width: 100%;
+    max-width: 100%;
+    border: 2px solid black;
+}
+.controls.wrap-upload {
+  margin-bottom: 20px;
+}
+.lux-gallery {
+  overflow: auto;
+  padding:  0;
+  text-align: center;
+}
+.lux-gallery .attachment {
+  width: 150px;
+  margin-right: 5px;
+}
+.posttype-post {
+  padding: 15px;
+}
+ .posttype-post .attachment {
+  width: 170px;
+ }
+.gallery-wrapper .lux-gallery {
+    overflow: auto;
+      padding:  20px;
+      text-align: center;
+}
+.lux-gallery li a.md-remove {
+  display: none;
+  background: #1e8cbe;
+  color: #fff;
+  padding:3px;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 5px #1e8cbe;
+}
+.lux-gallery li:hover,
+.lux-gallery li:focus {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 5px #1e8cbe;
+}
+.lux-gallery li:hover a.md-remove {
+  display: block;
+}
+.lux-gallery.logo img {
+    border: 1px solid #ccc;
+    background: #f0f0f0;
+}
+.md-remove{
+    color: #FF0000;
+    font-size: 20px;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+}
+
+.bo-add-new.wo-wrapclone {
+    clear: both;
+}
+.tbl-left {
+  width: 20%;
+}
+.tbl-right {
+  width: 79%;
+}
+.tbl-right .wiloke_input {
+  width: 100%;
+}
+.image-wrap{
+  display: inline-block;
+    padding: 10px;
+    background-color: #ededed;
+}
+.image-wrap span {
+    display:block;
+    position:relative;
+}
+.image-wrap a {
+  display: block;
+  z-index: 100;
+  position: relative;
+  background: rgba(0,0,0,0);
+  box-shadow: none;
+}
+.image-wrap img {
+    display: block;
+    position: relative;
+}
+.image-wrap a:before {
+    display:block;
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index: 99;
+    -moz-box-shadow:inset 0px 0px 5px 1px rgba(0,0,0,0.2);
+    -webkit-box-shadow:inset 0px 0px 5px 1px rgba(0,0,0,0.2);
+    box-shadow:inset 0px 0px 5px 1px rgba(0,0,0,0.2);
+}

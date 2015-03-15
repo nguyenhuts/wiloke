@@ -1,0 +1,6 @@
+<!-- search -->
+<form class="search" method="get" action="<?php echo home_url(); ?>" role="search">
+	<input class="search-input pi-input-text" type="text" name="s" placeholder="<?php _e( 'Type and hit enter', piCore::LANG ); ?>">
+</form>
+<!-- /search -->
+ 

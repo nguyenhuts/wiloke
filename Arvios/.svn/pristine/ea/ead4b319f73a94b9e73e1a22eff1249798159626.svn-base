@@ -1,0 +1,67 @@
+<div id="portfolio" class="inner-tabs-panel">
+    <div class="inner-content">
+        <div class="panel"> 
+
+            <div class="panel-heading">
+                <div class="panel-title"><?php _e('Work/Portfolio', 'wiloke'); ?></div>
+            </div>  
+        
+             <div class="panel-body wo-flag">
+                 <div class="form-group"> 
+                    <div class="control-button">
+                        <div class="slider">
+                            <input type="checkbox" id="enable-portfolio" class="toggle-settings pi_switch_button" name="theme_options[portfolio][enable]" value="1" <?php echo  (isset($aPortfolio['enable']) && !empty ($aPortfolio['enable']) ) ? 'checked' : ''; ?>>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-body">
+                <div class="form-group">
+                    <label class="form-label"><?php _e('Title', 'wiloke');?></label>
+                    <div class="controls">
+                        <input type="text" class="form-control" name="theme_options[portfolio][title]" value="<?php echo isset($aPortfolio['title']) ? esc_attr($aPortfolio['title']) : ''; ?>">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label"><?php _e('Description', 'wiloke');?></label>
+                    <div class="controls">
+                        <textarea type="text" class="form-control" name="theme_options[portfolio][description]"><?php echo isset($aPortfolio['description']) ? esc_textarea($aPortfolio['description']) : ''; ?></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label"><?php _e('Show Posts', 'wiloke');?></label>
+                    <div class="controls">
+                        <input type="text" class="form-control" name="theme_options[portfolio][showposts]" value="<?php echo isset($aPortfolio['showposts']) ? esc_attr($aPortfolio['showposts']) : 8; ?>">
+                    </div>
+                </div>
+
+                <!-- <div class="form-group">
+                    <label class="form-label"><?php _e('Display View All Work', 'wiloke');?></label>
+                    <div class="controls">
+                        <input type="checkbox" class="form-control" name="theme_options[portfolio][viewall]" value="<?php echo isset($aPortfolio['viewall']) ? 'checked' : ''; ?>">
+                    </div>
+                </div> -->
+                <div class="form-group">
+                    <label class="form-label"><?php _e('Hover Effect', 'wiloke');?></label>
+                    <div class="controls">
+                        <select name="theme_options[portfolio][hover_effect]" class="form-control">
+                            <option value="style1" <?php echo isset($aPortfolio['hover_effect']) && $aPortfolio['hover_effect']=='style1' ? 'selected' : ''; ?>>Stylel</option>
+                            <option value="style2" <?php echo isset($aPortfolio['hover_effect']) && $aPortfolio['hover_effect']=='style2' ? 'selected' : ''; ?>>Style2</option>
+                            <option value="style3" <?php echo isset($aPortfolio['hover_effect']) && $aPortfolio['hover_effect']=='style3' ? 'selected' : ''; ?>>Style3</option>
+                            <option value="style4" <?php echo isset($aPortfolio['hover_effect']) && $aPortfolio['hover_effect']=='style4' ? 'selected' : ''; ?>>Style4</option>
+                            <option value="style5" <?php echo isset($aPortfolio['hover_effect']) && $aPortfolio['hover_effect']=='style5' ? 'selected' : ''; ?>>Style5</option>
+                            <option value="style6" <?php echo isset($aPortfolio['hover_effect']) && $aPortfolio['hover_effect']=='style6' ? 'selected' : ''; ?>>Style6</option>
+                            <option value="random" <?php echo isset($aPortfolio['hover_effect']) && $aPortfolio['hover_effect']=='random' ? 'selected' : ''; ?>>Random</option>
+                        </select>
+                    </div>
+                </div>
+
+                <?php parent::pi_section_background('portfolio', $aPortfolio, 'color'); ?>
+
+            </div>
+        </div>
+    </div>
+</div>

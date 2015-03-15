@@ -1,0 +1,117 @@
+<div id="twitter" class="inner-tabs-panel">
+    <div class="inner-content">
+        <div class="panel">
+            
+            <div class="panel-heading">
+                <div class="panel-title">
+                    <?php _e('Twitter', 'wiloke'); ?>
+                    <p class="help"><?php _e('Allow use tags : &lt;span>, &lt; br />,  &lt;i>, &lt;b>', 'wiloke'); ?></p>
+                </div>
+            </div>
+
+             <div class="panel-body wo-flag">
+                 <div class="form-group">
+                    <div class="control-button">
+                        <div class="slider">
+                            <input type="checkbox" class="toggle-settings pi_switch_button" id="enable-twitter" name="theme_options[twitter][enable]" value="1" <?php echo  (isset($aTwitter['enable']) && !empty ($aTwitter['enable']) ) ? 'checked' : ''; ?>>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-body">
+                <div class="form-group">
+                    <label class="form-label"><?php _e('Title', 'wiloke') ?></label>
+                    <div class="controls">
+                        <input type="text" class="form-control" name="theme_options[twitter][title]" value="<?php  echo isset($aTwitter['title']) ? esc_attr($aTwitter['title']) : ''; ?>">
+                    </div>
+                </div>
+            </div> 
+
+            <div class="panel-body">
+                <div class="form-group">
+                    <label class="form-label"><?php _e('Description', 'wiloke') ?></label>
+                    <div class="controls">
+                        <textarea class="form-control" name="theme_options[twitter][description]"><?php echo isset($aTwitter['description']) ? esc_textarea($aTwitter['description']) : ''; ?></textarea>
+                    </div>
+                </div>
+            </div> 
+ 
+            <div class="panel-body">
+                <div class="form-group">
+                    <label class="form-label"><?php _e('User name', 'wiloke') ?></label>
+                    <div class="controls">
+                        <input type="text" class="form-control" name="theme_options[twitter][username]" value="<?php  echo isset($aTwitter['username']) ? esc_attr($aTwitter['username']) : ''; ?>">
+                    </div>
+                </div>
+                 <div class="form-group">
+                    <label class="form-label"><?php _e('Number of tweets', 'wiloke') ?></label>
+                    <div class="controls">
+                        <input type="text" class="form-control" name="theme_options[twitter][number_of_tweets]" value="<?php  echo isset($aTwitter['number_of_tweets']) ? esc_attr($aTwitter['number_of_tweets']) : ''; ?>">
+                    </div>
+                </div>
+                 <div class="form-group">
+                    <label class="form-label"><?php _e('Consumer Key', 'wiloke') ?></label>
+                    <div class="controls">
+                        <input type="text" class="form-control" name="theme_options[twitter][consumer_key]" value="<?php  echo isset($aTwitter['consumer_key']) ? esc_attr($aTwitter['consumer_key']) : ''; ?>">
+                    </div>
+                </div>
+                 <div class="form-group">
+                    <label class="form-label"><?php _e('Consumer Secret', 'wiloke') ?></label>
+                    <div class="controls">
+                        <input type="text" class="form-control" name="theme_options[twitter][consumer_secret]" value="<?php  echo isset($aTwitter['consumer_secret']) ? esc_attr($aTwitter['consumer_secret']) : ''; ?>">
+                    </div>
+                </div>
+                 <div class="form-group">
+                    <label class="form-label"><?php _e('Access Token', 'wiloke') ?></label>
+                    <div class="controls">
+                        <input type="text" class="form-control" name="theme_options[twitter][access_token]" value="<?php  echo isset($aTwitter['access_token']) ? esc_attr($aTwitter['access_token']) : ''; ?>">
+                    </div>
+                </div>
+                 <div class="form-group">
+                    <label class="form-label"><?php _e('Access Token Secret', 'wiloke') ?></label>
+                    <div class="controls">
+                        <input type="text" class="form-control" name="theme_options[twitter][access_token_secret]" value="<?php  echo isset($aTwitter['title']) ? esc_attr($aTwitter['access_token_secret']) : ''; ?>">
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-body">
+                <div class="form-group">
+                    <label class="form-label"><?php _e('Background', 'wiloke') ;?></label>
+                    <div class="controls">
+                        <?php 
+                            $selected = isset($aTwitter['background']) && !empty($aTwitter['background']) ? $aTwitter['background'] : 'none';
+                        ?>
+                        <select class="pi_toggle_multi" name="theme_options[twitter][background]">
+                            <option value="none"  data-hide=".pi_twitter_bg" <?php selected($selected, 'none') ?>>None</option>
+                            <option value="image" data-hide=".pi_twitter_bg" data-show=".pi_twitter_bg_img" <?php selected($selected, 'image') ?>>Image</option>
+                            <option value="color" data-hide=".pi_twitter_bg" data-show=".pi_twitter_bg_color" <?php selected($selected, 'color') ?>>Color</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group pi_twitter_bg pi_twitter_bg_img">
+                    <?php $image = isset($aTwitter['bg_img']) && !empty($aTwitter['bg_img']) ? wp_get_attachment_url($aTwitter['bg_img']) : $adminImages  . 'no-img.jpg'; ?>
+                    <div class="image-wrap">
+                        <span><img src="<?php echo esc_url($image); ?>"  width="350"></span>
+                    </div>
+                    <br>
+                    <a class="button button-primary upload-img blog-img" data-insertlink=".wo-insert-link" data-append=".image-wrap"><?php _e('Get image', 'wiloke') ?></a>
+                    <input class="insertlink" type="hidden" value="<?php echo  isset($aTwitter['bg_img']) ? esc_attr($aTwitter['bg_img']) : ""; ?>" name="theme_options[twitter][bg_img]"> 
+                    <div class="controls">
+                        <div class="slider">
+                            <input type="checkbox" id="twitter-overlay"   name="theme_options[twitter][overlay]" value="1" <?php echo  (isset($aTwitter['overlay']) && !empty ($aTwitter['overlay']) ) ? 'checked' : ''; ?> >
+                            <label for="twitter-overlay" class="form-label"><?php _e('Enable overlay', 'wiloke') ?></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pi_twitter_bg pi_twitter_bg_color">
+                     <input  type="text" class="color-picker" value="<?php echo  isset($aTwitter['bg_color']) ? esc_attr($aTwitter['bg_color']) : "#fff"; ?>" name="theme_options[twitter][bg_color]"> 
+                </div>
+            </div>
+
+        </div>  
+    </div> 
+</div>    

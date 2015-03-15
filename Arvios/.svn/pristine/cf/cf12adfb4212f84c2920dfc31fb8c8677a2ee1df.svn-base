@@ -1,0 +1,811 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*Toggle*/
+
+#pi_popup h3.hndle{
+    font-weight: normal !important;
+    padding: 9px 1.1% !important;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+    padding: 8px 12px; 
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+    margin-top: 32px;
+}
+#pi_popup h3.hndle:after{
+    content: "\f343";
+    font-size: 13px;
+    font-family: "dashicons";
+    line-height: 20px;
+    position: absolute;
+    right: 30px;
+}
+
+#pi_popup h3.hndle.closed:after{
+    content:  "\f347";
+}
+
+.pi_setting{
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/*========= Animation library Styles =========*/
+@-webkit-keyframes pi-popup {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@-moz-keyframes pi-popup {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@-ms-keyframes pi-popup {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+        
+    }
+}
+@-o-keyframes pi-popup {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@keyframes pi-popup {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.pi-popup, 
+.pi-box-grid {
+    -webkit-animation: .5s cubic-bezier(0.680, -0.550, 0.265, 2) 0s  1 pi-popup;
+    -moz-animation: .5s cubic-bezier(0.680, -0.550, 0.265, 2) 0s  1 pi-popup;
+    -o-animation: .5s cubic-bezier(0.680, -0.550, 0.265, 2) 0s 1 pi-popup;
+    animation: .5s cubic-bezier(0.680, -0.550, 0.265, 2) 0s 1 pi-popup;
+}
+a,
+.grid-size,
+.pi-box-header > [class^="toogle-"],
+.pi-box-header > [class*="toogle-"],
+.pi-popup .pi-row-item,
+.pi-popup-close  {
+    -webkit-transition: all .2s ease 0s;
+    -moz-transition: all .2s ease 0s;
+    -ms-transition: all .2s ease 0s;
+    -o-transition: all .2s ease 0s;
+    transition: all .2s ease 0s;
+}
+
+/* Style popup setting
+----------------------------------------------------------------- */
+
+/*=========  General Styles  =========*/
+/*body {
+    font-family: "Open Sans",sans-serif;
+    font-size: 13px;
+}*/
+
+/*========= Layout Styles =========*/
+.pi-popup {
+    background: none repeat scroll 0 0 #FFFFFF;
+    bottom: 30px;
+    left: 15%;
+    min-height: 210px;
+    overflow: auto;
+    position: fixed;
+    right: 15%;
+    top: 10%;
+    z-index: 1400;
+
+}
+.pi-wrap-textarea{
+    padding: 20px;
+}
+.pi-popup-inner-header {
+    border-bottom: 1px solid #DFDFDF;
+    height: 50px;
+    position: relative;
+}
+.pi-popup-inner-content {
+    bottom: 50px;
+    left: 0;
+    overflow: auto;
+    position: absolute;
+    right: 0;
+    top: 51px;
+    width: 100%;
+}
+.pi-popup-inner-footer {
+    background: #FCFCFC;
+    border-top: 1px solid #dfdfdf;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    position: absolute;
+}
+.pi-popup-backdrop.js_backdrop 
+{
+    background: #000;
+    bottom: 0;
+    left: 0;
+    min-height: 400px;
+    opacity: 0.7;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1200;
+}
+
+/* Dimension popup screen */
+.pi-popup.popup-big {
+    bottom: 2%;
+    left: 2%;
+    right: 2%;
+}
+.pi-popup.popup-medium {
+    bottom: 20%;
+    left: 20%;
+    right: 20%;
+    top: 20%;
+}
+.pi-popup.popup-small {
+    bottom: auto;
+    left: 30%;
+    right: 30%;
+    top: 35%;
+}
+
+/*========= Header Styles =========*/
+.pi-popup-title {
+    color: #555;
+    font-size: 22px;
+    font-weight: 200;
+    left: 14px;
+    line-height: 53px;
+    position: absolute;
+    top: 0;
+    margin: 0 !important;
+}
+.pi-popup-close {
+    background: url("images/icon-close.png") no-repeat left top;
+    height: 25px;
+    overflow: hidden;
+    position: absolute;
+    right: 14px;
+    text-indent: 300%;
+    top: 14px;
+    width: 25px;
+
+}
+.pi-popup-close:hover {
+    background-position: 0 -25px;
+}
+/*========= Content Styles =========*/
+.pi-popup .pi-row-item {
+    background: #FFF;
+    border-bottom: 1px dashed #E1E1E1;
+    padding: 20px;
+}
+.pi-popup .pi-row-item:hover {
+    background-color: #FCFCFC;
+}
+/*========= Footer Styles =========*/
+.pi-popup-inner-footer .button-large {
+    padding: 0 40px 2px;
+    position: absolute;
+    right: 12px;
+    top: 10px;
+}
+
+.pi-popup .pi-row-item,
+.pi-popup .row-inner {
+    display: table;
+    width: 100%;
+}
+.pi-popup .row-inner {
+    padding: 10px 0px;  
+}
+.pi-popup .pi-row-item .pi-name , 
+.pi-popup .pi-row-item .pi-setting  {
+        display: table-cell;
+        vertical-align: middle;
+        min-height: 50px;
+    }
+.pi-name{
+    width: 45%;
+}
+.pi-name p {
+    color: #939292;
+    display: block;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 21px;
+}
+.pi-setting {
+    width: 55%;
+}
+.pi-popup .pi-row-item .pi-setting  input[type="text"],
+.pi-popup .pi-row-item .pi-setting  textarea {
+    background-color: #fff;
+    border: 1px solid #9ca0a3;
+    box-shadow: none;
+    color: #333;
+    font: 12px/20px Arial,Helvetica,sans-serif;
+    padding: 6px 15px;
+    width: 100%;
+    border-radius: 0 !important;
+    margin-bottom: 10px;
+}
+.pi-popup .wp-picker-container input[type="text"] {
+    margin-bottom: 0 !important;
+    height: 27px;
+    margin-left: 20px;
+    width: 100px !important;
+}
+
+.pi-popup .pi-row-item .pi-setting .pi-medium{
+    width: 45% !important
+}
+
+
+
+.pi-popup .pi-row-item  .pi-name p > code {
+    color: #f00;
+    background: transparent;
+}
+/*========= Box grid Styles =========*/
+.pi-box-grid {
+    float: left;
+    margin: 1%;
+    position: relative;
+    width: 200px;
+}
+.pi-box-header {
+    height: 25px;
+    opacity: 1;
+    position: relative;
+    width: auto;
+    z-index: 10;
+    background: none repeat scroll 0 0 #FAFAFA;
+    color: #222222;
+    border: 1px solid #E5E5E5;
+}
+.pi-box-shortcode {
+    background: none repeat scroll 0 0 #F8F8F8;
+    border: 1px dashed #E1E1E1;
+    min-height: 35px;
+    padding: 20px 10px;
+    position: relative;
+    top: -5px;
+}
+.pi-box-header > [class^="toogle-"],
+.pi-box-header > [class*="toogle-"] {
+    display: block;
+    float: left;
+    height: 24px;
+    opacity: 0;
+    overflow: hidden;
+    position: relative;
+    width: 24px;
+    color: #666;
+    font-size: 20px;
+    margin-right: 10px
+
+
+}
+.pi-box-grid:hover  [class^="toogle-"],
+.pi-box-grid:hover  [class*="toogle-"]{
+    opacity: 1;
+}
+.grid-size {
+    color: #999999;
+    float: left;
+    height: 24px;
+    left: -30px;
+    line-height: 28px;
+    position: relative;
+    text-align: center;
+    width: 24px;
+
+}
+
+
+
+.js_center{
+    bottom: 0;
+    height: 60px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 60px;
+}
+
+.child-item{
+    width: 100%;
+}
+
+/* ===============================================================
+                        Global Style
+================================================================== */
+* html .clearfix,
+* html .ui-helper-clearfix {
+    height: 1%; /* IE5-6 */
+}
+
+.clearfix,
+.ui-helper-clearfix {
+    display: inline-block; /* IE7xhtml*/
+}
+
+html .clearfix,
+html .ui-helper-clearfix {
+    display: block; /* O */
+}
+
+.clearfix:after,
+.ui-helper-clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    line-height: 0;
+    font-size: 1px;
+    overflow: hidden;
+}
+.clear {clear: both;}
+
+/*Color Picker*/
+.picolor > input,
+.picolor > textarea {
+    display: block;
+}
+.picolor > .wp-picker-container {
+    /*margin-top: 20px;*/
+}
+.wp-picker-input-wrap > input {float: left; margin-right: 10px;}
+.wp-picker-input-wrap > .colorpicker  {
+    width: 80px !important;
+    height: 25px;
+}
+.color-picker {
+    width: 45px;
+    height: 45px;
+    background:#27A9E3;
+    display: inline-block;
+    float: left;
+}
+
+
+.picolor .wp-color-result, 
+.picolor .wp-color-result:after {
+    border: 0;
+    height: 27px;
+    line-height: 27px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none ;
+    background: #EBEBEB;
+}
+.picolor .wp-color-result:hover:after,
+.picolor .wp-color-result:focus:after {
+    border: 0;
+}
+.picolor .wp-picker-clear {
+    border: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background: #EBEBEB;
+    display: none;
+
+}
+
+.pi-popup .wp-color-result {
+    margin: 0;
+}
+
+/*Select*/
+.container-select {
+position: relative;
+display: block;
+vertical-align: middle;
+}
+
+.container-select select {
+padding-right: 2.5em; /* accommodate with the pseudo elements for the dropdown arrow */             
+border: 0;
+border-radius: 3px;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;    
+}
+
+.container-select::before,
+.container-select::after {
+content: "";
+position: absolute;
+pointer-events: none;
+}
+
+.container-select::after { /*  Custom dropdown arrow */
+content: "\25BC";
+height: 1em;
+font-size: .625em;
+line-height: 1;
+right: 1.2em;
+top: 50%; margin-top: -.5em;
+}
+
+.container-select::before { /*  Custom dropdown arrow cover */
+width: 2em;
+right: 0; top: 0; bottom: 0;
+border-radius: 0 3px 3px 0;
+background: #FFF !important;
+border: 1px solid #9ca0a3
+}
+
+.container-select select[disabled] {
+color: rgba(0,0,0,.3);
+}
+
+.container-select.disabled::after {
+color: rgba(0,0,0,.1);
+}
+
+/* White dropdown style */
+.container-select.white::before {
+    top: .5em; bottom: .5em;
+    background-color: #fff;
+    /*border-left: 1px solid rgba(0,0,0,.1);*/
+    border: 1px solid 
+}
+
+.container-select.white::after {
+color: rgba(0,0,0,.9);
+}                   
+
+/* Emerald dropdown style */
+.container-select::before {
+background-color: #1aa181;
+}
+
+.container-select::after {
+color: rgba(0,0,0,.4);
+}
+
+
+/* Red dropdown style */
+.container-select.red::before {
+background-color: #d53a22;
+}
+
+.container-select.red::after {
+color: rgba(0,0,0,.4);
+}
+
+/* FF only temporary & ugly fixes */
+/* the "appearance: none" applied on select still shows a dropdown arrow on Firefox */
+/* https://bugzilla.mozilla.org/show_bug.cgi?id=649849 */
+@-moz-document url-prefix() {
+.container-select select                    { padding-right: .9em }
+.container-select select { padding-right: 1.3em }
+.container-select select { padding-right: .5em }
+}   
+
+}
+
+
+.container-select {
+    display: inline-block
+}        
+
+.element-select{
+    width: 100% !important;
+    height: 34px !important;
+    border-color: -moz-use-text-color -moz-use-text-color -moz-use-text-color #d9d9d9 !important;
+    border-left: 1px solid #d9d9d9 !important;
+    border-top: 1px solid #d9d9d9 !important;
+    border-bottom: 1px solid #d9d9d9 !important;
+    border-style: none none none solid !important;
+    border-width: medium medium medium 1px !important;
+    border: 1px solid #ddd;
+    box-shadow: none !important;
+    background:  url("../images/select_bg4.jpg") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+    font-size: 15px !important;
+    outline-style: none !important
+}
+.container-select{
+    /*width: 57% !important*/
+}
+
+#pi_popup.pi-popup.pi-on-frontend
+{
+    position: absolute;
+    right: 40px;
+    width: 500px;
+    top: 100px;
+}
+#pi_popup.pi-popup.pi-on-frontend .pi-popup-inner-header
+{
+    cursor: pointer;
+    background-color: #ef5443;
+}
+
+#pi_popup.pi-popup.pi-on-frontend .pi-popup-inner-header h3
+{
+    color: #fff;
+}
+
+#pi_popup.pi-popup.pi-on-frontend .pi-popup-inner-header a
+{
+    color: #fff;
+}
+
+#pi_popup.pi-popup.pi-on-frontend .pi-popup-inner-content.js_insert_content 
+{
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}      
+
+#pi_popup.pi-popup.pi-on-frontend
+{
+    /*max-height: 510px;*/
+    /*left: 48%;*/
+    height: 500px;
+    top: 0px;
+}
+
+#pi_popup.pi-popup.pi-on-frontend .pi-popup-inner-content.js_insert_content
+{
+    /*width: 99%;*/
+}
+
+
+
+/*#pi_popup.pi-popup.pi-on-frontend .pi-row-item, #pi_popup.pi-popup.pi-on-frontend  .row-inner
+{
+    width: 449px;
+}*/
+
+#pi_popup.pi-popup.pi-on-frontend .hndle
+{
+    margin-bottom: 0px !important;
+}
+
+#pi_popup.pi-popup.pi-on-frontend .pi-name{
+    width: 44%;
+}
+
+#pi_popup.pi-popup.pi-on-frontend .pi-popup-inner-footer .button-large
+{
+    color: #fff;
+    display: inline-block;
+    float: right;
+    font-size: 14px;
+    margin-left: 5px;
+    position: relative;
+    padding: 5px 30px !important;
+    background-color: transparent;
+    border: 0;
+}
+#pi_popup.pi-popup.pi-on-frontend .pi-popup-inner-footer .pi-popup-save {
+    border: 1px solid #FFF;
+}
+#pi_popup.pi-popup.pi-on-frontend .pi-popup-inner-footer .button-large:after,
+#pi_popup.pi-popup.pi-on-frontend .pi-popup-inner-footer .button-large:before {
+    display: none;
+}
+#pi_popup.pi-popup.pi-on-frontend .pi-popup-inner-footer .button-large:hover {
+    text-decoration: none;
+}
+#pi_popup.pi-popup.pi-on-frontend .pi-popup-inner-footer .pi-popup-preview:hover {
+    text-decoration: underline;
+}
+#pi_popup.pi-on-frontend .pi-popup-title {
+    font-size: 16px;
+    line-height: 1.2;
+    padding: 15px 0;
+    text-transform: none;
+}
+.pi-editing {
+    border: 0;
+}
+#pi_popup .pi-editing  span {
+    color: #FFF;
+}
+#pi_popup.pi-on-frontend .pi-popup-inner-footer {
+    background-color: #ef5443;
+}
+
+#pi-header-type .form-label {
+    display: inline-block;
+    margin-bottom: 8px;
+}
+#pi-header-type input[type="text"],
+#pi-header-type textarea {
+    border-color: #999;
+}
+
+#pi-importdemo{
+    margin-top: 20px;
+}
+#pi-importdemo .notice {
+    padding: 20px;
+}
+
+.pi-popup .pi-footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.pi-popup #pi-cancel,
+.pi-popup #pi-create-section
+{
+    position: relative;
+    float: right;
+}
+
+
+.pi-popup .pi-settings{
+    width: 100%;
+    float: none;
+    padding: 20px;
+}
+
+
+.add-section.pi-popup {
+    display: table;
+    width: 100%;
+    height: 100%;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background: none;
+}
+.add-section.pi-popup .tb-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.add-section.pi-popup .pi-inner-wrap-editor {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #fff;
+    bottom: auto;
+    height: 100%;
+    max-height: 700px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.add-section.pi-popup .pi-element > label.form-label {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.add-section.pi-popup .pi-element {
+    margin-top: 15px;
+}
+.add-section.pi-popup .panel-body {
+    padding: 0;
+}
+.add-section.pi-popup .pi-element input[type="text"],
+.add-section.pi-popup .pi-element select {
+    width: 100%;
+}
+.add-section.pi-popup .pi-footer {
+    padding: 0;
+}
+.pi-popup .pi-footer button {
+    float: right;
+}
+.add-section.pi-popup .panel-body .image-wrap {
+    max-width: 300px;
+    border: 1px solid #ccc;
+}
+.add-section.pi-popup .slider label {
+    margin: 0;
+    margin-left: 5px;
+}
+.pi_contactinfo input {
+    line-height: 32px !important;
+}
+.pi-fontawesome .bo-tb-fa h3 {
+    font-weight: 700 !important;
+    font-size: 16px !important;
+    padding: 0 15px;
+}
+.pi-customize-title span {
+    position: relative;
+    float: right;
+    top: -3px;
+    margin-left: 3px;
+}
+.pi-customize-title span:hover{
+    color: #000;
+}

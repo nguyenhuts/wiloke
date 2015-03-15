@@ -1,0 +1,125 @@
+<div class="menu-left">
+    <ul class="tab-left">
+        <li><a href="#navigation"><i class="fa fa-laptop"></i>Navigation</a></li>
+        <li><a href="#colorskin"><i class="fa fa-laptop"></i>Color Schemes</a></li>
+        <li><a href="#sidebar"><i class="fa fa-gears"></i>Blog design</a></li>
+    </ul>
+</div>
+
+<div id="navigation" class="inner-tabs-panel">
+    <div class="inner-content">
+        <div class="container-12-fluid">
+            <div class="container-12-row">
+                <div class="large-12">
+                  
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                <?php _e('Navigation', piCore::LANG) ?>
+                            </div>
+                        </div>
+
+                        <div class="panel-body">
+
+                            <div class="form-group pi-withnavigation">
+                                <select  name="theme_options[design][nav]">
+                                    <option value="top" <?php echo isset($aDesign['nav']) && $aDesign['nav'] == 'top' ?  'selected' : ''; ?>><?php _e('Top Of Header', piCore::LANG) ?></option>
+                                    <option value="bottom" <?php echo isset($aDesign['nav']) && $aDesign['nav'] == 'bottom' ?  'selected' : ''; ?>><?php _e('Bottom Of Header', piCore::LANG) ?></option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </div>    
+</div>
+<div id="colorskin" class="inner-tabs-panel">
+    <div class="inner-content">
+        <div class="container-12-fluid">
+            <div class="container-12-row">
+                <div class="large-12">
+                  
+                    <div class="panel">
+
+                        <div class="panel-heading">
+                            <div class="panel-title">
+                                Choose Skin
+                            </div>
+                        </div>
+
+                        <div class="panel-body">
+                            <h3>Color Schemes</h3>
+                            <div class="form-control">
+                                    <?php 
+                                       $color_scheme = isset($aDesign['color_scheme']) && !empty($aDesign['color_scheme']) ? ltrim($aDesign['color_scheme'])  : "default";
+                                        $aSettings = array("default", "blue", "brown", "cyan", "green", "orange", "yellow","pi_use_custom_color");
+                                        $customColor = get_option("pi_custom_color");
+                                        $customColor = $customColor ? $customColor : '#000';
+                                        ?>
+                                        <ul class="skin-color qva-design">
+                                             <?php 
+                                                foreach ($aSettings as $v) :
+                                                    $active = ($v == $color_scheme) ? " skin-active" : '';
+                                                    
+
+                                                    $useCustomColor =  $v == 'pi_use_custom_color' ? 'style="background-color:' . $customColor . '"' : '';
+                                                   
+                                                    ?>
+                                                    <li class="<?php echo $v .  $active; ?>" <?php echo $useCustomColor; ?> data-key="<?php echo $v ?>"><a href="#" title="<?php echo $v == 'pi_use_custom_color' ? 'Custom Color' : ''; ?>"><i  class="<?php echo $v == 'pi_use_custom_color' ? 'fa fa-fire-extinguisher' : 'fa fa-check '?>"></i></a></li>
+
+                                                    <?php 
+                                                endforeach;
+                                            ?>
+                                        </ul>
+                                        <input class="hidden" name="theme_options[design][color_scheme]" value="<?php echo esc_attr($color_scheme) ?>">
+
+                                        <div class="picolor custom_color <?php echo ($color_scheme == 'pi_use_custom_color') ? '' : 'hidden'; ?>">
+                                            <input type="text" class="pi_color_picker color-picker" name="pi_custom_color" value="<?php echo $customColor; ?>">
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="sidebar" class="inner-tabs-panel">
+    <div class="inner-content">
+        <div class="container-12-fluid">
+            <div class="container-12-row">
+                <div class="large-12">
+                    <!-- Panel -->
+                        <div class="panel">
+
+                         
+                            <div class="panel-body">
+                                
+                                <div class="form-control">
+                                    <ul class="sidebar-op">
+                                        <?php 
+                                            $csidebar = isset($aDesign['choosidebar']) && !empty($aDesign['choosidebar']) ? $aDesign['choosidebar'] : 'r-sidebar';
+                                            $aSidebar = array("r-sidebar" => "Right sidebar", "l-sidebar"=>"Left sidebar", "no-sidebar"=>"No sidebar");
+
+                                            foreach ($aSidebar as $sidebar => $name) :
+                                                $active = $sidebar == $csidebar ? 'sidebar-active' :'';
+                                        ?>
+                                        <li>
+                                            <a href="#" class="<?php echo $active ?> choosidebar" data-sidebar="<?php echo $sidebar ?>"><img src="<?php echo $adminImages , $sidebar , '.png'; ?>" alt=""></a>
+                                            <span><?php echo $name ?></span>
+                                        </li>
+                                            <?php endforeach; ?>
+                                        <input class="hidden sidebar-value" name="theme_options[design][choosidebar]" value="<?php echo esc_attr($csidebar) ?>">
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

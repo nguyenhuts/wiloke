@@ -1,0 +1,28 @@
+
+			    <!-- FOOTER -->
+			    <footer id="footer" class="footer">
+			        <div class="container">
+			            <div class="scroll-top">
+			                <i class="fa fa-angle-up"></i>
+			            </div>
+			            <?php 
+			          
+			            if ( isset(piThemeOptions::$piOptions['social']['display']['footer']) && !empty(piThemeOptions::$piOptions['social']['display']['footer']) ) :
+			            	if ( isset(piThemeOptions::$piOptions['social']['social_link']) && !empty(piThemeOptions::$piOptions['social']['social_link']) ) :
+			            	pi_social();
+			           		else :
+			            	printf( (__('<p>%s <a href="%s" target="_blank">%s</a> %s</p>', piCore::LANG)), 'You haven\' added social yet, Please go  ', admin_url('admin.php?page=hercules-menu'), "here", " to add"); 
+			           		endif;
+			           	endif;
+			            ?>
+			            <?php if ( isset(piThemeOptions::$piOptions['footer']['copyright']) && !empty(piThemeOptions::$piOptions['footer']['copyright']) ) : ?>
+						<p class="copyright text-uppercase text-center"><?php echo wp_unslash(piThemeOptions::$piOptions['footer']['copyright']); ?></p>
+			        	<?php endif; ?>
+			        </div>
+			    </footer>
+			   
+			    <!-- END / FOOTER -->
+			</div>
+		<?php wp_footer(); ?>
+	</body>
+</html>
