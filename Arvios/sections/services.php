@@ -12,18 +12,17 @@ if ( apply_filters('pi_is_section_enable', 'services') ) :
         <?php apply_filters( 'pi_the_heading', 'services' ); ?>
         <?php apply_filters( 'pi_the_description', 'services' ); ?> 
     </div>
-  
+    
+    <div class="st-body">
     <div class="row"> 
-
-      <div class="st-body">
       <?php  
         $getID = apply_filters('pi_get_data', 'services'); if ( $getID ) : $piaData = get_post_meta($getID, "_pi_services", true); 
         if ( !empty($piaData) ) :
             foreach ( $piaData as $data ) :
       ?>  
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-md-4">
 
-          <div class="service-item text-center">
+          <div class="service-item">
             <div class="item-head">
               <?php  printf(__(('<i class="%s"></i>'), 'wiloke'), (wp_unslash($data['icon'])) );?>
               <?php printf(__(('<h4 class="h6 text-uppercase">%s</h4>'), 'wiloke'), (wp_unslash($data['service'])) ); ?>

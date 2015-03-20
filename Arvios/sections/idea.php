@@ -9,7 +9,7 @@ if ( apply_filters('pi_is_section_enable', 'idea') ) :
   <?php pi_get_background('idea'); ?>
   <div class="container">
     <div class="row">
-      <div class="col-md-12 col-lg-10 col-lg-offset-1">
+      <div class="col-md-12">
         <div class="tb">
           <div class="tb-cell">
                 <div class="item-content">

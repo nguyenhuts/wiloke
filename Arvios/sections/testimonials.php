@@ -9,15 +9,14 @@
   <?php pi_get_background('testimonials'); ?>
   <div class="container">
       <div class="st-heading text-center">
-        <span class="h3"><i class="fa fa-quote-right"></i></span>
         <?php apply_filters( 'pi_the_heading', 'testimonials' ); ?>
         <?php apply_filters( 'pi_the_description', 'testimonials' ); ?>
       </div>
       <?php 
         if ( count($piaData) > 0 ) :
       ?>
-        <div class="row">
-          <div class="st-body">
+        <div class="st-body">
+          <div class="row">
             <div class="testimonial-slider">
                 <?php 
                   foreach ( $piaData as $k => $data ) :
@@ -28,6 +27,15 @@
                     <?php  if ( isset($data['testimonial']) && !empty($data['testimonial']) ) : ?>
                     <?php printf(__(('<p>%s</p>'), 'wiloke'), (wp_unslash($data['testimonial'])) ); ?>
                     <?php endif; ?>
+                    <div class="testimonial-photo">
+                      <?php
+                      if ( isset($data['photo']) && !empty($data['photo']) ) :
+                      ?>
+                        <img src="<?php echo esc_url(wp_get_attachment_url($data['photo'])) ?>"  alt="<?php echo get_post_meta($data['photo'], '_wp_attachment_image_alt', true); ?>">
+                      <?php
+                      endif;
+                      ?>
+                    </div>
                     <footer>
                     <?php  
                       if ( isset($data['author']) && !empty($data['author']) ) : 

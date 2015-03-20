@@ -65,7 +65,7 @@
 
    <?php if ( $piBlogId && !empty($piBlogId) ) : ?>
     <div class="st-footer pi-wrap-blogbutton text-center">
-        <a class="h-btn" href="<?php echo get_permalink($piBlogId); ?>"><?php _e('View All Posts', 'wiloke') ?></a>
+        <a class="h-btn btn-style-2" href="<?php echo get_permalink($piBlogId); ?>"><?php _e('View All Posts', 'wiloke') ?></a>
     </div>
     <?php endif; ?>
     

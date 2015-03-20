@@ -259,7 +259,7 @@ if ( !class_exists('piCore') )
  
 			if ( !empty($title) || ( empty($title) && has_action('customize_controls_init') ) )
 			{
-				printf( __( ('<h3 class="h3 %s">%s</h3><hr class="he-divider">'), piCore::LANG), $addClass, wp_unslash($title) );
+				printf( __( ('<h3 class="h3 %s">%s</h3>'), piCore::LANG), $addClass, wp_unslash($title) );
 			}
 		}
 
@@ -279,7 +279,9 @@ if ( !class_exists('piCore') )
 
 			if ( !empty($pidescription) || ( empty($pidescription) && has_action('customize_controls_init') ) )
 			{
-				printf( __( ('<p class="sub-title %s">%s</p>'), piCore::LANG), $addClass, wp_unslash($pidescription) );	
+				printf( __( ('<p class="sub-title %s">%s</p><i class="fa fa-bookmark-o"></i>'), piCore::LANG), $addClass, wp_unslash($pidescription) );	
+			}else{
+				echo '<i class="fa fa-bookmark-o"></i>';
 			}
 		}
 

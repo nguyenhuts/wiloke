@@ -81,7 +81,8 @@ if (function_exists('add_theme_support'))
     add_action( 'after_setup_theme', 'pi_theme_add_editor_styles' );
 }
 
- 
+
+
 // Pagination
 function pi_pagination() 
 {
@@ -1306,6 +1307,12 @@ function pi_header_text($aData)
             <?php if ( isset($aData['description']) && !empty($aData['description'])  ) : ?>
             <?php printf( (__("<p>%s</p>", 'wiloke') ), wp_unslash($aData['description']) ); ?>
             <?php endif; ?>
+            <?php 
+                if ( isset($aData['button_link']) && !empty($aData['button_link']) ) :
+                    $buttonName  = isset($aData['button_name']) && !empty($aData['button_name']) ? wp_unslash($aData['button_name']) : "Button Name";
+                    printf( (__("<a class='h-btn pi-header-button' href='%s'>%s</a>", 'wiloke') ), esc_url($aData['button_link']), $buttonName);
+                endif;
+            ?>
         </div>
     </div>
     <?php 
@@ -1391,38 +1398,41 @@ function pi_header_bg()
     $getHeader = isset(piThemeOptions::$piOptions['header']) && !empty(piThemeOptions::$piOptions['header']) ? piThemeOptions::$piOptions['header'] : '';
 
     $type      = isset($getHeader['type']) && !empty($getHeader['type']) ? $getHeader['type']  : 'image_fixed';
+    $overlay_color = isset($getHeader['overlay_color']) ? $getHeader['overlay_color'] : 'rgba(0,0,0,0.0)';
     ob_start();
     pi_add_hidden('header');
     $class = ob_get_clean();
     if ( !empty($type) )
     {
         echo '<div id="pi-wrap-header-media" class="home-media '.esc_attr($class).'">';
-        switch ( $type )
-        {
-            case 'youtube_bg':
-                pi_youtube_bg($getHeader);
-            break;
+            echo "<div class='bg-static'></div>";
+            echo "<div class='bg-overlay' style='background-color:$overlay_color'></div>";
+            switch ( $type )
+            {
+                case 'youtube_bg':
+                    pi_youtube_bg($getHeader);
+                break;
 
-            case 'img_slider':
-                pi_image_slider($getHeader);
-            break;
+                case 'img_slider':
+                    pi_image_slider($getHeader);
+                break;
 
-            case 'bg_slideshow':
-            if ( isset($getHeader['tunna_slider']) && !empty($getHeader['tunna_slider']) ) :
-                echo do_shortcode("[tunna_slider id='".$getHeader['tunna_slider']."']");
-            else :
-                _e('You haven\'t created slider yet');
-            endif;
-            break;
+                case 'bg_slideshow':
+                if ( isset($getHeader['tunna_slider']) && !empty($getHeader['tunna_slider']) ) :
+                    echo do_shortcode("[tunna_slider id='".$getHeader['tunna_slider']."']");
+                else :
+                    _e('You haven\'t created slider yet');
+                endif;
+                break;
 
-            case 'text_slider':
-                pi_text_slider($getHeader);
-            break;
+                case 'text_slider':
+                    pi_text_slider($getHeader);
+                break;
 
-            case 'image_fixed':
-                pi_image_fixed($getHeader);
-            break;
-        }
+                case 'image_fixed':
+                    pi_image_fixed($getHeader);
+                break;
+            }
         echo '</div>';
     }
 }
@@ -1581,4 +1591,51 @@ function pi_sidebar_pos($postID="")
     }
 
     return $sidebar;
+}
+
+
+// Render about us
+function pi_aboutus_photo($piaData)
+{
+    ?>
+    <div class="tb-cell">
+        <?php 
+            if ( isset($piaData['photo']) && !empty($piaData['photo']) ) : 
+        ?>
+            <div class="image-wrap">
+                <img src="<?php echo esc_url(wp_get_attachment_url($piaData['photo'])) ?>"  alt="<?php echo get_post_meta($piaData['photo'], '_wp_attachment_image_alt', true); ?>">
+            </div>
+        <?php 
+            endif; 
+        ?>
+    </div>
+    <?php 
+}
+
+function pi_aboutus_intro($piaData)
+{
+    ?>
+    <div class="tb-cell">
+        <?php if (isset($piaData['title'])) : ?>
+        <div class="story-head">
+              <?php printf( __('<h4 class="h5 text-uppercase">%s</h4>', 'wiloke'), wp_unslash($piaData['title']) ); ?>
+              <hr class="he-divider">
+        </div>
+        <?php endif; ?>
+        <div class="story-content">
+        <?php 
+            if ( isset($piaData['intro']) && !empty($piaData['intro']) )
+            {
+                $piaData['intro'] = utf8_decode($piaData['intro']);
+                echo '<p>'.wp_unslash($piaData['intro']).'</p>';
+            }
+
+            if ( isset($piaData['link']) && !empty($piaData['link']) )
+            {
+                echo '<p><a class="btn h-btn btn-default btn-default h-btn " href="'.$piaData['link'].'">'.wp_unslash($piaData['button']).'</a></p>';
+            }
+          ?>
+        </div>  
+    </div>
+    <?php 
 }

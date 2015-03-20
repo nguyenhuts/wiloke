@@ -4,8 +4,6 @@ define('THEMENAME', '');
     
 class piWidgets extends piCore
 {
-
-
     public function __construct()
     {
         add_action('widgets_init', array($this, 'pi_widgets_building') );

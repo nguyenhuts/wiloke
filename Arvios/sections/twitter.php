@@ -13,8 +13,8 @@ if ( apply_filters('pi_is_section_enable', 'twitter') ) :
             <?php apply_filters( 'pi_the_heading', 'twitter' ); ?>
             <?php apply_filters( 'pi_the_description', 'twitter' ); ?>  
         </div>
-        <div class="row">
-            <div class="st-body pi-fill-twitter">
+        <div class="st-body">
+            <div class="row pi-fill-twitter">
             </div>
         </div>
     </div>

@@ -194,8 +194,7 @@
                     <button class="button button-primary upload-img blog-img" data-insertlink=".wo-insert-link" data-append=".image-wrap"><?php _e('Get image', 'wiloke');?></button>
                     <input class="insertlink" type="hidden" value="<?php echo  isset($aHeader['text_slider']) ? $aHeader['text_slider'] : ""; ?>" name="theme_options[header][text_slider]">
                 </div>
-
-        
+                
                 <div class="panel-body header-settings image_fixed youtube_bg img_slider contact-wrap">
                    <h5><?php _e('Settings', 'wiloke'); ?></h5>
                     
@@ -210,6 +209,18 @@
                         <label class="form-label"><?php _e('Description', 'wiloke'); ?></label>
                         <div class="form-control">
                             <textarea class="form-control"  name="theme_options[header][description]"><?php  echo isset($aHeader['description']) ? esc_textarea($aHeader['description']) : ""; ?></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel-body header-settings image_fixed img_slider">
+                    <div class="form-group">
+                        <label class="form-label"><?php _e('Button', 'wiloke'); ?></label>
+                        <div class="controls">
+                            <input type="text" class="form-control"  name="theme_options[header][button_name]" value="<?php echo  (isset($aHeader['button_name']) && !empty ($aHeader['button_name']) ) ? $aHeader['button_name'] : ''; ?>" placeholder="Button Name">
+                        </div>
+                        <div class="controls">
+                            <input type="text" class="form-control"  name="theme_options[header][button_link]" value="<?php echo  (isset($aHeader['button_link']) && !empty ($aHeader['button_link']) ) ? $aHeader['button_link'] : ''; ?>" placeholder="Link To">
                         </div>
                     </div>
                 </div>
@@ -246,8 +257,18 @@
                         <div class="form-group children">
                             <label class="form-label"><?php _e('Description', 'wiloke'); ?></label>
                             <div class="form-control">
-                                <textarea class="form-control text-slider-des"   name="theme_options[text_slider][description][]" required><?php  echo isset($aTextSlider['description'][$i]) && !empty($aTextSlider['description'][$i]) ?  esc_textarea($aTextSlider['description'][$i]) : ""; ?></textarea>
+                                <textarea class="form-control text-slider-des"   name="theme_options[text_slider][description][]" required><?php  echo isset($aTextSlider['description'][$i]) && !empty($aTextSlider['description'][$i]) ?  wp_unslash($aTextSlider['description'][$i]) : ""; ?></textarea>
                                 <code class="help">Allow use tags: &lt;h1>, &lt;h2>, &lt;h3>, &lt;h4>, &lt;h5>, &lt;h6>, &lt;span>, &lt;p>, the text inner &lt;span> tag will be displayed as highline</code>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label"><?php _e('Button', 'wiloke'); ?></label>
+                            <div class="controls">
+                                <input type="text" class="form-control"  name="theme_options[text_slider][button_name]" value="<?php echo  (isset($aTextSlider['button_name'][$i]) && !empty ($aTextSlider['button_name'][$i]) ) ? esc_attr($aTextSlider['button_name'][$i]) : ''; ?>" placeholder="Button Name">
+                            </div>
+                            <div class="controls">
+                                <input type="text" class="form-control"  name="theme_options[text_slider][button_link]" value="<?php echo  (isset($aTextSlider['button_link'][$i]) && !empty ($aTextSlider['button_link'][$i]) ) ? esc_attr($aTextSlider['button_link'][$i]) : ''; ?>" placeholder="Link To">
                             </div>
                         </div>
                        
@@ -257,6 +278,15 @@
 
                     <div class="pi-wrap-add pi-top">
                         <button class="pi_button button button-primary pi_add_textslider"><?php _e('Add More', 'wiloke'); ?></button>
+                    </div>
+                </div>
+
+                <div class="panel-body header-settings text_slider image_fixed youtube_bg img_slider">
+                    <div class="form-group">
+                        <label class="form-label"><?php _e('Overlay Color', 'wiloke'); ?></label>
+                        <div class="controls">
+                            <input type="text" class="form-control pi_color_picker"  name="theme_options[header][overlay_color]" value="<?php echo  (isset($aHeader['overlay_color']) && !empty ($aHeader['overlay_color']) ) ? $aHeader['overlay_color'] : 'rgba(0,0,0,0.0)'; ?>">
+                        </div>
                     </div>
                 </div>
 

@@ -688,15 +688,17 @@ window.onload = piGoogleMap;
 
     function parallaxInit() 
     {
-        if ( $('.bg-parallax').length > 0 )
-        {
-            if (window.innerWidth >= 1199) 
+        setTimeout(function() {
+            if ( $('.bg-parallax').length > 0 )
             {
-                $('.bg-parallax').each(function() {
-                        $(this).parallax("50%", 0.4);
-                });
+                if (window.innerWidth >= 1199) 
+                {
+                    $('.bg-parallax').each(function() {
+                            $(this).parallax("50%", 0.4);
+                    });
+                }
             }
-        }
+        }, 10);
     }
 
     function hasThang($target)
@@ -939,6 +941,13 @@ window.onload = piGoogleMap;
                 .find('.navigation')
                     .css('top', '46px');
         }
+
+        $('.st-heading').each(function() {
+            var $this = $(this);
+            if ($this.children('.fa-bookmark-o').siblings().length == 0) {
+                $this.next('.st-body').css('margin-top', '0');
+            }
+        });
 
     });
 })(jQuery, window, document);

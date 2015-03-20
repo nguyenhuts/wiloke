@@ -14,8 +14,8 @@ if ( apply_filters('pi_is_section_enable', 'team') ) :
           <?php apply_filters( 'pi_the_description', 'team'); ?> 
       </div>
 
-    <div class="row">
-        <div class="st-body">
+    <div class="st-body">
+        <div class="row">
             <div class="team-slider">
 
             <?php 

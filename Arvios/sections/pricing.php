@@ -22,7 +22,7 @@ if ( apply_filters('pi_is_section_enable', 'pricing') ) :
             if ( !empty($piaData) ) :
                 foreach ( $piaData as $data ) :
         ?>  
-                  <div class="col-xs-6 col-md-3">
+                  <div class="col-md-4">
                     <div class="pricing-item text-center <?php echo isset($data['highlight']) && !empty($data['highlight']) ? 'light-item' : ''; ?>">
                         <div class="item-heading">
                             <?php  printf(__(('<h4 class="h4 text-uppercase">%s</h4>'), 'wiloke'), (wp_unslash($data['title'])) );?>

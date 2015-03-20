@@ -39,7 +39,6 @@ $piaConfigs = array
 			(
 				0, 
 				array('title'=>'Calendar')
-				// array('tweet_title'=>'Latest Tweets', 'tweet_consemmer_key'=>'14XiEso9DKiEkhdejwvfLA', 'tweet_consemmer_secret'=>'K1IcprfP7ZtHW9SM9pag9YWJ0jUWi6vAWZ3hX2FvspI', 'tweet_access_token'=>'234626957-zSPIRl4nvdXvzffaXjZUZNVFxleenIQjOS2B749p', 'tweet_secret_access_token'=>'PAiDJWzd1nqVm2pzMnnFeY5OW1OiCieXSqkivO6PUM', 'tweet_username'=>'megadrupal', 'tweet_delay_time'=>3000, 'tweet_number_of_tweet'=>2)
 			),
 
 			'tag_cloud'	=> array
