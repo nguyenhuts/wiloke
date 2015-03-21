@@ -119,6 +119,50 @@
 		})
 	});
 
+	wp.customize( 'pi_save_theme_options[theme_options][header][sub_title]', function(value)
+	{
+		value.bind(function(newval)
+		{
+			
+			if ( $(".home-media-content h4.header-text").length >0 )
+			{
+				$(".home-media-content h4.header-text").html(newval);
+			}else{
+				$(".home-media-content").prepend('<h4 class="header-text">'+newval+'</h4>');
+			}
+		})
+	});
+
+	/*=========================================*/
+	/*	Button
+	/*=========================================*/
+	wp.customize( 'pi_save_theme_options[theme_options][header][button_name]', function(value)
+	{
+		value.bind(function(newval)
+		{
+			
+			if ( $(".home-media-content a.btn-style-2").length >0 )
+			{
+				$(".home-media-content a.btn-style-2").html(newval);
+			}else{
+				$(".home-media-content").append('<div class="pi-header-button"><a class="h-btn btn-style-2" href="#portfolio">'+newval+'</a></div>');
+			}
+		})
+	});
+
+	wp.customize( 'pi_save_theme_options[theme_options][header][button_link]', function(value)
+	{
+		value.bind(function(newval)
+		{
+			
+			if ( $(".home-media-content a.btn-style-2").length >0 )
+			{
+				$(".home-media-content a.btn-style-2").attr("href", newval);
+			}else{
+				$(".home-media-content").append('<div class="pi-header-button"><a class="h-btn btn-style-2" href="'+button_link+'">Button Name</a></div>');
+			}
+		})
+	});
 
 
 	/*=========================================*/
@@ -260,9 +304,15 @@
 					
 					headerText+='<div class="tb">';
                         headerText+='<div class="home-media-content tb-cell text-center text-uppercase">';
+                        	headerText+='<h4 class="header-text">'+_jsonData.sub_title+'</h4>';
                             headerText+='<h2 class="h1">'+_jsonData.title+'</h2>';
                             headerText+='<hr class="he-divider">';
                             headerText+='<p>'+_jsonData.description+'</p>';
+                            if ( _jsonData.button_link != '' )
+                            {
+                            	_jsonData.button_name = _jsonData.button_name == '' ? 'Button Name' : _jsonData.button_name;
+                            	headerText+='<div  class="pi-header-button"><a class="h-btn btn-style-2" href="'+_jsonData.button_link+'">'+_jsonData.button_name+'</a></div>';
+                            }
                         headerText+='</div>';
                     headerText+='</div>';
 
@@ -270,7 +320,7 @@
 					{
 						if ( val !='' )
 						{
-							item += '<div class="item"><img src="'+val+'" alt="Wiloke Wordpress Themes">'+headerText+'</div>';
+							item += '<div class="item"><img style="z-index: -3 !important;" src="'+val+'" alt="Wiloke Wordpress Themes"><div class="bg-overlay" style="background-color:'+_jsonData.overlay_color+'"></div>'+headerText+'</div>';
 						}
 					})
 					
@@ -330,6 +380,14 @@
 		})
 	});
 
+	wp.customize( 'pi_save_theme_options[theme_options][header][overlay_color]', function(value)
+	{
+		value.bind(function(newval)
+		{	
+			$(".home-media .bg-overlay").css({'background-color': newval});
+		})
+	});
+
 	/*Text slider*/
 	wp.customize( 'pi_save_theme_options[theme_options][text_slider][text_effect]', function( value ) 
 	{	
@@ -355,16 +413,21 @@
 			{	
 				_jsonData = JSON.parse(decodeURIComponent(newval));
 				
-				$pianchorMedia.html('<div class="bg-parallax"></div><div class="bg-overlay"></div>\
+				$pianchorMedia.html('<div class="bg-parallax"></div><div class="bg-overlay" style="background-color:'+_jsonData.overlay_color+'"></div>\
 				<div class="tb">\
 				<div class="home-media-content tb-cell text-center text-uppercase">\
+				<h4 class="header-text"></h4>\
 				<h2 class="h1"></h2>\
 				<hr class="he-divider">\
 				<p></p>\
+				<div  class="pi-header-button"><a class="h-btn btn-style-2" href=""></a></div>\
 				</div></div>');
 
+				$pianchorMedia.find(".home-media-content h4.header-text").html(_jsonData.sub_title);
 				$pianchorMedia.find(".home-media-content h2").html(_jsonData.title);
 				$pianchorMedia.find(".home-media-content p").html(_jsonData.description);
+				$pianchorMedia.find(".home-media-content .pi-header-button a").html(_jsonData.button_name);
+				$pianchorMedia.find(".home-media-content .pi-header-button a").attr("href",_jsonData.button_link);
 				$pianchorMedia.find(".bg-parallax").css({'background-image': 'url('+_jsonData.image + ')'});
 				_jsonData={};
 			}	
@@ -887,6 +950,7 @@
 					$("#"+section).prepend('<div  class="bg-parallax  pi-parallax-static" style="background-image:url('+newval+')"></div>');
 				}
 				$("#"+section).find('.bg-color').remove();
+				$("#"+section).css({'background': 'none'});
 			})
 			
 		});
@@ -930,6 +994,7 @@
 							}
 						}
 						$("#"+section + " .bg-color").remove();
+						$("#"+section).css({'background':'none'});
 
 					}else if ( _jsonData.type == 'color' )
 					{
@@ -940,9 +1005,11 @@
 							$("#"+section).prepend('<div class="bg-color" style="background-color: '+_jsonData.overlay_color+'"></div>');
 						}
 						$("#"+section).find(".pi-parallax-static, .bg-overlay").css({display: "none"});
+						$("#"+section).css({'background':'none'});
 					}else{
 						// $("#"+section).removeClass("")
 						$("#"+section).find(".bg-parallax, .bg-overlay, .bg-color, .bg-static").remove();
+						$("#"+section).css({'background-color':'#f9f9f9'});
 					}
 				}
 			})

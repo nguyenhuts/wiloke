@@ -206,6 +206,13 @@
                     </div>
 
                     <div class="form-group">
+                        <label class="form-label"><?php _e('Sub title', 'wiloke'); ?></label>
+                        <div class="form-control">
+                            <input type="text" class="form-control"  name="theme_options[header][sub_title]" value="<?php echo  (isset($aHeader['sub_title']) && !empty ($aHeader['sub_title']) ) ? $aHeader['sub_title'] : ''; ?>" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
                         <label class="form-label"><?php _e('Description', 'wiloke'); ?></label>
                         <div class="form-control">
                             <textarea class="form-control"  name="theme_options[header][description]"><?php  echo isset($aHeader['description']) ? esc_textarea($aHeader['description']) : ""; ?></textarea>
@@ -216,10 +223,10 @@
                 <div class="panel-body header-settings image_fixed img_slider">
                     <div class="form-group">
                         <label class="form-label"><?php _e('Button', 'wiloke'); ?></label>
-                        <div class="controls">
+                        <div class="form-control">
                             <input type="text" class="form-control"  name="theme_options[header][button_name]" value="<?php echo  (isset($aHeader['button_name']) && !empty ($aHeader['button_name']) ) ? $aHeader['button_name'] : ''; ?>" placeholder="Button Name">
                         </div>
-                        <div class="controls">
+                        <div class="form-control">
                             <input type="text" class="form-control"  name="theme_options[header][button_link]" value="<?php echo  (isset($aHeader['button_link']) && !empty ($aHeader['button_link']) ) ? $aHeader['button_link'] : ''; ?>" placeholder="Link To">
                         </div>
                     </div>
@@ -253,7 +260,12 @@
                                 <input type="text" class="form-control text-slider-title" placeholder="Title" name="theme_options[text_slider][title][]" value="<?php  echo isset($aTextSlider['title'][$i]) && !empty($aTextSlider['title'][$i] )? esc_attr($aTextSlider['title'][$i]) : ""; ?>" title="Title">
                             </div>
                         </div>
-
+                        <div class="form-group children">
+                            <label class="form-label"><?php _e('Sub title', 'wiloke'); ?></label>
+                            <div class="form-control">
+                                <input type="text" class="form-control text-slider-title" placeholder="Title" name="theme_options[text_slider][sub_title][]" value="<?php  echo isset($aTextSlider['sub_title'][$i]) && !empty($aTextSlider['sub_title'][$i] )? esc_attr($aTextSlider['sub_title'][$i]) : ""; ?>" title="Sub title">
+                            </div>
+                        </div>
                         <div class="form-group children">
                             <label class="form-label"><?php _e('Description', 'wiloke'); ?></label>
                             <div class="form-control">
@@ -262,13 +274,13 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group children">
                             <label class="form-label"><?php _e('Button', 'wiloke'); ?></label>
-                            <div class="controls">
-                                <input type="text" class="form-control"  name="theme_options[text_slider][button_name]" value="<?php echo  (isset($aTextSlider['button_name'][$i]) && !empty ($aTextSlider['button_name'][$i]) ) ? esc_attr($aTextSlider['button_name'][$i]) : ''; ?>" placeholder="Button Name">
+                            <div class="form-control">
+                                <input type="text" class="form-control"  name="theme_options[text_slider][button_name][]" value="<?php echo  (isset($aTextSlider['button_name'][$i]) && !empty ($aTextSlider['button_name'][$i]) ) ? esc_attr($aTextSlider['button_name'][$i]) : ''; ?>" placeholder="Button Name">
                             </div>
-                            <div class="controls">
-                                <input type="text" class="form-control"  name="theme_options[text_slider][button_link]" value="<?php echo  (isset($aTextSlider['button_link'][$i]) && !empty ($aTextSlider['button_link'][$i]) ) ? esc_attr($aTextSlider['button_link'][$i]) : ''; ?>" placeholder="Link To">
+                            <div class="form-control">
+                                <input type="text" class="form-control"  name="theme_options[text_slider][button_link][]" value="<?php echo  (isset($aTextSlider['button_link'][$i]) && !empty ($aTextSlider['button_link'][$i]) ) ? esc_attr($aTextSlider['button_link'][$i]) : ''; ?>" placeholder="Link To">
                             </div>
                         </div>
                        
@@ -284,7 +296,7 @@
                 <div class="panel-body header-settings text_slider image_fixed youtube_bg img_slider">
                     <div class="form-group">
                         <label class="form-label"><?php _e('Overlay Color', 'wiloke'); ?></label>
-                        <div class="controls">
+                        <div class="form-control">
                             <input type="text" class="form-control pi_color_picker"  name="theme_options[header][overlay_color]" value="<?php echo  (isset($aHeader['overlay_color']) && !empty ($aHeader['overlay_color']) ) ? $aHeader['overlay_color'] : 'rgba(0,0,0,0.0)'; ?>">
                         </div>
                     </div>

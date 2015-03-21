@@ -491,8 +491,12 @@ function pi_render_portfolio_item($gallery, $isPageTemplate = false, $style="", 
 
 function pi_excerpt_length($length)
 {
-    $numberOfWords = isset(piThemeOptions::$piOptions['blog']['number_of_words']) && !empty(piThemeOptions::$piOptions['blog']['number_of_words']) ? (int)(piThemeOptions::$piOptions['blog']['number_of_words']) :  50;
-    return $numberOfWords;
+    $uri = isset($_SERVER['REQUEST_URI']) && !empty($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI']  :'';
+    if ( preg_match('/masonry/', $uri) )
+    {
+        return 40;
+    }
+    return $length;
 }
 
 function pi_auto_excerpt_more() 
@@ -510,7 +514,8 @@ function pi_modify_read_more_link($link)
 
 add_filter( 'the_content_more_link', 'pi_modify_read_more_link' );
 
-// add_filter( 'excerpt_length', 'pi_excerpt_length');
+add_filter( 'excerpt_length', 'pi_excerpt_length', 10, 1);
+
 add_filter( 'excerpt_more', 'pi_auto_excerpt_more' );
 
 
@@ -1121,7 +1126,7 @@ function pi_image_fixed($aData)
     {
         ?>
         <div class="bg-parallax" style="background:  url('http://placehold.it/2000x1600&text=image') no-repeat fixed center center / cover rgba(0, 0, 0, 0);"></div>
-            <div class="bg-overlay"></div>
+        <div class="bg-overlay"></div>
         <?php
     }else{
        
@@ -1136,14 +1141,14 @@ function pi_image_fixed($aData)
             }else{
                 ?>
                 <div class="bg-parallax" style="background:  url('<?php echo  esc_url(wp_get_attachment_url($aData['image_fixed'])) ?>') no-repeat fixed center center / cover rgba(0, 0, 0, 0);"></div>
-                <div class="bg-overlay"></div>
+                <div class="bg-overlay" style="background-color: <?php echo isset($aData['overlay_color']) ? $aData['overlay_color'] : ''; ?>"></div>
                 <?php 
             }
         }else{
             
             ?>
             <div class="bg-parallax" style="background:  url('<?php echo esc_url($aData['image_fixed']) ?>') no-repeat fixed center center / cover rgba(0, 0, 0, 0);"></div>
-            <div class="bg-overlay"></div>
+            <div class="bg-overlay" style="background-color: <?php echo isset($aData['overlay_color']) ? $aData['overlay_color'] : ''; ?>"></div>
             <?php
         }  
     }
@@ -1153,11 +1158,14 @@ function pi_image_fixed($aData)
 
 function pi_text_slider($aData)
 { 
-   
+    
     $img = isset($aData['text_slider']) && !empty($aData['text_slider']) ? $aData['text_slider'] :  'http://placehold.it/1600x1160';
     $textEffect  = isset(piThemeOptions::$piOptions['text_slider']['text_effect']) && !empty(piThemeOptions::$piOptions['text_slider']['text_effect']) ? piThemeOptions::$piOptions['text_slider']['text_effect'] : 'fade';
     $getTitle    =  isset(piThemeOptions::$piOptions['text_slider']['title']) && !empty(piThemeOptions::$piOptions['text_slider']['title']) ? piThemeOptions::$piOptions['text_slider']['title'] : array('We Love Design and Creatve Stuff', 'We love what we do');  
-    $getDescription    =  isset(piThemeOptions::$piOptions['text_slider']['description']) && !empty(piThemeOptions::$piOptions['text_slider']['description']) ? piThemeOptions::$piOptions['text_slider']['description'] : array('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur diam felis, lacinia eget<br> mattis ut, mollis id turpis class aptent tacit', 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiumo<br> mattis ut, mollis id turpis class aptent tacit');      
+    $getDescription    =  isset(piThemeOptions::$piOptions['text_slider']['description']) && !empty(piThemeOptions::$piOptions['text_slider']['description']) ? piThemeOptions::$piOptions['text_slider']['description'] : array('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur diam felis, lacinia eget<br> mattis ut, mollis id turpis class aptent tacit', 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiumo<br> mattis ut, mollis id turpis class aptent tacit');
+    $aSubTitle        =  isset(piThemeOptions::$piOptions['text_slider']['sub_title']) && !empty(piThemeOptions::$piOptions['text_slider']['sub_title']) ? piThemeOptions::$piOptions['text_slider']['sub_title'] : array('Creative Angency', 'Stay Hungry Stay Foolish');
+    $aButtonName        =  isset(piThemeOptions::$piOptions['text_slider']['button_name']) && !empty(piThemeOptions::$piOptions['text_slider']['button_name']) ? piThemeOptions::$piOptions['text_slider']['button_name'] : array('Our Work', 'Meet Team');
+    $aButtonLink        =  isset(piThemeOptions::$piOptions['text_slider']['button_link']) && !empty(piThemeOptions::$piOptions['text_slider']['button_link']) ? piThemeOptions::$piOptions['text_slider']['button_link'] : array('#portfolio', '#team');
     ?>
 
     <?php 
@@ -1169,17 +1177,16 @@ function pi_text_slider($aData)
             }else{
             ?>
             <div class="bg-parallax" style="background:  url('<?php echo wp_get_attachment_url($img)  ?>') no-repeat fixed center center / cover rgba(0, 0, 0, 0);"></div>
+            <div class="bg-overlay" style="background-color: <?php echo isset($aData['overlay_color']) ? $aData['overlay_color'] : ''; ?>"></div>
             <?php
             } 
         }else{
             ?>
             <div class="bg-parallax" style="background:  url('<?php echo esc_url($img);  ?>') no-repeat fixed center center / cover rgba(0, 0, 0, 0);"></div>
+            <div class="bg-overlay" style="background-color: <?php echo isset($aData['overlay_color']) ? $aData['overlay_color'] : ''; ?>"></div>
             <?php 
         }
     ?>
-    <div class="bg-overlay"></div>
-
-  
     <div class="pi-textslider text-slider" data-effect="<?php echo esc_attr($textEffect) ?>">
     <?php 
         foreach ( $getTitle as $k => $title ) :
@@ -1187,6 +1194,9 @@ function pi_text_slider($aData)
     <div class="item">
         <div class="tb">
             <div class="home-media-content tb-cell text-center text-uppercase">
+                <?php if ( isset($aSubTitle[$k]) && !empty($aSubTitle[$k])  )  :  ?>
+                <?php printf( (__("<h4 class='header-text'>%s</h4>", 'wiloke') ), wp_unslash($aSubTitle[$k]) ); ?>
+                <?php endif; ?>
                 <?php if ( !empty($title) ) : ?>
                 <h2 class="h1"><?php printf( __('%s', 'wiloke'), wp_unslash($title) ); ?></h2>
                 <hr class="he-divider">
@@ -1196,6 +1206,11 @@ function pi_text_slider($aData)
                 ?>
                 <?php printf( __('<p>%s</p>', 'wiloke'), wp_unslash($getDescription[$k]) ); ?>
                 <?php endif; ?>
+                <?php 
+                    if ( isset($aButtonLink[$k]) && !empty($aButtonLink[$k]) ) :
+                        printf( (__("<div  class='pi-header-button'><a class='h-btn btn-style-2' href='%s'>%s</a></div>", 'wiloke') ), wp_unslash($aButtonLink[$k]), $aButtonName[$k]);
+                    endif;
+                ?>
             </div>
         </div>
     </div>
@@ -1221,6 +1236,7 @@ function pi_tunna_slider($aData)
 function pi_image_slider($aData)
 {
     $imgs = isset($aData['img_slider']) && !empty($aData['img_slider']) ? $aData['img_slider'] : 'placehold.it/1600x1160,http://placehold.it/1600x1160/ffffff/000000';
+    $overlay_color = isset($aData['overlay_color']) ? $aData['overlay_color'] : 'rgba(0,0,0,0.0)';
     $parseID = explode(",", $imgs);
     ?>
     <div class="home-slider" data-background="bg-parallax">
@@ -1236,11 +1252,13 @@ function pi_image_slider($aData)
                         if ( wp_attachment_is_image($id) ) :
                         ?>
                         <img src="<?php echo esc_url(wp_get_attachment_url($id)); ?>" alt="<?php echo esc_attr(get_post_meta( $id, '_wp_attachment_image_alt', true )); ?>"> 
+                        <div class='bg-overlay' style='background-color:<?php echo $overlay_color; ?>'></div>
                         <?php 
                         endif;
                     }else{
                         ?>
-                        <img src="<?php echo esc_url($id); ?>" alt="Wiloke Theme"> 
+                        <img src="<?php echo esc_url($id); ?>" alt="Wiloke Theme">
+                        <div class='bg-overlay' style='background-color:<?php echo $overlay_color; ?>'></div>
                         <?php   
                     }
                    
@@ -1300,6 +1318,9 @@ function pi_header_text($aData)
     ?>
     <div class="tb">
         <div class="home-media-content tb-cell text-center text-uppercase">
+            <?php if ( isset($aData['sub_title']) && !empty($aData['sub_title'])  ) : ?>
+            <?php printf( (__("<h4 class='header-text'>%s</h4>", 'wiloke') ), wp_unslash($aData['sub_title']) ); ?>
+            <?php endif; ?>
             <?php if ( isset($aData['title']) && !empty($aData['title'])  ) : ?>
             <?php printf( (__("<h2 class='h1'>%s</h2>", 'wiloke') ), wp_unslash($aData['title']) ); ?>
             <hr class="he-divider">
@@ -1310,7 +1331,7 @@ function pi_header_text($aData)
             <?php 
                 if ( isset($aData['button_link']) && !empty($aData['button_link']) ) :
                     $buttonName  = isset($aData['button_name']) && !empty($aData['button_name']) ? wp_unslash($aData['button_name']) : "Button Name";
-                    printf( (__("<a class='h-btn pi-header-button' href='%s'>%s</a>", 'wiloke') ), esc_url($aData['button_link']), $buttonName);
+                    printf( (__("<div  class='pi-header-button'><a class='h-btn btn-style-2' href='%s'>%s</a></div>", 'wiloke') ), wp_unslash($aData['button_link']), $buttonName);
                 endif;
             ?>
         </div>
@@ -1396,7 +1417,7 @@ function pi_the_description($section, $addClass="")
 function pi_header_bg()
 {
     $getHeader = isset(piThemeOptions::$piOptions['header']) && !empty(piThemeOptions::$piOptions['header']) ? piThemeOptions::$piOptions['header'] : '';
-
+   
     $type      = isset($getHeader['type']) && !empty($getHeader['type']) ? $getHeader['type']  : 'image_fixed';
     $overlay_color = isset($getHeader['overlay_color']) ? $getHeader['overlay_color'] : 'rgba(0,0,0,0.0)';
     ob_start();
@@ -1405,8 +1426,6 @@ function pi_header_bg()
     if ( !empty($type) )
     {
         echo '<div id="pi-wrap-header-media" class="home-media '.esc_attr($class).'">';
-            echo "<div class='bg-static'></div>";
-            echo "<div class='bg-overlay' style='background-color:$overlay_color'></div>";
             switch ( $type )
             {
                 case 'youtube_bg':
@@ -1632,10 +1651,11 @@ function pi_aboutus_intro($piaData)
 
             if ( isset($piaData['link']) && !empty($piaData['link']) )
             {
-                echo '<p><a class="btn h-btn btn-default btn-default h-btn " href="'.$piaData['link'].'">'.wp_unslash($piaData['button']).'</a></p>';
+                echo '<p><a class="btn h-btn btn-default" href="'.$piaData['link'].'">'.wp_unslash($piaData['button']).'</a></p>';
             }
           ?>
         </div>  
     </div>
     <?php 
 }
+

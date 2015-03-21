@@ -1,0 +1,148 @@
+
+
+::-moz-selection {
+  background-color: #ef6b6c;
+}
+
+::selection {
+  background-color: #ef6b6c;
+}
+
+
+.contact-form form .wpcf7-submit:hover,
+.widget_calendar table tfoot a,
+.widget_calendar table caption,
+.tagcloud a:hover,
+#comments .commentlist .comment-foot a:hover,
+.pagination > span.current,
+.pagination > a.current,
+.blog-list .post .post-title > a,
+.form-submit input[type="submit"],
+.edit-this a,
+.sidebar code a,
+.pricing-item.light-item .item-footer a,
+.nav-portfolio a:hover,
+.portfolio-item .caption:after,
+#filters ul li.select-filter a,
+.portfolio .bg-color ~ div #filters ul li.select-filter a,
+.portfolio .bg-static ~ div #filters ul li.select-filter a,
+.portfolio .bg-parallax ~ div #filters ul li.select-filter a,
+.team-item .image-wrap:after,
+.navigation .close-menu span:hover:before,
+.navigation .close-menu span:hover:after,
+.navigation .open-menu:hover .item:before,
+.navigation .open-menu:hover .item:after,
+.navigation .open-menu:hover .item,
+.slides-pagination a.current,
+.pricing .bg-static ~ .container .light-item .h-btn,
+.pricing .bg-parallax ~ .container .light-item .h-btn,
+.pricing .bg-color ~ .container .light-item .h-btn,
+.bg-parallax ~ .container .owl-carousel .owl-controls .owl-pagination .owl-page.active > span,
+.bg-static ~ .container .owl-carousel .owl-controls .owl-pagination .owl-page.active > span,
+.owl-carousel .owl-controls .owl-pagination .owl-page.active > span,
+mark, .mark,
+.h-btn.btn-style-2,
+.h-btn:focus,
+.h-btn:hover,
+.st-heading .fa,
+.bg-color {
+	background-color: #ef6b6c;
+}
+
+
+.preloader span,
+.footer .social a:hover,
+.footer .scroll-top:hover .fa,
+.contact-info .item a:hover,
+.contact-info .item .fa,
+.widget_rss ul li a:hover,
+.widget_meta ul li a:hover,
+.widget_pages ul li a:hover,
+.widget_recent_comments ul li a:hover,
+.widget_nav_menu ul li a:hover,
+.widget_categories ul li a:hover,
+.widget_recent_entries ul li a:hover,
+.widget_archive ul li a:hover,
+#comments .commentlist .comment-foot a,
+#comments .commentlist .comment-box cite a:hover,
+.author-social a:hover .fa,
+.tags-wrap .tag a:hover,
+.tags-wrap .fa,
+.blog-grid-2 .post .post-media .pi-wrap-post-format:hover,
+.post-meta a:hover,
+.post .post-title h2 a:hover,
+.breadcrumb-wrap .breadcrumb li a:hover,
+.logged-in-as a:hover,
+.blog-grid .post-media .pi-wrap-post-format,
+.blog-grid .post:hover .post-body h1,
+.blog-grid .post:hover .post-body h2,
+.blog-grid .post .post-meta a:hover,
+.blog-section .bg-static ~ div .blog-grid .grid-item .post .post-title h3:hover,
+.blog-section .bg-parallax ~ div .blog-grid .grid-item .post .post-title h3:hover,
+.pricing-item.light-item .item-price .pi-duration,
+.pricing-item.light-item .item-price .amount,
+.twitter-item a:hover,
+.twitter .bg-color ~ div .twitter-item a:hover,
+.twitter .bg-static ~ div .twitter-item a:hover,
+.twitter .bg-parallax ~ div .twitter-item a:hover,
+.testimonial .bg-color ~ div .twitter-item a:hover,
+.testimonial .bg-static ~ div .twitter-item a:hover,
+.testimonial .bg-parallax ~ div .twitter-item a:hover,
+.service-item:hover .item-head .fa,
+.team-item .team-social a:hover,
+.team .bg-static ~ div .owl-carousel .owl-controls .owl-buttons > div:hover,
+.team .bg-parallax ~ div .owl-carousel .owl-controls .owl-buttons > div:hover,
+.search-box.active .toggle-search .fa,
+.search-box .toggle-search:hover .fa,
+.navigation .nav li:hover > a,
+.navigation .nav li.active > a,
+.navigation .nav li.current-menu-parent > a,
+.navigation .nav li.current-menu-item > a,
+.controls-sm span .fa,
+.controls-video .play .fa,
+.slides-navigation a .fa:hover,
+.bg-color ~ .container .st-heading span .fa,
+.bg-parallax ~ .container .owl-carousel .owl-controls .owl-buttons > div:hover,
+.bg-static ~ .container .owl-carousel .owl-controls .owl-buttons > div:hover,
+.owl-carousel .owl-controls .owl-buttons > div:hover,
+.social a:hover {
+	color: #ef6b6c;
+}
+
+
+
+
+.footer .social a:hover,
+.author-social a:hover .fa,
+.blog-grid-2 .post:hover:after,
+.blog-grid-2 .post .post-media .pi-wrap-post-format:hover,
+.blog-list .post .post-title > a:after,
+.nav-portfolio a:hover,
+.portfolio-item .caption .item-icon:after,
+#filters ul li.select-filter a,
+.portfolio .bg-color ~ div #filters ul li.select-filter a,
+.portfolio .bg-static ~ div #filters ul li.select-filter a,
+.portfolio .bg-parallax ~ div #filters ul li.select-filter a,
+.team-item:hover,
+.skill-bar .pie.pie2,
+.skill-bar .pie,
+.search-box .search-form,
+.controls-sm span .fa,
+.controls-video .play .fa,
+.slides-navigation a .fa:hover,
+.bg-parallax ~ .container .owl-carousel .owl-controls .owl-buttons > div:hover,
+.bg-static ~ .container .owl-carousel .owl-controls .owl-buttons > div:hover,
+.owl-carousel .owl-controls .owl-buttons > div:hover,
+blockquote,
+.social a:hover {
+	border-color: #ef6b6c;
+}
+
+.navigation .nav li:hover.menu-item-has-children:after,
+.navigation .nav li.active.menu-item-has-children:after,
+.navigation .nav li.current-menu-parent.menu-item-has-children:after,
+.navigation .nav li.current-menu-item.menu-item-has-children:after {
+  border-top-color: #ef6b6c;
+}
+
+

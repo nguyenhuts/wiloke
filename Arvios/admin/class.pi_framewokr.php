@@ -428,8 +428,9 @@ if ( !class_exists('piCore') )
     		wp_localize_script('jquery', 'piAjaxUrl', admin_url('admin-ajax.php'));
 
     		wp_localize_script('jquery', 'piTwitterUsername', $username);
-
     		
+    		wp_localize_script('jquery', 'piImgs', get_template_directory_uri() . '/admin/pi-assets/images/' );
+
 
     		if ( has_action('customize_preview_init') )
     		{

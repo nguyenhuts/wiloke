@@ -194,6 +194,7 @@ class piThemeOptions extends piCore
 		if ( $con )
 		{
 			self::$piOptions = get_option("pi_save_theme_options_en");
+			// update_option("pi_save_theme_options_en", self::$piOptions);
 			self::$piOptions = isset(self::$piOptions['theme_options']) ? self::$piOptions['theme_options'] : array();
 			self::$piOptions = $this->pi_unslashed_before_update(self::$piOptions);
 		}	

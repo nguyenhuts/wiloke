@@ -24,7 +24,7 @@
                             <div class="form-control">
                                     <?php 
                                        $color_scheme = isset($aDesign['color_scheme']) && !empty($aDesign['color_scheme']) ? ltrim($aDesign['color_scheme'])  : "default";
-                                        $aSettings = array("default", "blue", "cyan", "red", "green", "yellow","pi_use_custom_color");
+                                        $aSettings = array("default", "blue", "cyan", "green", "yellow","pi_use_custom_color");
                                         $customColor = get_option("pi_custom_color");
                                         $customColor = $customColor ? $customColor : '#000';
                                         ?>

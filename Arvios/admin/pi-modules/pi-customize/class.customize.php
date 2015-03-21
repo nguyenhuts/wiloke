@@ -185,8 +185,15 @@ class piCustomize extends piCore
                 $textEffect  = isset(piThemeOptions::$piOptions['text_slider']['text_effect']) && !empty(piThemeOptions::$piOptions['text_slider']['text_effect']) ? piThemeOptions::$piOptions['text_slider']['text_effect'] : 'fade';
                 $getTitle    =  isset(piThemeOptions::$piOptions['text_slider']['title']) && !empty(piThemeOptions::$piOptions['text_slider']['title']) ? piThemeOptions::$piOptions['text_slider']['title'] : array('We are Axpo', 'We love what we do');
                 $getTitle    = implode(",", $getTitle);
+                $getSubTitle    =  isset(piThemeOptions::$piOptions['text_slider']['sub_title']) && !empty(piThemeOptions::$piOptions['text_slider']['sub_title']) ? piThemeOptions::$piOptions['text_slider']['sub_title'] : array('Stay Hungry', 'Stay Foolish');
+                $getSubTitle    = implode(",", $getSubTitle);
+                $getButtonName    =  isset(piThemeOptions::$piOptions['text_slider']['button_name']) && !empty(piThemeOptions::$piOptions['text_slider']['button_name']) ? piThemeOptions::$piOptions['text_slider']['button_name'] : array('Our Work', 'Meet Team');
+                $getButtonName    = implode(",", $getButtonName);
+                $getButtonLink    =  isset(piThemeOptions::$piOptions['text_slider']['button_link']) && !empty(piThemeOptions::$piOptions['text_slider']['button_link']) ? piThemeOptions::$piOptions['text_slider']['button_link'] : array('#portfolio', '#team');
+                $getButtonLink    = implode(",", $getButtonLink);
+                $overlay_color    = isset(piThemeOptions::$piOptions['header']['overlay_color']) && !empty(piThemeOptions::$piOptions['header']['overlay_color']) ? piThemeOptions::$piOptions['header']['overlay_color'] : 'rgba(0,0,0,0)';
 
-                echo do_shortcode('[pi_text_slider title="'.$getTitle.'" effect="'.$textEffect.'" img="'.$img.'"]');
+                echo do_shortcode('[pi_text_slider overlay_color="'.$overlay_color.'" title="'.$getTitle.'" button_name="'.$getButtonName.'" button_link="'.$getButtonLink.'" sub_title="'.$getSubTitle.'"  effect="'.$textEffect.'" img="'.$img.'"]');
                 wp_die();
             break;
 
@@ -829,6 +836,93 @@ class piCustomize extends piCore
                 'priority'  => $this->priority++
         ) );
         $wp_customize->get_setting( "pi_save_theme_options[theme_options][header][title]" )->transport = 'postMessage';
+
+        /*=========================================*/
+        /*  Sub Title
+        /*=========================================*/
+        $wp_customize->add_setting (
+                "pi_save_theme_options[theme_options][header][sub_title]",
+                array(
+                    'default'        => isset($aOptions['header']['sub_title']) ? $aOptions['header']['sub_title']:'',
+                    'capability'     => 'edit_theme_options',
+                    'type'           => 'option',
+                    'sanitize_callback' => array($this, 'pi_sanitize_callback')
+                )
+        );
+        $wp_customize->add_control(  "pi_save_theme_options[theme_options][header][sub_title]",array(
+                'label'     => "Sub title",
+                'section'   => 'pi_section_builder',
+                'type'      => 'text',
+                'settings'  => "pi_save_theme_options[theme_options][header][sub_title]",
+                'priority'  => $this->priority++
+        ) );
+        $wp_customize->get_setting( "pi_save_theme_options[theme_options][header][sub_title]" )->transport = 'postMessage';
+
+        /*=========================================*/
+        /*  Button
+        /*=========================================*/
+        $wp_customize->add_setting (
+                "pi_save_theme_options[theme_options][header][button_name]",
+                array(
+                    'default'        => isset($aOptions['header']['button_name']) ? $aOptions['header']['button_name']:'',
+                    'capability'     => 'edit_theme_options',
+                    'type'           => 'option',
+                    'sanitize_callback' => array($this, 'pi_sanitize_callback')
+                )
+        );
+        $wp_customize->add_control(  "pi_save_theme_options[theme_options][header][button_name]",array(
+                'label'     => "Button Name",
+                'section'   => 'pi_section_builder',
+                'type'      => 'text',
+                'settings'  => "pi_save_theme_options[theme_options][header][button_name]",
+                'priority'  => $this->priority++
+        ) );
+        $wp_customize->get_setting( "pi_save_theme_options[theme_options][header][button_name]" )->transport = 'postMessage';
+
+        $wp_customize->add_setting (
+                "pi_save_theme_options[theme_options][header][button_link]",
+                array(
+                    'default'        => isset($aOptions['header']['button_link']) ? $aOptions['header']['button_link']:'',
+                    'capability'     => 'edit_theme_options',
+                    'type'           => 'option',
+                    'sanitize_callback' => array($this, 'pi_sanitize_callback')
+                )
+        );
+        $wp_customize->add_control(  "pi_save_theme_options[theme_options][header][button_link]",array(
+                'label'     => "Link To",
+                'section'   => 'pi_section_builder',
+                'type'      => 'text',
+                'settings'  => "pi_save_theme_options[theme_options][header][button_link]",
+                'priority'  => $this->priority++
+        ) );
+        $wp_customize->get_setting( "pi_save_theme_options[theme_options][header][button_link]" )->transport = 'postMessage';
+
+        /*=========================================*/
+        /*  Overlay Color 
+        /*=========================================*/
+        $wp_customize->add_setting (
+            "pi_save_theme_options[theme_options][header][overlay_color]",
+            array(
+                'default'        => isset($aOptions['header']['overlay_color']) ? $aOptions['header']['overlay_color']:'rgba(0,0,0,0)',
+                'capability'     => 'edit_theme_options',
+                'type'           => 'option',
+                'sanitize_callback' => array($this, 'pi_sanitize_callback')
+            )
+        );
+        $wp_customize->add_control( 
+            new PI_COLOR_PICKER( 
+            $wp_customize, 
+            "pi_save_theme_options[theme_options][header][overlay_color]",
+            array(
+                'label'      => __( 'Overlay Color', 'wiloke' ),
+                'has_lable'  => true,
+                'section'    => 'pi_section_builder',
+                'priority'   => $this->priority++,
+                'settings'   => "pi_save_theme_options[theme_options][header][overlay_color]"
+            ) ) 
+        );
+
+        $wp_customize->get_setting( "pi_save_theme_options[theme_options][header][overlay_color]" )->transport = 'postMessage';
 
 
         /*=========================================*/
@@ -2593,8 +2687,15 @@ if (class_exists('WP_Customize_Control'))
     class PI_COLOR_PICKER extends WP_Customize_Control
     {
         public $type = 'pi-colorpicker';
+        public $has_lable = false;
         public function render_content() 
         {
+            if ( $this->has_lable )
+            {
+               ?>
+            <h4 class="customize-control-title"><?php echo $this->label; ?></h4>
+               <?php 
+            }
         ?>
             <input type="text" <?php $this->link(); ?> class="pi_color_picker" value="<?php echo $this->value(); ?>">
         <?php

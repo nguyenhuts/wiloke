@@ -353,22 +353,26 @@
                     case 'youtube_bg':
                         $("[id*='img_slider'], [id*='tunna_slider'], [id*='text_slider'], [id*='image_fixed']").fadeOut();
                         $("[id*='youtube'], [id*='video_options'],[id*='header-title'], [id*='header-description']").fadeIn();
+                        $("#customize-control-pi_save_theme_options-theme_options-header-sub_title, #customize-control-pi_save_theme_options-theme_options-header-button_name, #customize-control-pi_save_theme_options-theme_options-header-button_link, #customize-control-pi_save_theme_options-theme_options-header-overlay_color").fadeOut();
                         obj.pi_hack_trigger("youtube_bg", obj);
                     break;
 
                     case 'img_slider':
                        $("[id*='youtube'], [id*='tunna_slider'], [id*='text_slider'], [id*='image_fixed'], [id*='video_options']").fadeOut();
+                       $("#customize-control-pi_save_theme_options-theme_options-header-sub_title, #customize-control-pi_save_theme_options-theme_options-header-button_name, #customize-control-pi_save_theme_options-theme_options-header-button_link, #customize-control-pi_save_theme_options-theme_options-header-overlay_color").fadeIn();
                        $("[id*='img_slider'],[id*='header-title'], [id*='header-description']").fadeIn();
                         obj.pi_hack_trigger("img_slider", obj);
                     break;
  
                     case 'bg_slideshow':
                         $("[id*='img_slider'], [id*='youtube'], [id*='text_slider'], [id*='image_fixed'], [id*='video_options'],[id*='header-title'], [id*='header-description']").fadeOut();
+                        $("#customize-control-pi_save_theme_options-theme_options-header-sub_title, #customize-control-pi_save_theme_options-theme_options-header-button_name, #customize-control-pi_save_theme_options-theme_options-header-button_link, #customize-control-pi_save_theme_options-theme_options-header-overlay_color").fadeOut();
                         $("[id*='tunna_slider']").fadeIn();
                     break;
 
                     case 'text_slider':
                         $("[id*='img_slider'], [id*='tunna_slider'], [id*='youtube'], [id*='image_fixed'], [id*='video_options'],[id*='header-title'], [id*='header-description']").fadeOut();
+                        $("#customize-control-pi_save_theme_options-theme_options-header-sub_title, #customize-control-pi_save_theme_options-theme_options-header-button_name, #customize-control-pi_save_theme_options-theme_options-header-button_link, #customize-control-pi_save_theme_options-theme_options-header-overlay_color").fadeOut();
                         $("[id*='text_slider']").fadeIn();
                         obj.pi_hack_trigger("text_slider", obj);
                     break;
@@ -376,6 +380,7 @@
                     case 'image_fixed':
                         $("[id*='img_slider'], [id*='youtube'], [id*='text_slider'], [id*='tunna_slider'], [id*='video_options']").fadeOut();
                         $("[id*='image_fixed'], [id*='header-title'], [id*='header-description']").fadeIn();
+                        $("#customize-control-pi_save_theme_options-theme_options-header-sub_title, #customize-control-pi_save_theme_options-theme_options-header-button_name, #customize-control-pi_save_theme_options-theme_options-header-button_link, #customize-control-pi_save_theme_options-theme_options-header-overlay_color").fadeIn();
                         obj.pi_hack_trigger("image_fixed", obj);
                     break;
                 }
@@ -531,8 +536,12 @@
             var _oData = {};
             
             _oData['title']  = $("#customize-control-pi_save_theme_options-theme_options-header-title input").val();
+            _oData['sub_title']  = $("#customize-control-pi_save_theme_options-theme_options-header-sub_title input").val();
+            _oData['button_name']  = $("#customize-control-pi_save_theme_options-theme_options-header-button_name input").val();
+            _oData['button_link']  = $("#customize-control-pi_save_theme_options-theme_options-header-button_link input").val();
             _oData['description']  = $("#customize-control-pi_save_theme_options-theme_options-header-description textarea").val();
-            
+            _oData['overlay_color'] = $("#customize-control-pi_save_theme_options-theme_options-header-overlay_color input").val();
+
             switch ( target )
             {
                 case 'youtube_bg':

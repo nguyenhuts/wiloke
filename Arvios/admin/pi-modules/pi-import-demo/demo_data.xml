@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-<!-- generator="WordPress/4.1.1" created="2015-03-14 18:05" -->
+<!-- generator="WordPress/4.1.1" created="2015-03-21 19:25" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>Arvios</title>
 	<link>http://wiloke.net/wordpress/arvios-singleimage</link>
 	<description>Just another Wiloke Sites site</description>
-	<pubDate>Sat, 14 Mar 2015 18:05:47 +0000</pubDate>
+	<pubDate>Sat, 21 Mar 2015 19:25:16 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>http://wiloke.net/wordpress/</wp:base_site_url>
@@ -3803,226 +3803,6 @@
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Home</title>
-		<link>http://wiloke.net/wordpress/arvios-singleimage/2015/03/02/home-2/</link>
-		<pubDate>Mon, 02 Mar 2015 06:20:55 +0000</pubDate>
-		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
-		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?p=10</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>10</wp:post_id>
-		<wp:post_date>2015-03-02 06:20:55</wp:post_date>
-		<wp:post_date_gmt>2015-03-02 06:20:55</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>home-2</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>1</wp:menu_order>
-		<wp:post_type>nav_menu_item</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="nav_menu" nicename="arvios"><![CDATA[Arvios]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object_id</wp:meta_key>
-			<wp:meta_value><![CDATA[10]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
-			<wp:meta_value><![CDATA[0]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_type</wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object</wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_target</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_classes</wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_xfn</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_url</wp:meta_key>
-			<wp:meta_value><![CDATA[#page-top]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>About</title>
-		<link>http://wiloke.net/wordpress/arvios-singleimage/2015/03/02/about/</link>
-		<pubDate>Mon, 02 Mar 2015 06:20:56 +0000</pubDate>
-		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
-		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?p=11</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>11</wp:post_id>
-		<wp:post_date>2015-03-02 06:20:56</wp:post_date>
-		<wp:post_date_gmt>2015-03-02 06:20:56</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>about</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>8</wp:menu_order>
-		<wp:post_type>nav_menu_item</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="nav_menu" nicename="arvios"><![CDATA[Arvios]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_type</wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
-			<wp:meta_value><![CDATA[0]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object_id</wp:meta_key>
-			<wp:meta_value><![CDATA[11]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object</wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_target</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_classes</wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_xfn</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_url</wp:meta_key>
-			<wp:meta_value><![CDATA[#aboutus]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Services</title>
-		<link>http://wiloke.net/wordpress/arvios-singleimage/2015/03/02/services/</link>
-		<pubDate>Mon, 02 Mar 2015 06:20:56 +0000</pubDate>
-		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
-		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?p=12</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>12</wp:post_id>
-		<wp:post_date>2015-03-02 06:20:56</wp:post_date>
-		<wp:post_date_gmt>2015-03-02 06:20:56</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>services</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>9</wp:menu_order>
-		<wp:post_type>nav_menu_item</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="nav_menu" nicename="arvios"><![CDATA[Arvios]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_type</wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
-			<wp:meta_value><![CDATA[0]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object_id</wp:meta_key>
-			<wp:meta_value><![CDATA[12]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object</wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_target</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_classes</wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_xfn</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_url</wp:meta_key>
-			<wp:meta_value><![CDATA[#services]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Team</title>
-		<link>http://wiloke.net/wordpress/arvios-singleimage/2015/03/02/team/</link>
-		<pubDate>Mon, 02 Mar 2015 06:20:56 +0000</pubDate>
-		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
-		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?p=13</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>13</wp:post_id>
-		<wp:post_date>2015-03-02 06:20:56</wp:post_date>
-		<wp:post_date_gmt>2015-03-02 06:20:56</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>team</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>10</wp:menu_order>
-		<wp:post_type>nav_menu_item</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="nav_menu" nicename="arvios"><![CDATA[Arvios]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_type</wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
-			<wp:meta_value><![CDATA[0]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object_id</wp:meta_key>
-			<wp:meta_value><![CDATA[13]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object</wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_target</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_classes</wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_xfn</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_url</wp:meta_key>
-			<wp:meta_value><![CDATA[#team]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
 		<title>17</title>
 		<link>http://wiloke.net/wordpress/arvios-singleimage/porfolio/project-5/17-2/</link>
 		<pubDate>Sat, 14 Mar 2015 15:47:11 +0000</pubDate>
@@ -4519,38 +4299,162 @@
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Skills</title>
-		<link>http://wiloke.net/wordpress/arvios-singleimage/2015/03/02/skills/</link>
-		<pubDate>Mon, 02 Mar 2015 06:20:56 +0000</pubDate>
+		<title>306</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/?attachment_id=321</link>
+		<pubDate>Wed, 18 Mar 2015 05:10:25 +0000</pubDate>
 		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
-		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?p=14</guid>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/wp-content/uploads/sites/6/2015/03/306.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>14</wp:post_id>
-		<wp:post_date>2015-03-02 06:20:56</wp:post_date>
-		<wp:post_date_gmt>2015-03-02 06:20:56</wp:post_date_gmt>
+		<wp:post_id>321</wp:post_id>
+		<wp:post_date>2015-03-18 05:10:25</wp:post_date>
+		<wp:post_date_gmt>2015-03-18 05:10:25</wp:post_date_gmt>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>skills</wp:post_name>
+		<wp:post_name>306</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://wiloke.net/wordpress/arvios-singleimage/wp-content/uploads/sites/6/2015/03/306.jpg</wp:attachment_url>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attached_file</wp:meta_key>
+			<wp:meta_value><![CDATA[2015/03/306.jpg]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:1600;s:6:"height";i:991;s:4:"file";s:15:"2015/03/306.jpg";s:5:"sizes";a:6:{s:9:"thumbnail";a:4:{s:4:"file";s:15:"306-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:15:"306-300x186.jpg";s:5:"width";i:300;s:6:"height";i:186;s:9:"mime-type";s:10:"image/jpeg";}s:5:"large";a:4:{s:4:"file";s:16:"306-1024x634.jpg";s:5:"width";i:1024;s:6:"height";i:634;s:9:"mime-type";s:10:"image/jpeg";}s:11:"arvios-grid";a:4:{s:4:"file";s:15:"306-400x400.jpg";s:5:"width";i:400;s:6:"height";i:400;s:9:"mime-type";s:10:"image/jpeg";}s:16:"arvios-f-masonry";a:4:{s:4:"file";s:15:"306-400x300.jpg";s:5:"width";i:400;s:6:"height";i:300;s:9:"mime-type";s:10:"image/jpeg";}s:16:"arvios-s-masonry";a:4:{s:4:"file";s:15:"306-300x200.jpg";s:5:"width";i:300;s:6:"height";i:200;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:11:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:0;}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>36</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/?attachment_id=322</link>
+		<pubDate>Wed, 18 Mar 2015 05:15:10 +0000</pubDate>
+		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/wp-content/uploads/sites/6/2015/03/361.jpg</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>322</wp:post_id>
+		<wp:post_date>2015-03-18 05:15:10</wp:post_date>
+		<wp:post_date_gmt>2015-03-18 05:15:10</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>36</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://wiloke.net/wordpress/arvios-singleimage/wp-content/uploads/sites/6/2015/03/361.jpg</wp:attachment_url>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attached_file</wp:meta_key>
+			<wp:meta_value><![CDATA[2015/03/361.jpg]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:1600;s:6:"height";i:991;s:4:"file";s:15:"2015/03/361.jpg";s:5:"sizes";a:6:{s:9:"thumbnail";a:4:{s:4:"file";s:15:"361-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:15:"361-300x186.jpg";s:5:"width";i:300;s:6:"height";i:186;s:9:"mime-type";s:10:"image/jpeg";}s:5:"large";a:4:{s:4:"file";s:16:"361-1024x634.jpg";s:5:"width";i:1024;s:6:"height";i:634;s:9:"mime-type";s:10:"image/jpeg";}s:11:"arvios-grid";a:4:{s:4:"file";s:15:"361-400x400.jpg";s:5:"width";i:400;s:6:"height";i:400;s:9:"mime-type";s:10:"image/jpeg";}s:16:"arvios-f-masonry";a:4:{s:4:"file";s:15:"361-400x300.jpg";s:5:"width";i:400;s:6:"height";i:300;s:9:"mime-type";s:10:"image/jpeg";}s:16:"arvios-s-masonry";a:4:{s:4:"file";s:15:"361-300x200.jpg";s:5:"width";i:300;s:6:"height";i:200;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:11:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:0;}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>306dsf</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/?attachment_id=323</link>
+		<pubDate>Wed, 18 Mar 2015 05:49:26 +0000</pubDate>
+		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/wp-content/uploads/sites/6/2015/03/306dsf.jpg</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>323</wp:post_id>
+		<wp:post_date>2015-03-18 05:49:26</wp:post_date>
+		<wp:post_date_gmt>2015-03-18 05:49:26</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>306dsf</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://wiloke.net/wordpress/arvios-singleimage/wp-content/uploads/sites/6/2015/03/306dsf.jpg</wp:attachment_url>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attached_file</wp:meta_key>
+			<wp:meta_value><![CDATA[2015/03/306dsf.jpg]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:1600;s:6:"height";i:991;s:4:"file";s:18:"2015/03/306dsf.jpg";s:5:"sizes";a:6:{s:9:"thumbnail";a:4:{s:4:"file";s:18:"306dsf-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:18:"306dsf-300x186.jpg";s:5:"width";i:300;s:6:"height";i:186;s:9:"mime-type";s:10:"image/jpeg";}s:5:"large";a:4:{s:4:"file";s:19:"306dsf-1024x634.jpg";s:5:"width";i:1024;s:6:"height";i:634;s:9:"mime-type";s:10:"image/jpeg";}s:11:"arvios-grid";a:4:{s:4:"file";s:18:"306dsf-400x400.jpg";s:5:"width";i:400;s:6:"height";i:400;s:9:"mime-type";s:10:"image/jpeg";}s:16:"arvios-f-masonry";a:4:{s:4:"file";s:18:"306dsf-400x300.jpg";s:5:"width";i:400;s:6:"height";i:300;s:9:"mime-type";s:10:"image/jpeg";}s:16:"arvios-s-masonry";a:4:{s:4:"file";s:18:"306dsf-300x200.jpg";s:5:"width";i:300;s:6:"height";i:200;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:11:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:0;}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>234</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/?attachment_id=324</link>
+		<pubDate>Wed, 18 Mar 2015 05:54:33 +0000</pubDate>
+		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/wp-content/uploads/sites/6/2015/03/234.jpg</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>324</wp:post_id>
+		<wp:post_date>2015-03-18 05:54:33</wp:post_date>
+		<wp:post_date_gmt>2015-03-18 05:54:33</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>234</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://wiloke.net/wordpress/arvios-singleimage/wp-content/uploads/sites/6/2015/03/234.jpg</wp:attachment_url>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attached_file</wp:meta_key>
+			<wp:meta_value><![CDATA[2015/03/234.jpg]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:1600;s:6:"height";i:800;s:4:"file";s:15:"2015/03/234.jpg";s:5:"sizes";a:6:{s:9:"thumbnail";a:4:{s:4:"file";s:15:"234-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:15:"234-300x150.jpg";s:5:"width";i:300;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:5:"large";a:4:{s:4:"file";s:16:"234-1024x512.jpg";s:5:"width";i:1024;s:6:"height";i:512;s:9:"mime-type";s:10:"image/jpeg";}s:11:"arvios-grid";a:4:{s:4:"file";s:15:"234-400x400.jpg";s:5:"width";i:400;s:6:"height";i:400;s:9:"mime-type";s:10:"image/jpeg";}s:16:"arvios-f-masonry";a:4:{s:4:"file";s:15:"234-400x300.jpg";s:5:"width";i:400;s:6:"height";i:300;s:9:"mime-type";s:10:"image/jpeg";}s:16:"arvios-s-masonry";a:4:{s:4:"file";s:15:"234-300x200.jpg";s:5:"width";i:300;s:6:"height";i:200;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:11:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:0;}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Home</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/2015/03/02/home-2/</link>
+		<pubDate>Mon, 02 Mar 2015 06:20:55 +0000</pubDate>
+		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?p=10</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>10</wp:post_id>
+		<wp:post_date>2015-03-02 06:20:55</wp:post_date>
+		<wp:post_date_gmt>2015-03-02 06:20:55</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>home-2</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>11</wp:menu_order>
+		<wp:menu_order>1</wp:menu_order>
 		<wp:post_type>nav_menu_item</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
 		<category domain="nav_menu" nicename="arvios"><![CDATA[Arvios]]></category>
 		<wp:postmeta>
-			<wp:meta_key>_menu_item_type</wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+			<wp:meta_key>_menu_item_object_id</wp:meta_key>
+			<wp:meta_value><![CDATA[10]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
 			<wp:meta_value><![CDATA[0]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key>_menu_item_object_id</wp:meta_key>
-			<wp:meta_value><![CDATA[14]]></wp:meta_value>
+			<wp:meta_key>_menu_item_type</wp:meta_key>
+			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_menu_item_object</wp:meta_key>
@@ -4570,7 +4474,172 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_menu_item_url</wp:meta_key>
-			<wp:meta_value><![CDATA[#skills]]></wp:meta_value>
+			<wp:meta_value><![CDATA[#page-top]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>About</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/2015/03/02/about/</link>
+		<pubDate>Mon, 02 Mar 2015 06:20:56 +0000</pubDate>
+		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?p=11</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>11</wp:post_id>
+		<wp:post_date>2015-03-02 06:20:56</wp:post_date>
+		<wp:post_date_gmt>2015-03-02 06:20:56</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>about</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>8</wp:menu_order>
+		<wp:post_type>nav_menu_item</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="nav_menu" nicename="arvios"><![CDATA[Arvios]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_type</wp:meta_key>
+			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_object_id</wp:meta_key>
+			<wp:meta_value><![CDATA[11]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_object</wp:meta_key>
+			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_target</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_classes</wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_xfn</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_url</wp:meta_key>
+			<wp:meta_value><![CDATA[#aboutus]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Services</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/2015/03/02/services/</link>
+		<pubDate>Mon, 02 Mar 2015 06:20:56 +0000</pubDate>
+		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?p=12</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>12</wp:post_id>
+		<wp:post_date>2015-03-02 06:20:56</wp:post_date>
+		<wp:post_date_gmt>2015-03-02 06:20:56</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>services</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>9</wp:menu_order>
+		<wp:post_type>nav_menu_item</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="nav_menu" nicename="arvios"><![CDATA[Arvios]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_type</wp:meta_key>
+			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_object_id</wp:meta_key>
+			<wp:meta_value><![CDATA[12]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_object</wp:meta_key>
+			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_target</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_classes</wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_xfn</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_url</wp:meta_key>
+			<wp:meta_value><![CDATA[#services]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Team</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/2015/03/02/team/</link>
+		<pubDate>Mon, 02 Mar 2015 06:20:56 +0000</pubDate>
+		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?p=13</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>13</wp:post_id>
+		<wp:post_date>2015-03-02 06:20:56</wp:post_date>
+		<wp:post_date_gmt>2015-03-02 06:20:56</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>team</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>10</wp:menu_order>
+		<wp:post_type>nav_menu_item</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="nav_menu" nicename="arvios"><![CDATA[Arvios]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_type</wp:meta_key>
+			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_object_id</wp:meta_key>
+			<wp:meta_value><![CDATA[13]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_object</wp:meta_key>
+			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_target</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_classes</wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_xfn</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_url</wp:meta_key>
+			<wp:meta_value><![CDATA[#team]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -4590,7 +4659,7 @@
 		<wp:post_name>works</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>12</wp:menu_order>
+		<wp:menu_order>11</wp:menu_order>
 		<wp:post_type>nav_menu_item</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
@@ -4629,61 +4698,6 @@
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Clients</title>
-		<link>http://wiloke.net/wordpress/arvios-singleimage/2015/03/02/clients/</link>
-		<pubDate>Mon, 02 Mar 2015 06:20:56 +0000</pubDate>
-		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
-		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?p=16</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>16</wp:post_id>
-		<wp:post_date>2015-03-02 06:20:56</wp:post_date>
-		<wp:post_date_gmt>2015-03-02 06:20:56</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>clients</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>17</wp:menu_order>
-		<wp:post_type>nav_menu_item</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="nav_menu" nicename="arvios"><![CDATA[Arvios]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_type</wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
-			<wp:meta_value><![CDATA[0]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object_id</wp:meta_key>
-			<wp:meta_value><![CDATA[16]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object</wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_target</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_classes</wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_xfn</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_url</wp:meta_key>
-			<wp:meta_value><![CDATA[#clients]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
 		<title>Pricing</title>
 		<link>http://wiloke.net/wordpress/arvios-singleimage/2015/03/02/pricing/</link>
 		<pubDate>Mon, 02 Mar 2015 06:20:56 +0000</pubDate>
@@ -4700,7 +4714,7 @@
 		<wp:post_name>pricing</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>18</wp:menu_order>
+		<wp:menu_order>16</wp:menu_order>
 		<wp:post_type>nav_menu_item</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
@@ -4755,7 +4769,7 @@
 		<wp:post_name>contact-us</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>28</wp:menu_order>
+		<wp:menu_order>26</wp:menu_order>
 		<wp:post_type>nav_menu_item</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
@@ -4810,7 +4824,7 @@
 		<wp:post_name>190</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>13</wp:menu_order>
+		<wp:menu_order>12</wp:menu_order>
 		<wp:post_type>nav_menu_item</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
@@ -4865,7 +4879,7 @@
 		<wp:post_name>191</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>15</wp:menu_order>
+		<wp:menu_order>14</wp:menu_order>
 		<wp:post_type>nav_menu_item</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
@@ -4920,7 +4934,7 @@
 		<wp:post_name>192</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>14</wp:menu_order>
+		<wp:menu_order>13</wp:menu_order>
 		<wp:post_type>nav_menu_item</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
@@ -4975,7 +4989,7 @@
 		<wp:post_name>193</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>16</wp:menu_order>
+		<wp:menu_order>15</wp:menu_order>
 		<wp:post_type>nav_menu_item</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
@@ -5014,6 +5028,413 @@
 		</wp:postmeta>
 	</item>
 	<item>
+		<title>Untitleddfdsf-1</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/?attachment_id=325</link>
+		<pubDate>Wed, 18 Mar 2015 05:57:52 +0000</pubDate>
+		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/wp-content/uploads/sites/6/2015/03/Untitleddfdsf-1.jpg</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>325</wp:post_id>
+		<wp:post_date>2015-03-18 05:57:52</wp:post_date>
+		<wp:post_date_gmt>2015-03-18 05:57:52</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>untitleddfdsf-1</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://wiloke.net/wordpress/arvios-singleimage/wp-content/uploads/sites/6/2015/03/Untitleddfdsf-1.jpg</wp:attachment_url>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attached_file</wp:meta_key>
+			<wp:meta_value><![CDATA[2015/03/Untitleddfdsf-1.jpg]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:1600;s:6:"height";i:800;s:4:"file";s:27:"2015/03/Untitleddfdsf-1.jpg";s:5:"sizes";a:6:{s:9:"thumbnail";a:4:{s:4:"file";s:27:"Untitleddfdsf-1-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:27:"Untitleddfdsf-1-300x150.jpg";s:5:"width";i:300;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:5:"large";a:4:{s:4:"file";s:28:"Untitleddfdsf-1-1024x512.jpg";s:5:"width";i:1024;s:6:"height";i:512;s:9:"mime-type";s:10:"image/jpeg";}s:11:"arvios-grid";a:4:{s:4:"file";s:27:"Untitleddfdsf-1-400x400.jpg";s:5:"width";i:400;s:6:"height";i:400;s:9:"mime-type";s:10:"image/jpeg";}s:16:"arvios-f-masonry";a:4:{s:4:"file";s:27:"Untitleddfdsf-1-400x300.jpg";s:5:"width";i:400;s:6:"height";i:300;s:9:"mime-type";s:10:"image/jpeg";}s:16:"arvios-s-masonry";a:4:{s:4:"file";s:27:"Untitleddfdsf-1-300x200.jpg";s:5:"width";i:300;s:6:"height";i:200;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:11:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:0;}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Untitlefdgfgd-3</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/?attachment_id=326</link>
+		<pubDate>Wed, 18 Mar 2015 08:55:42 +0000</pubDate>
+		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/wp-content/uploads/sites/6/2015/03/Untitlefdgfgd-3.jpg</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>326</wp:post_id>
+		<wp:post_date>2015-03-18 08:55:42</wp:post_date>
+		<wp:post_date_gmt>2015-03-18 08:55:42</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>untitlefdgfgd-3</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://wiloke.net/wordpress/arvios-singleimage/wp-content/uploads/sites/6/2015/03/Untitlefdgfgd-3.jpg</wp:attachment_url>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:1600;s:6:"height";i:845;s:4:"file";s:27:"2015/03/Untitlefdgfgd-3.jpg";s:5:"sizes";a:6:{s:9:"thumbnail";a:4:{s:4:"file";s:27:"Untitlefdgfgd-3-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:27:"Untitlefdgfgd-3-300x158.jpg";s:5:"width";i:300;s:6:"height";i:158;s:9:"mime-type";s:10:"image/jpeg";}s:5:"large";a:4:{s:4:"file";s:28:"Untitlefdgfgd-3-1024x541.jpg";s:5:"width";i:1024;s:6:"height";i:541;s:9:"mime-type";s:10:"image/jpeg";}s:11:"arvios-grid";a:4:{s:4:"file";s:27:"Untitlefdgfgd-3-400x400.jpg";s:5:"width";i:400;s:6:"height";i:400;s:9:"mime-type";s:10:"image/jpeg";}s:16:"arvios-f-masonry";a:4:{s:4:"file";s:27:"Untitlefdgfgd-3-400x300.jpg";s:5:"width";i:400;s:6:"height";i:300;s:9:"mime-type";s:10:"image/jpeg";}s:16:"arvios-s-masonry";a:4:{s:4:"file";s:27:"Untitlefdgfgd-3-300x200.jpg";s:5:"width";i:300;s:6:"height";i:200;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:11:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:0;}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attached_file</wp:meta_key>
+			<wp:meta_value><![CDATA[2015/03/Untitlefdgfgd-3.jpg]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>345</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/?attachment_id=327</link>
+		<pubDate>Wed, 18 Mar 2015 09:21:05 +0000</pubDate>
+		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/wp-content/uploads/sites/6/2015/03/345.jpg</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>327</wp:post_id>
+		<wp:post_date>2015-03-18 09:21:05</wp:post_date>
+		<wp:post_date_gmt>2015-03-18 09:21:05</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>345</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://wiloke.net/wordpress/arvios-singleimage/wp-content/uploads/sites/6/2015/03/345.jpg</wp:attachment_url>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attached_file</wp:meta_key>
+			<wp:meta_value><![CDATA[2015/03/345.jpg]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:1600;s:6:"height";i:1000;s:4:"file";s:15:"2015/03/345.jpg";s:5:"sizes";a:6:{s:9:"thumbnail";a:4:{s:4:"file";s:15:"345-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:15:"345-300x188.jpg";s:5:"width";i:300;s:6:"height";i:188;s:9:"mime-type";s:10:"image/jpeg";}s:5:"large";a:4:{s:4:"file";s:16:"345-1024x640.jpg";s:5:"width";i:1024;s:6:"height";i:640;s:9:"mime-type";s:10:"image/jpeg";}s:11:"arvios-grid";a:4:{s:4:"file";s:15:"345-400x400.jpg";s:5:"width";i:400;s:6:"height";i:400;s:9:"mime-type";s:10:"image/jpeg";}s:16:"arvios-f-masonry";a:4:{s:4:"file";s:15:"345-400x300.jpg";s:5:"width";i:400;s:6:"height";i:300;s:9:"mime-type";s:10:"image/jpeg";}s:16:"arvios-s-masonry";a:4:{s:4:"file";s:15:"345-300x200.jpg";s:5:"width";i:300;s:6:"height";i:200;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:11:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:0;}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>logo-red</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/?attachment_id=328</link>
+		<pubDate>Thu, 19 Mar 2015 02:25:22 +0000</pubDate>
+		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/wp-content/uploads/sites/6/2015/03/logo-red.png</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>328</wp:post_id>
+		<wp:post_date>2015-03-19 02:25:22</wp:post_date>
+		<wp:post_date_gmt>2015-03-19 02:25:22</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>logo-red</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://wiloke.net/wordpress/arvios-singleimage/wp-content/uploads/sites/6/2015/03/logo-red.png</wp:attachment_url>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attached_file</wp:meta_key>
+			<wp:meta_value><![CDATA[2015/03/logo-red.png]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:44;s:6:"height";i:38;s:4:"file";s:20:"2015/03/logo-red.png";s:5:"sizes";a:0:{}s:10:"image_meta";a:11:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:0;}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>logo-red@2x</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/?attachment_id=329</link>
+		<pubDate>Thu, 19 Mar 2015 02:25:30 +0000</pubDate>
+		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/wp-content/uploads/sites/6/2015/03/logo-red@2x.png</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>329</wp:post_id>
+		<wp:post_date>2015-03-19 02:25:30</wp:post_date>
+		<wp:post_date_gmt>2015-03-19 02:25:30</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>logo-red2x</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://wiloke.net/wordpress/arvios-singleimage/wp-content/uploads/sites/6/2015/03/logo-red@2x.png</wp:attachment_url>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attached_file</wp:meta_key>
+			<wp:meta_value><![CDATA[2015/03/logo-red@2x.png]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:88;s:6:"height";i:78;s:4:"file";s:23:"2015/03/logo-red@2x.png";s:5:"sizes";a:0:{}s:10:"image_meta";a:11:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:0;}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>picmbo</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/?attachment_id=330</link>
+		<pubDate>Thu, 19 Mar 2015 03:36:47 +0000</pubDate>
+		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/wp-content/uploads/sites/6/2015/03/picmbo.jpg</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>330</wp:post_id>
+		<wp:post_date>2015-03-19 03:36:47</wp:post_date>
+		<wp:post_date_gmt>2015-03-19 03:36:47</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>picmbo</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://wiloke.net/wordpress/arvios-singleimage/wp-content/uploads/sites/6/2015/03/picmbo.jpg</wp:attachment_url>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attached_file</wp:meta_key>
+			<wp:meta_value><![CDATA[2015/03/picmbo.jpg]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:1600;s:6:"height";i:810;s:4:"file";s:18:"2015/03/picmbo.jpg";s:5:"sizes";a:6:{s:9:"thumbnail";a:4:{s:4:"file";s:18:"picmbo-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:18:"picmbo-300x152.jpg";s:5:"width";i:300;s:6:"height";i:152;s:9:"mime-type";s:10:"image/jpeg";}s:5:"large";a:4:{s:4:"file";s:19:"picmbo-1024x518.jpg";s:5:"width";i:1024;s:6:"height";i:518;s:9:"mime-type";s:10:"image/jpeg";}s:11:"arvios-grid";a:4:{s:4:"file";s:18:"picmbo-400x400.jpg";s:5:"width";i:400;s:6:"height";i:400;s:9:"mime-type";s:10:"image/jpeg";}s:16:"arvios-f-masonry";a:4:{s:4:"file";s:18:"picmbo-400x300.jpg";s:5:"width";i:400;s:6:"height";i:300;s:9:"mime-type";s:10:"image/jpeg";}s:16:"arvios-s-masonry";a:4:{s:4:"file";s:18:"picmbo-300x200.jpg";s:5:"width";i:300;s:6:"height";i:200;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:11:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:0;}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>picjumbsdfo</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/?attachment_id=331</link>
+		<pubDate>Thu, 19 Mar 2015 03:38:53 +0000</pubDate>
+		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/wp-content/uploads/sites/6/2015/03/picjumbsdfo.jpg</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>331</wp:post_id>
+		<wp:post_date>2015-03-19 03:38:53</wp:post_date>
+		<wp:post_date_gmt>2015-03-19 03:38:53</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>picjumbsdfo</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://wiloke.net/wordpress/arvios-singleimage/wp-content/uploads/sites/6/2015/03/picjumbsdfo.jpg</wp:attachment_url>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attached_file</wp:meta_key>
+			<wp:meta_value><![CDATA[2015/03/picjumbsdfo.jpg]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:1600;s:6:"height";i:810;s:4:"file";s:23:"2015/03/picjumbsdfo.jpg";s:5:"sizes";a:6:{s:9:"thumbnail";a:4:{s:4:"file";s:23:"picjumbsdfo-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:23:"picjumbsdfo-300x152.jpg";s:5:"width";i:300;s:6:"height";i:152;s:9:"mime-type";s:10:"image/jpeg";}s:5:"large";a:4:{s:4:"file";s:24:"picjumbsdfo-1024x518.jpg";s:5:"width";i:1024;s:6:"height";i:518;s:9:"mime-type";s:10:"image/jpeg";}s:11:"arvios-grid";a:4:{s:4:"file";s:23:"picjumbsdfo-400x400.jpg";s:5:"width";i:400;s:6:"height";i:400;s:9:"mime-type";s:10:"image/jpeg";}s:16:"arvios-f-masonry";a:4:{s:4:"file";s:23:"picjumbsdfo-400x300.jpg";s:5:"width";i:400;s:6:"height";i:300;s:9:"mime-type";s:10:"image/jpeg";}s:16:"arvios-s-masonry";a:4:{s:4:"file";s:23:"picjumbsdfo-300x200.jpg";s:5:"width";i:300;s:6:"height";i:200;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:11:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:0;}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>1234412</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/?attachment_id=333</link>
+		<pubDate>Sat, 21 Mar 2015 15:22:01 +0000</pubDate>
+		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/wp-content/uploads/sites/6/2015/03/1234412.jpg</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>333</wp:post_id>
+		<wp:post_date>2015-03-21 15:22:01</wp:post_date>
+		<wp:post_date_gmt>2015-03-21 15:22:01</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>1234412</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://wiloke.net/wordpress/arvios-singleimage/wp-content/uploads/sites/6/2015/03/1234412.jpg</wp:attachment_url>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attached_file</wp:meta_key>
+			<wp:meta_value><![CDATA[2015/03/1234412.jpg]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:800;s:6:"height";i:409;s:4:"file";s:19:"2015/03/1234412.jpg";s:5:"sizes";a:5:{s:9:"thumbnail";a:4:{s:4:"file";s:19:"1234412-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:19:"1234412-300x153.jpg";s:5:"width";i:300;s:6:"height";i:153;s:9:"mime-type";s:10:"image/jpeg";}s:11:"arvios-grid";a:4:{s:4:"file";s:19:"1234412-400x400.jpg";s:5:"width";i:400;s:6:"height";i:400;s:9:"mime-type";s:10:"image/jpeg";}s:16:"arvios-f-masonry";a:4:{s:4:"file";s:19:"1234412-400x300.jpg";s:5:"width";i:400;s:6:"height";i:300;s:9:"mime-type";s:10:"image/jpeg";}s:16:"arvios-s-masonry";a:4:{s:4:"file";s:19:"1234412-300x200.jpg";s:5:"width";i:300;s:6:"height";i:200;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:11:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:0;}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>234543</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/?attachment_id=334</link>
+		<pubDate>Sat, 21 Mar 2015 15:22:18 +0000</pubDate>
+		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/wp-content/uploads/sites/6/2015/03/234543.jpg</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>334</wp:post_id>
+		<wp:post_date>2015-03-21 15:22:18</wp:post_date>
+		<wp:post_date_gmt>2015-03-21 15:22:18</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>234543</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>http://wiloke.net/wordpress/arvios-singleimage/wp-content/uploads/sites/6/2015/03/234543.jpg</wp:attachment_url>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attached_file</wp:meta_key>
+			<wp:meta_value><![CDATA[2015/03/234543.jpg]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_attachment_metadata</wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{s:5:"width";i:800;s:6:"height";i:409;s:4:"file";s:18:"2015/03/234543.jpg";s:5:"sizes";a:5:{s:9:"thumbnail";a:4:{s:4:"file";s:18:"234543-150x150.jpg";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:10:"image/jpeg";}s:6:"medium";a:4:{s:4:"file";s:18:"234543-300x153.jpg";s:5:"width";i:300;s:6:"height";i:153;s:9:"mime-type";s:10:"image/jpeg";}s:11:"arvios-grid";a:4:{s:4:"file";s:18:"234543-400x400.jpg";s:5:"width";i:400;s:6:"height";i:400;s:9:"mime-type";s:10:"image/jpeg";}s:16:"arvios-f-masonry";a:4:{s:4:"file";s:18:"234543-400x300.jpg";s:5:"width";i:400;s:6:"height";i:300;s:9:"mime-type";s:10:"image/jpeg";}s:16:"arvios-s-masonry";a:4:{s:4:"file";s:18:"234543-300x200.jpg";s:5:"width";i:300;s:6:"height";i:200;s:9:"mime-type";s:10:"image/jpeg";}}s:10:"image_meta";a:11:{s:8:"aperture";i:0;s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";i:0;s:9:"copyright";s:0:"";s:12:"focal_length";i:0;s:3:"iso";i:0;s:13:"shutter_speed";i:0;s:5:"title";s:0:"";s:11:"orientation";i:0;}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Sample Page</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/sample-page/</link>
+		<pubDate>Mon, 02 Mar 2015 05:57:35 +0000</pubDate>
+		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?page_id=2</guid>
+		<description></description>
+		<content:encoded><![CDATA[This is an example page. It's different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:
+
+<blockquote>Hi there! I'm a bike messenger by day, aspiring actor by night, and this is my blog. I live in Los Angeles, have a great dog named Jack, and I like pi&#241;a coladas. (And gettin' caught in the rain.)</blockquote>
+
+...or something like this:
+
+<blockquote>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</blockquote>
+
+As a new WordPress user, you should go to <a href="http://wiloke.net/wordpress/arvios-singleimage/wp-admin/">your dashboard</a> to delete this page and create new pages for your content. Have fun!]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>2</wp:post_id>
+		<wp:post_date>2015-03-02 05:57:35</wp:post_date>
+		<wp:post_date_gmt>2015-03-02 05:57:35</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>sample-page</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>page</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_wp_page_template</wp:meta_key>
+			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Blog - List</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/blog-list/</link>
+		<pubDate>Mon, 02 Mar 2015 06:12:57 +0000</pubDate>
+		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/blog-list/</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>6</wp:post_id>
+		<wp:post_date>2015-03-02 06:12:57</wp:post_date>
+		<wp:post_date_gmt>2015-03-02 06:12:57</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>blog-list</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>page</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_wp_page_template</wp:meta_key>
+			<wp:meta_value><![CDATA[list-blog.php]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Home</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/</link>
+		<pubDate>Mon, 02 Mar 2015 06:21:45 +0000</pubDate>
+		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?page_id=20</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>20</wp:post_id>
+		<wp:post_date>2015-03-02 06:21:45</wp:post_date>
+		<wp:post_date_gmt>2015-03-02 06:21:45</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>home</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>page</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_post_settings</wp:meta_key>
+			<wp:meta_value><![CDATA[a:4:{s:8:"image_bg";s:115:"http://wiloke.net/wordpress/arvios-singleimage/wp-content/themes/Arvios/admin/pi-assets/images/background-image.gif";s:13:"overlay_color";s:13:"rgba(0,0,0,0)";s:7:"sidebar";s:7:"default";s:11:"post_author";s:7:"default";}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_page_template</wp:meta_key>
+			<wp:meta_value><![CDATA[homepage.php]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Blog - Masonry</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/blog-masonry/</link>
+		<pubDate>Mon, 02 Mar 2015 18:12:36 +0000</pubDate>
+		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?page_id=126</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>126</wp:post_id>
+		<wp:post_date>2015-03-02 18:12:36</wp:post_date>
+		<wp:post_date_gmt>2015-03-02 18:12:36</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>blog-masonry</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>page</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_wp_page_template</wp:meta_key>
+			<wp:meta_value><![CDATA[masonry-layout.php]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_post_settings</wp:meta_key>
+			<wp:meta_value><![CDATA[a:4:{s:8:"image_bg";s:115:"http://wiloke.net/wordpress/arvios-singleimage/wp-content/themes/Arvios/admin/pi-assets/images/background-image.gif";s:13:"overlay_color";s:13:"rgba(0,0,0,0)";s:7:"sidebar";s:9:"r-sidebar";s:11:"post_author";s:7:"default";}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
 		<title>Blog</title>
 		<link>http://wiloke.net/wordpress/arvios-singleimage/2015/03/04/latest-news/</link>
 		<pubDate>Wed, 04 Mar 2015 17:42:19 +0000</pubDate>
@@ -5030,7 +5451,7 @@
 		<wp:post_name>latest-news</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>19</wp:menu_order>
+		<wp:menu_order>17</wp:menu_order>
 		<wp:post_type>nav_menu_item</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
@@ -5085,7 +5506,7 @@
 		<wp:post_name>195</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>22</wp:menu_order>
+		<wp:menu_order>20</wp:menu_order>
 		<wp:post_type>nav_menu_item</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
@@ -5140,7 +5561,7 @@
 		<wp:post_name>196</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>20</wp:menu_order>
+		<wp:menu_order>18</wp:menu_order>
 		<wp:post_type>nav_menu_item</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
@@ -5195,7 +5616,7 @@
 		<wp:post_name>blog-listing</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>24</wp:menu_order>
+		<wp:menu_order>22</wp:menu_order>
 		<wp:post_type>nav_menu_item</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
@@ -5250,7 +5671,7 @@
 		<wp:post_name>257</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>25</wp:menu_order>
+		<wp:menu_order>23</wp:menu_order>
 		<wp:post_type>nav_menu_item</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
@@ -5305,7 +5726,7 @@
 		<wp:post_name>258</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>26</wp:menu_order>
+		<wp:menu_order>24</wp:menu_order>
 		<wp:post_type>nav_menu_item</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
@@ -5360,7 +5781,7 @@
 		<wp:post_name>259</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>27</wp:menu_order>
+		<wp:menu_order>25</wp:menu_order>
 		<wp:post_type>nav_menu_item</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
@@ -5415,7 +5836,7 @@
 		<wp:post_name>261</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>29</wp:menu_order>
+		<wp:menu_order>27</wp:menu_order>
 		<wp:post_type>nav_menu_item</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
@@ -5619,118 +6040,396 @@
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Sample Page</title>
-		<link>http://wiloke.net/wordpress/arvios-singleimage/sample-page/</link>
-		<pubDate>Mon, 02 Mar 2015 05:57:35 +0000</pubDate>
+		<title>Home - Version 4</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/2015/03/08/home-version-4/</link>
+		<pubDate>Sun, 08 Mar 2015 17:56:07 +0000</pubDate>
 		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
-		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?page_id=2</guid>
-		<description></description>
-		<content:encoded><![CDATA[This is an example page. It's different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:
-
-<blockquote>Hi there! I'm a bike messenger by day, aspiring actor by night, and this is my blog. I live in Los Angeles, have a great dog named Jack, and I like pi&#241;a coladas. (And gettin' caught in the rain.)</blockquote>
-
-...or something like this:
-
-<blockquote>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</blockquote>
-
-As a new WordPress user, you should go to <a href="http://wiloke.net/wordpress/arvios-singleimage/wp-admin/">your dashboard</a> to delete this page and create new pages for your content. Have fun!]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>2</wp:post_id>
-		<wp:post_date>2015-03-02 05:57:35</wp:post_date>
-		<wp:post_date_gmt>2015-03-02 05:57:35</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>sample-page</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>page</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key>_wp_page_template</wp:meta_key>
-			<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Blog - List</title>
-		<link>http://wiloke.net/wordpress/arvios-singleimage/blog-list/</link>
-		<pubDate>Mon, 02 Mar 2015 06:12:57 +0000</pubDate>
-		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
-		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/blog-list/</guid>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?p=266</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>6</wp:post_id>
-		<wp:post_date>2015-03-02 06:12:57</wp:post_date>
-		<wp:post_date_gmt>2015-03-02 06:12:57</wp:post_date_gmt>
+		<wp:post_id>266</wp:post_id>
+		<wp:post_date>2015-03-08 17:56:07</wp:post_date>
+		<wp:post_date_gmt>2015-03-08 17:56:07</wp:post_date_gmt>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>blog-list</wp:post_name>
+		<wp:post_name>home-version-4</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>page</wp:post_type>
+		<wp:menu_order>5</wp:menu_order>
+		<wp:post_type>nav_menu_item</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="nav_menu" nicename="arvios"><![CDATA[Arvios]]></category>
 		<wp:postmeta>
-			<wp:meta_key>_wp_page_template</wp:meta_key>
-			<wp:meta_value><![CDATA[list-blog.php]]></wp:meta_value>
+			<wp:meta_key>_menu_item_type</wp:meta_key>
+			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
+			<wp:meta_value><![CDATA[10]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_object_id</wp:meta_key>
+			<wp:meta_value><![CDATA[266]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_object</wp:meta_key>
+			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_target</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_classes</wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_xfn</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_url</wp:meta_key>
+			<wp:meta_value><![CDATA[http://wiloke.net/wordpress/arvios-slider/]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Home</title>
-		<link>http://wiloke.net/wordpress/arvios-singleimage/</link>
-		<pubDate>Mon, 02 Mar 2015 06:21:45 +0000</pubDate>
+		<title>Home - Version 5</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/2015/03/08/home-version-5/</link>
+		<pubDate>Sun, 08 Mar 2015 17:56:07 +0000</pubDate>
 		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
-		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?page_id=20</guid>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?p=267</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>20</wp:post_id>
-		<wp:post_date>2015-03-02 06:21:45</wp:post_date>
-		<wp:post_date_gmt>2015-03-02 06:21:45</wp:post_date_gmt>
+		<wp:post_id>267</wp:post_id>
+		<wp:post_date>2015-03-08 17:56:07</wp:post_date>
+		<wp:post_date_gmt>2015-03-08 17:56:07</wp:post_date_gmt>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>home</wp:post_name>
+		<wp:post_name>home-version-5</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>6</wp:menu_order>
+		<wp:post_type>nav_menu_item</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="nav_menu" nicename="arvios"><![CDATA[Arvios]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_type</wp:meta_key>
+			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
+			<wp:meta_value><![CDATA[10]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_object_id</wp:meta_key>
+			<wp:meta_value><![CDATA[267]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_object</wp:meta_key>
+			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_target</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_classes</wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_xfn</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_url</wp:meta_key>
+			<wp:meta_value><![CDATA[http://wiloke.net/wordpress/arvios-youtube/]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Home - Version 6</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/2015/03/08/home-version-6/</link>
+		<pubDate>Sun, 08 Mar 2015 17:56:07 +0000</pubDate>
+		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?p=268</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>268</wp:post_id>
+		<wp:post_date>2015-03-08 17:56:07</wp:post_date>
+		<wp:post_date_gmt>2015-03-08 17:56:07</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>home-version-6</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>7</wp:menu_order>
+		<wp:post_type>nav_menu_item</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="nav_menu" nicename="arvios"><![CDATA[Arvios]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_type</wp:meta_key>
+			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
+			<wp:meta_value><![CDATA[10]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_object_id</wp:meta_key>
+			<wp:meta_value><![CDATA[268]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_object</wp:meta_key>
+			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_target</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_classes</wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_xfn</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_url</wp:meta_key>
+			<wp:meta_value><![CDATA[http://wiloke.net/wordpress/arvios-home-portfolio/]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Fullwidth Masonry</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/2015/03/14/fullwidth-masonry/</link>
+		<pubDate>Sat, 14 Mar 2015 14:22:13 +0000</pubDate>
+		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?p=290</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>290</wp:post_id>
+		<wp:post_date>2015-03-14 14:22:13</wp:post_date>
+		<wp:post_date_gmt>2015-03-14 14:22:13</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>fullwidth-masonry</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>19</wp:menu_order>
+		<wp:post_type>nav_menu_item</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="nav_menu" nicename="arvios"><![CDATA[Arvios]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_type</wp:meta_key>
+			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
+			<wp:meta_value><![CDATA[194]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_object_id</wp:meta_key>
+			<wp:meta_value><![CDATA[290]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_object</wp:meta_key>
+			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_target</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_classes</wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_xfn</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_url</wp:meta_key>
+			<wp:meta_value><![CDATA[http://wiloke.net/wordpress/arvios-singleimage/blog-masonry-full-width/]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Fullwidth Grid</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/2015/03/14/fullwidth-grid/</link>
+		<pubDate>Sat, 14 Mar 2015 14:22:13 +0000</pubDate>
+		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?p=291</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>291</wp:post_id>
+		<wp:post_date>2015-03-14 14:22:13</wp:post_date>
+		<wp:post_date_gmt>2015-03-14 14:22:13</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>fullwidth-grid</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>21</wp:menu_order>
+		<wp:post_type>nav_menu_item</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="nav_menu" nicename="arvios"><![CDATA[Arvios]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_type</wp:meta_key>
+			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
+			<wp:meta_value><![CDATA[194]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_object_id</wp:meta_key>
+			<wp:meta_value><![CDATA[291]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_object</wp:meta_key>
+			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_target</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_classes</wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_xfn</wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_menu_item_url</wp:meta_key>
+			<wp:meta_value><![CDATA[http://wiloke.net/wordpress/arvios-singleimage/blog-fullwidth-grid/]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Fun facts</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/fun-facts/fun-facts/</link>
+		<pubDate>Mon, 02 Mar 2015 06:41:26 +0000</pubDate>
+		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?post_type=pi_funfacts&#038;p=40</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>40</wp:post_id>
+		<wp:post_date>2015-03-02 06:41:26</wp:post_date>
+		<wp:post_date_gmt>2015-03-02 06:41:26</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>fun-facts</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>page</wp:post_type>
+		<wp:post_type>pi_funfacts</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
 		<wp:postmeta>
-			<wp:meta_key>_post_settings</wp:meta_key>
-			<wp:meta_value><![CDATA[a:4:{s:8:"image_bg";s:115:"http://wiloke.net/wordpress/arvios-singleimage/wp-content/themes/Arvios/admin/pi-assets/images/background-image.gif";s:13:"overlay_color";s:13:"rgba(0,0,0,0)";s:7:"sidebar";s:7:"default";s:11:"post_author";s:7:"default";}]]></wp:meta_value>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key>_wp_page_template</wp:meta_key>
-			<wp:meta_value><![CDATA[homepage.php]]></wp:meta_value>
+			<wp:meta_key>_pi_funfacts</wp:meta_key>
+			<wp:meta_value><![CDATA[a:4:{i:0;a:3:{s:4:"icon";s:12:"fa fa-trophy";s:5:"total";s:3:"300";s:4:"name";s:7:"Awwards";}i:1;a:3:{s:4:"icon";s:12:"fa fa-coffee";s:5:"total";s:3:"950";s:4:"name";s:10:"Coffe Cups";}i:2;a:3:{s:4:"icon";s:15:"fa fa-pagelines";s:5:"total";s:4:"1120";s:4:"name";s:13:"Client Worked";}i:3;a:3:{s:4:"icon";s:12:"fa fa-rocket";s:5:"total";s:4:"1850";s:4:"name";s:17:"Project Completed";}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Our Team</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/our-team/frank-miller/</link>
+		<pubDate>Mon, 02 Mar 2015 06:43:05 +0000</pubDate>
+		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?post_type=pi_ourteam&#038;p=41</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>41</wp:post_id>
+		<wp:post_date>2015-03-02 06:43:05</wp:post_date>
+		<wp:post_date_gmt>2015-03-02 06:43:05</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>frank-miller</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>pi_ourteam</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_pi_ourteam</wp:meta_key>
+			<wp:meta_value><![CDATA[a:5:{i:0;a:5:{s:5:"photo";s:3:"279";s:4:"name";s:12:"Frank Miller";s:8:"position";s:7:"Founder";s:11:"social_link";a:8:{s:8:"facebook";s:1:"#";s:7:"twitter";s:1:"#";s:10:"googleplus";s:1:"#";s:8:"linkedin";s:1:"#";s:8:"dribbble";s:0:"";s:7:"youtube";s:0:"";s:5:"vimeo";s:0:"";s:7:"behance";s:0:"";}s:11:"social_icon";a:8:{s:8:"facebook";s:14:"fa fa-facebook";s:7:"twitter";s:13:"fa fa-twitter";s:10:"googleplus";s:17:"fa fa-google-plus";s:8:"linkedin";s:14:"fa fa-linkedin";s:8:"dribbble";s:14:"fa fa-dribbble";s:7:"youtube";s:13:"fa fa-youtube";s:5:"vimeo";s:18:"fa fa-vimeo-square";s:7:"behance";s:13:"fa fa-behance";}}i:2573814;a:5:{s:5:"photo";s:3:"281";s:4:"name";s:12:"Steven Typer";s:8:"position";s:10:"Programmer";s:11:"social_link";a:8:{s:8:"facebook";s:0:"";s:7:"twitter";s:1:"#";s:10:"googleplus";s:1:"#";s:8:"linkedin";s:1:"#";s:8:"dribbble";s:0:"";s:7:"youtube";s:1:"#";s:5:"vimeo";s:0:"";s:7:"behance";s:0:"";}s:11:"social_icon";a:8:{s:8:"facebook";s:14:"fa fa-facebook";s:7:"twitter";s:13:"fa fa-twitter";s:10:"googleplus";s:17:"fa fa-google-plus";s:8:"linkedin";s:14:"fa fa-linkedin";s:8:"dribbble";s:14:"fa fa-dribbble";s:7:"youtube";s:13:"fa fa-youtube";s:5:"vimeo";s:18:"fa fa-vimeo-square";s:7:"behance";s:13:"fa fa-behance";}}i:7152352;a:5:{s:5:"photo";s:3:"280";s:4:"name";s:15:"Barbara Walters";s:8:"position";s:13:"Wordpress Dev";s:11:"social_link";a:8:{s:8:"facebook";s:0:"";s:7:"twitter";s:0:"";s:10:"googleplus";s:1:"#";s:8:"linkedin";s:0:"";s:8:"dribbble";s:1:"#";s:7:"youtube";s:1:"#";s:5:"vimeo";s:0:"";s:7:"behance";s:1:"#";}s:11:"social_icon";a:8:{s:8:"facebook";s:14:"fa fa-facebook";s:7:"twitter";s:13:"fa fa-twitter";s:10:"googleplus";s:17:"fa fa-google-plus";s:8:"linkedin";s:14:"fa fa-linkedin";s:8:"dribbble";s:14:"fa fa-dribbble";s:7:"youtube";s:13:"fa fa-youtube";s:5:"vimeo";s:18:"fa fa-vimeo-square";s:7:"behance";s:13:"fa fa-behance";}}i:739997;a:5:{s:5:"photo";s:3:"278";s:4:"name";s:11:"Mark Harmon";s:8:"position";s:8:"Designer";s:11:"social_link";a:8:{s:8:"facebook";s:0:"";s:7:"twitter";s:1:"#";s:10:"googleplus";s:0:"";s:8:"linkedin";s:0:"";s:8:"dribbble";s:1:"#";s:7:"youtube";s:0:"";s:5:"vimeo";s:1:"#";s:7:"behance";s:1:"#";}s:11:"social_icon";a:8:{s:8:"facebook";s:14:"fa fa-facebook";s:7:"twitter";s:13:"fa fa-twitter";s:10:"googleplus";s:17:"fa fa-google-plus";s:8:"linkedin";s:14:"fa fa-linkedin";s:8:"dribbble";s:14:"fa fa-dribbble";s:7:"youtube";s:13:"fa fa-youtube";s:5:"vimeo";s:18:"fa fa-vimeo-square";s:7:"behance";s:13:"fa fa-behance";}}i:664285;a:5:{s:5:"photo";s:3:"283";s:4:"name";s:13:"Steven Wiloke";s:8:"position";s:7:"Seo Exp";s:11:"social_link";a:8:{s:8:"facebook";s:0:"";s:7:"twitter";s:1:"#";s:10:"googleplus";s:1:"#";s:8:"linkedin";s:0:"";s:8:"dribbble";s:1:"#";s:7:"youtube";s:0:"";s:5:"vimeo";s:0:"";s:7:"behance";s:1:"#";}s:11:"social_icon";a:8:{s:8:"facebook";s:14:"fa fa-facebook";s:7:"twitter";s:13:"fa fa-twitter";s:10:"googleplus";s:17:"fa fa-google-plus";s:8:"linkedin";s:14:"fa fa-linkedin";s:8:"dribbble";s:14:"fa fa-dribbble";s:7:"youtube";s:13:"fa fa-youtube";s:5:"vimeo";s:18:"fa fa-vimeo-square";s:7:"behance";s:13:"fa fa-behance";}}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Moutain Drift</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/porfolio/project-1/</link>
+		<pubDate>Mon, 02 Mar 2015 06:51:51 +0000</pubDate>
+		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?post_type=pi_portfolio&#038;p=49</guid>
+		<description></description>
+		<content:encoded><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>49</wp:post_id>
+		<wp:post_date>2015-03-02 06:51:51</wp:post_date>
+		<wp:post_date_gmt>2015-03-02 06:51:51</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>project-1</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>pi_portfolio</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="portfolio_skill" nicename="arvios"><![CDATA[Arvios]]></category>
+		<category domain="pi_portfolio_cats" nicename="design"><![CDATA[Web Design]]></category>
+		<category domain="portfolio_skill" nicename="xpro"><![CDATA[Xpro]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_thumbnail_id</wp:meta_key>
+			<wp:meta_value><![CDATA[303]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_edit_last</wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_pi_portfolio</wp:meta_key>
+			<wp:meta_value><![CDATA[a:3:{s:10:"media_type";s:5:"video";s:10:"video_link";s:43:"https://www.youtube.com/watch?v=lrF814OnFQ4";s:8:"image_id";s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
 	</item>
 	<item>
-		<title>Blog - Masonry</title>
-		<link>http://wiloke.net/wordpress/arvios-singleimage/blog-masonry/</link>
-		<pubDate>Mon, 02 Mar 2015 18:12:36 +0000</pubDate>
+		<title>Our Clients</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/our-clients/our-clients/</link>
+		<pubDate>Mon, 02 Mar 2015 14:31:06 +0000</pubDate>
 		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
-		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?page_id=126</guid>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?post_type=pi_ourclients&#038;p=61</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>126</wp:post_id>
-		<wp:post_date>2015-03-02 18:12:36</wp:post_date>
-		<wp:post_date_gmt>2015-03-02 18:12:36</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>blog-masonry</wp:post_name>
+		<wp:post_id>61</wp:post_id>
+		<wp:post_date>2015-03-02 14:31:06</wp:post_date>
+		<wp:post_date_gmt>2015-03-02 14:31:06</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>our-clients</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>page</wp:post_type>
+		<wp:post_type>pi_ourclients</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
 		<wp:postmeta>
@@ -5738,12 +6437,119 @@ As a new WordPress user, you should go to <a href="http://wiloke.net/wordpress/a
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key>_wp_page_template</wp:meta_key>
-			<wp:meta_value><![CDATA[masonry-layout.php]]></wp:meta_value>
+			<wp:meta_key>_pi_ourclients</wp:meta_key>
+			<wp:meta_value><![CDATA[a:4:{i:0;a:3:{s:5:"photo";s:3:"206";s:6:"client";s:6:"Chance";s:4:"link";s:1:"#";}i:5427142;a:3:{s:5:"photo";s:3:"205";s:6:"client";s:6:"Cercle";s:4:"link";s:1:"#";}i:596170;a:3:{s:5:"photo";s:3:"207";s:6:"client";s:8:"Choleric";s:4:"link";s:1:"#";}i:8495720;a:3:{s:5:"photo";s:3:"204";s:6:"client";s:5:"Rider";s:4:"link";s:1:"#";}}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>HayMaker</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/porfolio/project-2/</link>
+		<pubDate>Mon, 02 Mar 2015 15:20:12 +0000</pubDate>
+		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?post_type=pi_portfolio&#038;p=78</guid>
+		<description></description>
+		<content:encoded><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>78</wp:post_id>
+		<wp:post_date>2015-03-02 15:20:12</wp:post_date>
+		<wp:post_date_gmt>2015-03-02 15:20:12</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>project-2</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>pi_portfolio</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="portfolio_skill" nicename="drupal"><![CDATA[Drupal]]></category>
+		<category domain="pi_portfolio_cats" nicename="print"><![CDATA[PRINT]]></category>
+		<category domain="portfolio_skill" nicename="wordpress"><![CDATA[Wordpress]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_thumbnail_id</wp:meta_key>
+			<wp:meta_value><![CDATA[299]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key>_post_settings</wp:meta_key>
-			<wp:meta_value><![CDATA[a:4:{s:8:"image_bg";s:115:"http://wiloke.net/wordpress/arvios-singleimage/wp-content/themes/Arvios/admin/pi-assets/images/background-image.gif";s:13:"overlay_color";s:13:"rgba(0,0,0,0)";s:7:"sidebar";s:9:"r-sidebar";s:11:"post_author";s:7:"default";}]]></wp:meta_value>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_pi_portfolio</wp:meta_key>
+			<wp:meta_value><![CDATA[a:3:{s:10:"media_type";s:7:"gallery";s:10:"video_link";s:0:"";s:8:"image_id";s:7:"112,111";}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Be My Gues</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/porfolio/project-3/</link>
+		<pubDate>Mon, 02 Mar 2015 15:22:12 +0000</pubDate>
+		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?post_type=pi_portfolio&#038;p=79</guid>
+		<description></description>
+		<content:encoded><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>79</wp:post_id>
+		<wp:post_date>2015-03-02 15:22:12</wp:post_date>
+		<wp:post_date_gmt>2015-03-02 15:22:12</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>project-3</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>pi_portfolio</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="portfolio_skill" nicename="apple"><![CDATA[Apple]]></category>
+		<category domain="pi_portfolio_cats" nicename="mobile-app"><![CDATA[MOBILE APP]]></category>
+		<category domain="portfolio_skill" nicename="samsung"><![CDATA[Samsung]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_thumbnail_id</wp:meta_key>
+			<wp:meta_value><![CDATA[57]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_pi_portfolio</wp:meta_key>
+			<wp:meta_value><![CDATA[a:3:{s:10:"media_type";s:7:"gallery";s:10:"video_link";s:0:"";s:8:"image_id";s:7:"148,147";}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>OWNAGE</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/porfolio/project-4/</link>
+		<pubDate>Mon, 02 Mar 2015 15:23:53 +0000</pubDate>
+		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?post_type=pi_portfolio&#038;p=80</guid>
+		<description></description>
+		<content:encoded><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>80</wp:post_id>
+		<wp:post_date>2015-03-02 15:23:53</wp:post_date>
+		<wp:post_date_gmt>2015-03-02 15:23:53</wp:post_date_gmt>
+		<wp:comment_status>closed</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>project-4</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>pi_portfolio</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="portfolio_skill" nicename="folix"><![CDATA[Folix]]></category>
+		<category domain="pi_portfolio_cats" nicename="icons"><![CDATA[ICONS]]></category>
+		<category domain="portfolio_skill" nicename="xpro"><![CDATA[Xpro]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_thumbnail_id</wp:meta_key>
+			<wp:meta_value><![CDATA[306]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_pi_portfolio</wp:meta_key>
+			<wp:meta_value><![CDATA[a:3:{s:10:"media_type";s:7:"gallery";s:10:"video_link";s:0:"";s:8:"image_id";s:3:"107";}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -6124,171 +6930,6 @@ As a new WordPress user, you should go to <a href="http://wiloke.net/wordpress/a
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Home - Version 4</title>
-		<link>http://wiloke.net/wordpress/arvios-singleimage/2015/03/08/home-version-4/</link>
-		<pubDate>Sun, 08 Mar 2015 17:56:07 +0000</pubDate>
-		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
-		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?p=266</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>266</wp:post_id>
-		<wp:post_date>2015-03-08 17:56:07</wp:post_date>
-		<wp:post_date_gmt>2015-03-08 17:56:07</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>home-version-4</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>5</wp:menu_order>
-		<wp:post_type>nav_menu_item</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="nav_menu" nicename="arvios"><![CDATA[Arvios]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_type</wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
-			<wp:meta_value><![CDATA[10]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object_id</wp:meta_key>
-			<wp:meta_value><![CDATA[266]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object</wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_target</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_classes</wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_xfn</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_url</wp:meta_key>
-			<wp:meta_value><![CDATA[http://wiloke.net/wordpress/arvios-slider/]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Home - Version 5</title>
-		<link>http://wiloke.net/wordpress/arvios-singleimage/2015/03/08/home-version-5/</link>
-		<pubDate>Sun, 08 Mar 2015 17:56:07 +0000</pubDate>
-		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
-		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?p=267</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>267</wp:post_id>
-		<wp:post_date>2015-03-08 17:56:07</wp:post_date>
-		<wp:post_date_gmt>2015-03-08 17:56:07</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>home-version-5</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>6</wp:menu_order>
-		<wp:post_type>nav_menu_item</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="nav_menu" nicename="arvios"><![CDATA[Arvios]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_type</wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
-			<wp:meta_value><![CDATA[10]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object_id</wp:meta_key>
-			<wp:meta_value><![CDATA[267]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object</wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_target</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_classes</wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_xfn</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_url</wp:meta_key>
-			<wp:meta_value><![CDATA[http://wiloke.net/wordpress/arvios-youtube/]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Home - Version 6</title>
-		<link>http://wiloke.net/wordpress/arvios-singleimage/2015/03/08/home-version-6/</link>
-		<pubDate>Sun, 08 Mar 2015 17:56:07 +0000</pubDate>
-		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
-		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?p=268</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>268</wp:post_id>
-		<wp:post_date>2015-03-08 17:56:07</wp:post_date>
-		<wp:post_date_gmt>2015-03-08 17:56:07</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>home-version-6</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>7</wp:menu_order>
-		<wp:post_type>nav_menu_item</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="nav_menu" nicename="arvios"><![CDATA[Arvios]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_type</wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
-			<wp:meta_value><![CDATA[10]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object_id</wp:meta_key>
-			<wp:meta_value><![CDATA[268]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object</wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_target</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_classes</wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_xfn</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_url</wp:meta_key>
-			<wp:meta_value><![CDATA[http://wiloke.net/wordpress/arvios-home-portfolio/]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
 		<title>Blog -  Fullwidth Masonry</title>
 		<link>http://wiloke.net/wordpress/arvios-singleimage/blog-masonry-full-width/</link>
 		<pubDate>Sat, 14 Mar 2015 14:16:53 +0000</pubDate>
@@ -6323,130 +6964,54 @@ As a new WordPress user, you should go to <a href="http://wiloke.net/wordpress/a
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Fullwidth Masonry</title>
-		<link>http://wiloke.net/wordpress/arvios-singleimage/2015/03/14/fullwidth-masonry/</link>
-		<pubDate>Sat, 14 Mar 2015 14:22:13 +0000</pubDate>
+		<title>Blog - Fullwidth Grid</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/blog-fullwidth-grid/</link>
+		<pubDate>Sat, 14 Mar 2015 14:18:35 +0000</pubDate>
 		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
-		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?p=290</guid>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?page_id=288</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>290</wp:post_id>
-		<wp:post_date>2015-03-14 14:22:13</wp:post_date>
-		<wp:post_date_gmt>2015-03-14 14:22:13</wp:post_date_gmt>
+		<wp:post_id>288</wp:post_id>
+		<wp:post_date>2015-03-14 14:18:35</wp:post_date>
+		<wp:post_date_gmt>2015-03-14 14:18:35</wp:post_date_gmt>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>fullwidth-masonry</wp:post_name>
+		<wp:post_name>blog-fullwidth-grid</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>21</wp:menu_order>
-		<wp:post_type>nav_menu_item</wp:post_type>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>page</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="nav_menu" nicename="arvios"><![CDATA[Arvios]]></category>
 		<wp:postmeta>
-			<wp:meta_key>_menu_item_type</wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
-			<wp:meta_value><![CDATA[194]]></wp:meta_value>
+			<wp:meta_key>_wp_page_template</wp:meta_key>
+			<wp:meta_value><![CDATA[grid-blog.php]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key>_menu_item_object_id</wp:meta_key>
-			<wp:meta_value><![CDATA[290]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object</wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_target</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_classes</wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_xfn</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_url</wp:meta_key>
-			<wp:meta_value><![CDATA[http://wiloke.net/wordpress/arvios-singleimage/blog-masonry-full-width/]]></wp:meta_value>
+			<wp:meta_key>_post_settings</wp:meta_key>
+			<wp:meta_value><![CDATA[a:6:{s:8:"image_bg";s:115:"http://wiloke.net/wordpress/arvios-singleimage/wp-content/themes/Arvios/admin/pi-assets/images/background-image.gif";s:13:"overlay_color";s:13:"rgba(0,0,0,0)";s:7:"sidebar";s:10:"no-sidebar";s:11:"post_author";s:7:"default";s:23:"portfolio_item_per_page";s:1:"8";s:15:"portfolio_style";s:6:"style1";}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Fullwidth Grid</title>
-		<link>http://wiloke.net/wordpress/arvios-singleimage/2015/03/14/fullwidth-grid/</link>
-		<pubDate>Sat, 14 Mar 2015 14:22:13 +0000</pubDate>
+		<title>About Us</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/about-us/332-2/</link>
+		<pubDate>Sat, 21 Mar 2015 14:39:56 +0000</pubDate>
 		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
-		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?p=291</guid>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?post_type=pi_aboutus&#038;p=332</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>291</wp:post_id>
-		<wp:post_date>2015-03-14 14:22:13</wp:post_date>
-		<wp:post_date_gmt>2015-03-14 14:22:13</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>fullwidth-grid</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>23</wp:menu_order>
-		<wp:post_type>nav_menu_item</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="nav_menu" nicename="arvios"><![CDATA[Arvios]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_type</wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_menu_item_parent</wp:meta_key>
-			<wp:meta_value><![CDATA[194]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object_id</wp:meta_key>
-			<wp:meta_value><![CDATA[291]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_object</wp:meta_key>
-			<wp:meta_value><![CDATA[custom]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_target</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_classes</wp:meta_key>
-			<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_xfn</wp:meta_key>
-			<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_menu_item_url</wp:meta_key>
-			<wp:meta_value><![CDATA[http://wiloke.net/wordpress/arvios-singleimage/blog-fullwidth-grid/]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>About us</title>
-		<link>http://wiloke.net/wordpress/arvios-singleimage/about-us/about-us/</link>
-		<pubDate>Mon, 02 Mar 2015 06:29:44 +0000</pubDate>
-		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
-		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?post_type=pi_aboutus&#038;p=34</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>34</wp:post_id>
-		<wp:post_date>2015-03-02 06:29:44</wp:post_date>
-		<wp:post_date_gmt>2015-03-02 06:29:44</wp:post_date_gmt>
+		<wp:post_id>332</wp:post_id>
+		<wp:post_date>2015-03-21 14:39:56</wp:post_date>
+		<wp:post_date_gmt>2015-03-21 14:39:56</wp:post_date_gmt>
 		<wp:comment_status>closed</wp:comment_status>
 		<wp:ping_status>closed</wp:ping_status>
-		<wp:post_name>about-us</wp:post_name>
+		<wp:post_name>332-2</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
@@ -6459,30 +7024,28 @@ As a new WordPress user, you should go to <a href="http://wiloke.net/wordpress/a
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_pi_aboutus</wp:meta_key>
-			<wp:meta_value><![CDATA[a:3:{s:5:"photo";s:3:"317";s:5:"title";s:12:"What We Do ?";s:5:"intro";s:502:"<p>Orem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus adipiscing eget augue at tristique. Aliquam sit amet sodales dui, eget blandit metus. Nam fermentum purus eu est cursus tincidunt. Proin ut justo lorem. Mauris luctus aliquet nunc quis consectetur.</p>
-<p>Mauris luctus aliquet nunc quis consectetur. Curabitur elit massa, consequat vel velit sit amet, scelerisque hendrerit mi.</p>
-<p>[pi_wiloke_button button_name='Our Team' contextual='h-btn' size='btn-default' link='#team']</p>";}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:2:{i:0;a:5:{s:5:"photo";s:3:"333";s:5:"title";s:12:"Who We Are ?";s:5:"intro";s:389:"Etiam massa neque, faucibus ut ornare a, bibendum non nibh. Vivamus turpis dui, rhoncus id euismod at, eleifend sit amet urna. Praesent nec posuere nibh. Sed suscipit odio vitae sapien malesuada, eget aliquam odio finibus. Sed nibh sem, interdum quis odio ac, commodo sollicitudin erat. Suspendisse imperdiet est nec porta gravida. Sed non maximus diam. Integer blandit ac erat id laoreet.";s:6:"button";s:0:"";s:4:"link";s:0:"";}i:6704806;a:5:{s:5:"photo";s:3:"334";s:5:"title";s:12:"WHAT WE DO ?";s:5:"intro";s:397:"Aenean quis mauris at ipsum tincidunt dictum. Praesent id iaculis leo, in cursus sem. Vivamus bibendum nec ligula sit amet sodales. Sed et faucibus velit. Nam ornare non ante eu tempus. Morbi et odio at lacus pellentesque posuere vitae vel sem. Quisque vitae dui nisi. Sed elementum viverra aliquam. Fusce id est rhoncus, tincidunt tortor nec, molestie dui. Integer dignissim a tortor nec lacinia.";s:6:"button";s:0:"";s:4:"link";s:0:"";}}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Fun facts</title>
-		<link>http://wiloke.net/wordpress/arvios-singleimage/fun-facts/fun-facts/</link>
-		<pubDate>Mon, 02 Mar 2015 06:41:26 +0000</pubDate>
+		<title>Our Services</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/services/38-2/</link>
+		<pubDate>Mon, 02 Mar 2015 06:37:34 +0000</pubDate>
 		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
-		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?post_type=pi_funfacts&#038;p=40</guid>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?post_type=pi_services&#038;p=38</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>40</wp:post_id>
-		<wp:post_date>2015-03-02 06:41:26</wp:post_date>
-		<wp:post_date_gmt>2015-03-02 06:41:26</wp:post_date_gmt>
+		<wp:post_id>38</wp:post_id>
+		<wp:post_date>2015-03-02 06:37:34</wp:post_date>
+		<wp:post_date_gmt>2015-03-02 06:37:34</wp:post_date_gmt>
 		<wp:comment_status>closed</wp:comment_status>
 		<wp:ping_status>closed</wp:ping_status>
-		<wp:post_name>fun-facts</wp:post_name>
+		<wp:post_name>38-2</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>pi_funfacts</wp:post_type>
+		<wp:post_type>pi_services</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
 		<wp:postmeta>
@@ -6490,29 +7053,29 @@ As a new WordPress user, you should go to <a href="http://wiloke.net/wordpress/a
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key>_pi_funfacts</wp:meta_key>
-			<wp:meta_value><![CDATA[a:4:{i:0;a:3:{s:4:"icon";s:12:"fa fa-trophy";s:5:"total";s:3:"300";s:4:"name";s:7:"Awwards";}i:1;a:3:{s:4:"icon";s:12:"fa fa-coffee";s:5:"total";s:3:"950";s:4:"name";s:10:"Coffe Cups";}i:2;a:3:{s:4:"icon";s:15:"fa fa-pagelines";s:5:"total";s:4:"1120";s:4:"name";s:19:"Client Worked Whith";}i:3;a:3:{s:4:"icon";s:12:"fa fa-rocket";s:5:"total";s:4:"1850";s:4:"name";s:17:"Project Completed";}}]]></wp:meta_value>
+			<wp:meta_key>_pi_services</wp:meta_key>
+			<wp:meta_value><![CDATA[a:9:{i:0;a:3:{s:4:"icon";s:13:"fa fa-heart-o";s:7:"service";s:17:"500+ Font awesome";s:11:"small_intro";s:77:"Curabitur elit massa, consequat vel velit sit amet, scelerisque hendrerit mi.";}i:1;a:3:{s:4:"icon";s:13:"fa fa-desktop";s:7:"service";s:15:"100% RESPONSIVE";s:11:"small_intro";s:90:"Aliquam eu porta lacus. Nullam eros sapien, hendrerit quis congue nec, luctus vitae dolor.";}i:2;a:3:{s:4:"icon";s:13:"fa fa-lemon-o";s:7:"service";s:14:"ULIMITED COLOR";s:11:"small_intro";s:77:"Curabitur elit massa, consequat vel velit sit amet, scelerisque hendrerit mi.";}i:3;a:3:{s:4:"icon";s:10:"fa fa-code";s:7:"service";s:9:"CUSTOMIZE";s:11:"small_intro";s:80:"Fusce arcu mauris, fermentum fringilla lacus scelerisque, gravida imperdiet sem.";}i:4;a:3:{s:4:"icon";s:10:"fa fa-edit";s:7:"service";s:4:"WPML";s:11:"small_intro";s:46:"Aliquam a ante sit amet ipsum cursus molestie.";}i:5;a:3:{s:4:"icon";s:11:"fa fa-print";s:7:"service";s:11:"PSD INCLUDE";s:11:"small_intro";s:54:"Maecenas sed mauris faucibus nibh fermentum elementum.";}i:6;a:3:{s:4:"icon";s:17:"fa fa-thumbs-o-up";s:7:"service";s:13:"3+ BLOG STYLE";s:11:"small_intro";s:75:"Sed condimentum porta massa, sit amet porta sem. Lorem ipsum dolor sit amet";}i:7;a:3:{s:4:"icon";s:19:"fa fa-external-link";s:7:"service";s:18:"3+ Portfolio style";s:11:"small_intro";s:57:"Quisque vitae sapien erat. Cras augue ipsum, cursus vitae";}i:8;a:3:{s:4:"icon";s:13:"fa fa-refresh";s:7:"service";s:9:"SHOrtcode";s:11:"small_intro";s:55:"Orem ipsum dolor sit amet, consectetur adipiscing elit.";}}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Our Team</title>
-		<link>http://wiloke.net/wordpress/arvios-singleimage/our-team/frank-miller/</link>
-		<pubDate>Mon, 02 Mar 2015 06:43:05 +0000</pubDate>
+		<title>Skills</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/skill/skills/</link>
+		<pubDate>Mon, 02 Mar 2015 06:47:03 +0000</pubDate>
 		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
-		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?post_type=pi_ourteam&#038;p=41</guid>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?post_type=pi_skill&#038;p=47</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>41</wp:post_id>
-		<wp:post_date>2015-03-02 06:43:05</wp:post_date>
-		<wp:post_date_gmt>2015-03-02 06:43:05</wp:post_date_gmt>
+		<wp:post_id>47</wp:post_id>
+		<wp:post_date>2015-03-02 06:47:03</wp:post_date>
+		<wp:post_date_gmt>2015-03-02 06:47:03</wp:post_date_gmt>
 		<wp:comment_status>closed</wp:comment_status>
 		<wp:ping_status>closed</wp:ping_status>
-		<wp:post_name>frank-miller</wp:post_name>
+		<wp:post_name>skills</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>pi_ourteam</wp:post_type>
+		<wp:post_type>pi_skill</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
 		<wp:postmeta>
@@ -6520,66 +7083,29 @@ As a new WordPress user, you should go to <a href="http://wiloke.net/wordpress/a
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key>_pi_ourteam</wp:meta_key>
-			<wp:meta_value><![CDATA[a:5:{i:0;a:5:{s:5:"photo";s:3:"279";s:4:"name";s:12:"Frank Miller";s:8:"position";s:7:"Founder";s:11:"social_link";a:8:{s:8:"facebook";s:1:"#";s:7:"twitter";s:1:"#";s:10:"googleplus";s:1:"#";s:8:"linkedin";s:1:"#";s:8:"dribbble";s:0:"";s:7:"youtube";s:0:"";s:5:"vimeo";s:0:"";s:7:"behance";s:0:"";}s:11:"social_icon";a:8:{s:8:"facebook";s:14:"fa fa-facebook";s:7:"twitter";s:13:"fa fa-twitter";s:10:"googleplus";s:17:"fa fa-google-plus";s:8:"linkedin";s:14:"fa fa-linkedin";s:8:"dribbble";s:14:"fa fa-dribbble";s:7:"youtube";s:13:"fa fa-youtube";s:5:"vimeo";s:18:"fa fa-vimeo-square";s:7:"behance";s:13:"fa fa-behance";}}i:2573814;a:5:{s:5:"photo";s:3:"281";s:4:"name";s:12:"Steven Typer";s:8:"position";s:10:"Programmer";s:11:"social_link";a:8:{s:8:"facebook";s:0:"";s:7:"twitter";s:1:"#";s:10:"googleplus";s:1:"#";s:8:"linkedin";s:1:"#";s:8:"dribbble";s:0:"";s:7:"youtube";s:1:"#";s:5:"vimeo";s:0:"";s:7:"behance";s:0:"";}s:11:"social_icon";a:8:{s:8:"facebook";s:14:"fa fa-facebook";s:7:"twitter";s:13:"fa fa-twitter";s:10:"googleplus";s:17:"fa fa-google-plus";s:8:"linkedin";s:14:"fa fa-linkedin";s:8:"dribbble";s:14:"fa fa-dribbble";s:7:"youtube";s:13:"fa fa-youtube";s:5:"vimeo";s:18:"fa fa-vimeo-square";s:7:"behance";s:13:"fa fa-behance";}}i:7152352;a:5:{s:5:"photo";s:3:"280";s:4:"name";s:15:"Barbara Walters";s:8:"position";s:13:"Wordpress Dev";s:11:"social_link";a:8:{s:8:"facebook";s:0:"";s:7:"twitter";s:0:"";s:10:"googleplus";s:1:"#";s:8:"linkedin";s:0:"";s:8:"dribbble";s:1:"#";s:7:"youtube";s:1:"#";s:5:"vimeo";s:0:"";s:7:"behance";s:1:"#";}s:11:"social_icon";a:8:{s:8:"facebook";s:14:"fa fa-facebook";s:7:"twitter";s:13:"fa fa-twitter";s:10:"googleplus";s:17:"fa fa-google-plus";s:8:"linkedin";s:14:"fa fa-linkedin";s:8:"dribbble";s:14:"fa fa-dribbble";s:7:"youtube";s:13:"fa fa-youtube";s:5:"vimeo";s:18:"fa fa-vimeo-square";s:7:"behance";s:13:"fa fa-behance";}}i:739997;a:5:{s:5:"photo";s:3:"278";s:4:"name";s:11:"Mark Harmon";s:8:"position";s:8:"Designer";s:11:"social_link";a:8:{s:8:"facebook";s:0:"";s:7:"twitter";s:1:"#";s:10:"googleplus";s:0:"";s:8:"linkedin";s:0:"";s:8:"dribbble";s:1:"#";s:7:"youtube";s:0:"";s:5:"vimeo";s:1:"#";s:7:"behance";s:1:"#";}s:11:"social_icon";a:8:{s:8:"facebook";s:14:"fa fa-facebook";s:7:"twitter";s:13:"fa fa-twitter";s:10:"googleplus";s:17:"fa fa-google-plus";s:8:"linkedin";s:14:"fa fa-linkedin";s:8:"dribbble";s:14:"fa fa-dribbble";s:7:"youtube";s:13:"fa fa-youtube";s:5:"vimeo";s:18:"fa fa-vimeo-square";s:7:"behance";s:13:"fa fa-behance";}}i:664285;a:5:{s:5:"photo";s:3:"283";s:4:"name";s:13:"Steven Wiloke";s:8:"position";s:7:"Seo Exp";s:11:"social_link";a:8:{s:8:"facebook";s:0:"";s:7:"twitter";s:1:"#";s:10:"googleplus";s:1:"#";s:8:"linkedin";s:0:"";s:8:"dribbble";s:1:"#";s:7:"youtube";s:0:"";s:5:"vimeo";s:0:"";s:7:"behance";s:1:"#";}s:11:"social_icon";a:8:{s:8:"facebook";s:14:"fa fa-facebook";s:7:"twitter";s:13:"fa fa-twitter";s:10:"googleplus";s:17:"fa fa-google-plus";s:8:"linkedin";s:14:"fa fa-linkedin";s:8:"dribbble";s:14:"fa fa-dribbble";s:7:"youtube";s:13:"fa fa-youtube";s:5:"vimeo";s:18:"fa fa-vimeo-square";s:7:"behance";s:13:"fa fa-behance";}}}]]></wp:meta_value>
+			<wp:meta_key>_pi_skill</wp:meta_key>
+			<wp:meta_value><![CDATA[a:4:{i:0;a:2:{s:7:"percent";s:2:"90";s:5:"skill";s:9:"Wordpress";}i:2;a:2:{s:7:"percent";s:2:"85";s:5:"skill";s:6:"Design";}i:3;a:2:{s:7:"percent";s:2:"25";s:5:"skill";s:10:"Mobile App";}i:4;a:2:{s:7:"percent";s:2:"78";s:5:"skill";s:13:"Interface App";}}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Moutain Drift</title>
-		<link>http://wiloke.net/wordpress/arvios-singleimage/porfolio/project-1/</link>
-		<pubDate>Mon, 02 Mar 2015 06:51:51 +0000</pubDate>
+		<title>Pricing Table</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/pricingtable/pricing-table/</link>
+		<pubDate>Mon, 02 Mar 2015 14:24:44 +0000</pubDate>
 		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
-		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?post_type=pi_portfolio&#038;p=49</guid>
-		<description></description>
-		<content:encoded><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>49</wp:post_id>
-		<wp:post_date>2015-03-02 06:51:51</wp:post_date>
-		<wp:post_date_gmt>2015-03-02 06:51:51</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>closed</wp:ping_status>
-		<wp:post_name>project-1</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>pi_portfolio</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="portfolio_skill" nicename="arvios"><![CDATA[Arvios]]></category>
-		<category domain="pi_portfolio_cats" nicename="design"><![CDATA[Web Design]]></category>
-		<category domain="portfolio_skill" nicename="xpro"><![CDATA[Xpro]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_thumbnail_id</wp:meta_key>
-			<wp:meta_value><![CDATA[303]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_pi_portfolio</wp:meta_key>
-			<wp:meta_value><![CDATA[a:3:{s:10:"media_type";s:5:"video";s:10:"video_link";s:43:"https://www.youtube.com/watch?v=lrF814OnFQ4";s:8:"image_id";s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Our Clients</title>
-		<link>http://wiloke.net/wordpress/arvios-singleimage/our-clients/our-clients/</link>
-		<pubDate>Mon, 02 Mar 2015 14:31:06 +0000</pubDate>
-		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
-		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?post_type=pi_ourclients&#038;p=61</guid>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?post_type=pi_pricingtable&#038;p=60</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>61</wp:post_id>
-		<wp:post_date>2015-03-02 14:31:06</wp:post_date>
-		<wp:post_date_gmt>2015-03-02 14:31:06</wp:post_date_gmt>
+		<wp:post_id>60</wp:post_id>
+		<wp:post_date>2015-03-02 14:24:44</wp:post_date>
+		<wp:post_date_gmt>2015-03-02 14:24:44</wp:post_date_gmt>
 		<wp:comment_status>closed</wp:comment_status>
 		<wp:ping_status>closed</wp:ping_status>
-		<wp:post_name>our-clients</wp:post_name>
+		<wp:post_name>pricing-table</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>pi_ourclients</wp:post_type>
+		<wp:post_type>pi_pricingtable</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
 		<wp:postmeta>
@@ -6587,119 +7113,38 @@ As a new WordPress user, you should go to <a href="http://wiloke.net/wordpress/a
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key>_pi_ourclients</wp:meta_key>
-			<wp:meta_value><![CDATA[a:7:{i:0;a:3:{s:5:"photo";s:3:"206";s:6:"client";s:6:"Chance";s:4:"link";s:1:"#";}i:5427142;a:3:{s:5:"photo";s:3:"205";s:6:"client";s:6:"Cercle";s:4:"link";s:1:"#";}i:596170;a:3:{s:5:"photo";s:3:"207";s:6:"client";s:8:"Choleric";s:4:"link";s:1:"#";}i:8495720;a:3:{s:5:"photo";s:3:"204";s:6:"client";s:5:"Rider";s:4:"link";s:1:"#";}i:1166920;a:3:{s:5:"photo";s:3:"203";s:6:"client";s:11:"Hungry Lion";s:4:"link";s:1:"#";}i:7033911;a:3:{s:5:"photo";s:3:"201";s:6:"client";s:6:"Chance";s:4:"link";s:1:"#";}i:8002269;a:3:{s:5:"photo";s:3:"202";s:6:"client";s:6:"Chance";s:4:"link";s:1:"#";}}]]></wp:meta_value>
+			<wp:meta_key>_pi_pricingtable</wp:meta_key>
+			<wp:meta_value><![CDATA[a:3:{i:0;a:7:{s:5:"title";s:5:"BASIC";s:8:"currency";s:1:"$";s:5:"price";s:2:"15";s:8:"duration";s:9:"per month";s:6:"offers";a:4:{i:0;s:14:"2GB Disk space";i:1;s:15:"100GB Bandwidth";i:2;s:10:"1 Database";i:3;s:6:"10 CMS";}s:11:"button_name";s:7:"SIGN UP";s:3:"url";s:1:"#";}i:1;a:8:{s:5:"title";s:12:"PROFESSIONAL";s:8:"currency";s:1:"$";s:5:"price";s:2:"60";s:8:"duration";s:9:"per month";s:6:"offers";a:4:{i:0;s:14:"3GB Disk space";i:1;s:15:"200GB Bandwidth";i:2;s:10:"2 Database";i:3;s:6:"10 CMS";}s:11:"button_name";s:7:"SIGN UP";s:3:"url";s:1:"#";s:9:"highlight";s:1:"1";}i:2;a:7:{s:5:"title";s:8:"STANDARD";s:8:"currency";s:1:"$";s:5:"price";s:2:"30";s:8:"duration";s:9:"per month";s:6:"offers";a:4:{i:0;s:14:"2GB Disk space";i:1;s:15:"150GB Bandwidth";i:2;s:10:"1 Database";i:3;s:6:"10 CMS";}s:11:"button_name";s:7:"SIGN UP";s:3:"url";s:1:"#";}}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>HayMaker</title>
-		<link>http://wiloke.net/wordpress/arvios-singleimage/porfolio/project-2/</link>
-		<pubDate>Mon, 02 Mar 2015 15:20:12 +0000</pubDate>
+		<title>Testimonial</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/testimonials/testimonial/</link>
+		<pubDate>Mon, 02 Mar 2015 14:33:47 +0000</pubDate>
 		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
-		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?post_type=pi_portfolio&#038;p=78</guid>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?post_type=pi_testimonials&#038;p=71</guid>
 		<description></description>
-		<content:encoded><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]]></content:encoded>
+		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>78</wp:post_id>
-		<wp:post_date>2015-03-02 15:20:12</wp:post_date>
-		<wp:post_date_gmt>2015-03-02 15:20:12</wp:post_date_gmt>
+		<wp:post_id>71</wp:post_id>
+		<wp:post_date>2015-03-02 14:33:47</wp:post_date>
+		<wp:post_date_gmt>2015-03-02 14:33:47</wp:post_date_gmt>
 		<wp:comment_status>closed</wp:comment_status>
 		<wp:ping_status>closed</wp:ping_status>
-		<wp:post_name>project-2</wp:post_name>
+		<wp:post_name>testimonial</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>pi_portfolio</wp:post_type>
+		<wp:post_type>pi_testimonials</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="portfolio_skill" nicename="drupal"><![CDATA[Drupal]]></category>
-		<category domain="pi_portfolio_cats" nicename="print"><![CDATA[PRINT]]></category>
-		<category domain="portfolio_skill" nicename="wordpress"><![CDATA[Wordpress]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_thumbnail_id</wp:meta_key>
-			<wp:meta_value><![CDATA[299]]></wp:meta_value>
-		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_edit_last</wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key>_pi_portfolio</wp:meta_key>
-			<wp:meta_value><![CDATA[a:3:{s:10:"media_type";s:7:"gallery";s:10:"video_link";s:0:"";s:8:"image_id";s:7:"112,111";}]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Be My Gues</title>
-		<link>http://wiloke.net/wordpress/arvios-singleimage/porfolio/project-3/</link>
-		<pubDate>Mon, 02 Mar 2015 15:22:12 +0000</pubDate>
-		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
-		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?post_type=pi_portfolio&#038;p=79</guid>
-		<description></description>
-		<content:encoded><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>79</wp:post_id>
-		<wp:post_date>2015-03-02 15:22:12</wp:post_date>
-		<wp:post_date_gmt>2015-03-02 15:22:12</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>closed</wp:ping_status>
-		<wp:post_name>project-3</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>pi_portfolio</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="portfolio_skill" nicename="apple"><![CDATA[Apple]]></category>
-		<category domain="pi_portfolio_cats" nicename="mobile-app"><![CDATA[MOBILE APP]]></category>
-		<category domain="portfolio_skill" nicename="samsung"><![CDATA[Samsung]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_thumbnail_id</wp:meta_key>
-			<wp:meta_value><![CDATA[57]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_pi_portfolio</wp:meta_key>
-			<wp:meta_value><![CDATA[a:3:{s:10:"media_type";s:7:"gallery";s:10:"video_link";s:0:"";s:8:"image_id";s:7:"148,147";}]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>OWNAGE</title>
-		<link>http://wiloke.net/wordpress/arvios-singleimage/porfolio/project-4/</link>
-		<pubDate>Mon, 02 Mar 2015 15:23:53 +0000</pubDate>
-		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
-		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?post_type=pi_portfolio&#038;p=80</guid>
-		<description></description>
-		<content:encoded><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>80</wp:post_id>
-		<wp:post_date>2015-03-02 15:23:53</wp:post_date>
-		<wp:post_date_gmt>2015-03-02 15:23:53</wp:post_date_gmt>
-		<wp:comment_status>closed</wp:comment_status>
-		<wp:ping_status>closed</wp:ping_status>
-		<wp:post_name>project-4</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>pi_portfolio</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="portfolio_skill" nicename="folix"><![CDATA[Folix]]></category>
-		<category domain="pi_portfolio_cats" nicename="icons"><![CDATA[ICONS]]></category>
-		<category domain="portfolio_skill" nicename="xpro"><![CDATA[Xpro]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_thumbnail_id</wp:meta_key>
-			<wp:meta_value><![CDATA[306]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_pi_portfolio</wp:meta_key>
-			<wp:meta_value><![CDATA[a:3:{s:10:"media_type";s:7:"gallery";s:10:"video_link";s:0:"";s:8:"image_id";s:3:"107";}]]></wp:meta_value>
+			<wp:meta_key>_pi_testimonials</wp:meta_key>
+			<wp:meta_value><![CDATA[a:3:{i:0;a:4:{s:5:"photo";s:3:"278";s:11:"testimonial";s:158:"“Quisque cursus congue mi non faucibus. Aliquam a tellus in nulla maximus dapibus nec sed mi. Ut maximus nunc magna, dictum cursus leo imperdiet aliquet.”";s:6:"author";s:12:"Frank Miller";s:7:"website";s:22:"www.webdesignalley.org";}i:9451673;a:4:{s:5:"photo";s:3:"279";s:11:"testimonial";s:252:"“Praesent metus urna, feugiat a placerat vel, elementum at leo. Quisque vel fermentum ipsum. Nulla at facilisis est, vel condimentum ligula. consectetur. Fusce sed purus eros. Vivamus rhoncus, ipsum in tempus fermentum, orci leo facilisis purus,..”";s:6:"author";s:10:"Rene Brown";s:7:"website";s:18:"www.rennebrown.com";}i:2504868;a:4:{s:5:"photo";s:3:"280";s:11:"testimonial";s:158:"“Quisque cursus congue mi non faucibus. Aliquam a tellus in nulla maximus dapibus nec sed mi. Ut maximus nunc magna, dictum cursus leo imperdiet aliquet.”";s:6:"author";s:6:"Wiloke";s:7:"website";s:14:"www.wiloke.com";}}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -6900,7 +7345,7 @@ As a new WordPress user, you should go to <a href="http://wiloke.net/wordpress/a
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Aviato theme</title>
+		<title>Slider image</title>
 		<link>http://wiloke.net/wordpress/arvios-singleimage/porfolio/table-rocket/</link>
 		<pubDate>Wed, 04 Mar 2015 16:58:49 +0000</pubDate>
 		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
@@ -6925,7 +7370,7 @@ As a new WordPress user, you should go to <a href="http://wiloke.net/wordpress/a
 		<category domain="pi_portfolio_cats" nicename="mobile-app"><![CDATA[MOBILE APP]]></category>
 		<wp:postmeta>
 			<wp:meta_key>_thumbnail_id</wp:meta_key>
-			<wp:meta_value><![CDATA[213]]></wp:meta_value>
+			<wp:meta_value><![CDATA[299]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_edit_last</wp:meta_key>
@@ -7011,7 +7456,7 @@ As a new WordPress user, you should go to <a href="http://wiloke.net/wordpress/a
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Pi Piped</title>
+		<title>Logo design</title>
 		<link>http://wiloke.net/wordpress/arvios-singleimage/porfolio/pi-piped/</link>
 		<pubDate>Sun, 08 Mar 2015 08:30:12 +0000</pubDate>
 		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
@@ -7034,9 +7479,10 @@ As a new WordPress user, you should go to <a href="http://wiloke.net/wordpress/a
 		<category domain="portfolio_skill" nicename="aviros"><![CDATA[Aviros]]></category>
 		<category domain="portfolio_skill" nicename="evanto"><![CDATA[evanto]]></category>
 		<category domain="pi_portfolio_cats" nicename="print"><![CDATA[PRINT]]></category>
+		<category domain="pi_portfolio_cats" nicename="design"><![CDATA[Web Design]]></category>
 		<wp:postmeta>
 			<wp:meta_key>_thumbnail_id</wp:meta_key>
-			<wp:meta_value><![CDATA[307]]></wp:meta_value>
+			<wp:meta_value><![CDATA[54]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_edit_last</wp:meta_key>
@@ -7048,7 +7494,7 @@ As a new WordPress user, you should go to <a href="http://wiloke.net/wordpress/a
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Nucleus</title>
+		<title>Mobile app</title>
 		<link>http://wiloke.net/wordpress/arvios-singleimage/porfolio/nucleus/</link>
 		<pubDate>Sun, 08 Mar 2015 08:31:35 +0000</pubDate>
 		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
@@ -7069,11 +7515,12 @@ As a new WordPress user, you should go to <a href="http://wiloke.net/wordpress/a
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
 		<category domain="portfolio_skill" nicename="aviato"><![CDATA[Aviato]]></category>
+		<category domain="pi_portfolio_cats" nicename="mobile-app"><![CDATA[MOBILE APP]]></category>
 		<category domain="pi_portfolio_cats" nicename="print"><![CDATA[PRINT]]></category>
 		<category domain="portfolio_skill" nicename="xpro"><![CDATA[Xpro]]></category>
 		<wp:postmeta>
 			<wp:meta_key>_thumbnail_id</wp:meta_key>
-			<wp:meta_value><![CDATA[304]]></wp:meta_value>
+			<wp:meta_value><![CDATA[52]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_edit_last</wp:meta_key>
@@ -7085,7 +7532,7 @@ As a new WordPress user, you should go to <a href="http://wiloke.net/wordpress/a
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Oniver</title>
+		<title>coffee house</title>
 		<link>http://wiloke.net/wordpress/arvios-singleimage/porfolio/oniver/</link>
 		<pubDate>Sun, 08 Mar 2015 08:33:10 +0000</pubDate>
 		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
@@ -7110,7 +7557,7 @@ As a new WordPress user, you should go to <a href="http://wiloke.net/wordpress/a
 		<category domain="pi_portfolio_cats" nicename="print"><![CDATA[PRINT]]></category>
 		<wp:postmeta>
 			<wp:meta_key>_thumbnail_id</wp:meta_key>
-			<wp:meta_value><![CDATA[293]]></wp:meta_value>
+			<wp:meta_value><![CDATA[300]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_edit_last</wp:meta_key>
@@ -7122,37 +7569,188 @@ As a new WordPress user, you should go to <a href="http://wiloke.net/wordpress/a
 		</wp:postmeta>
 	</item>
 	<item>
-		<title>Blog - Fullwidth Grid</title>
-		<link>http://wiloke.net/wordpress/arvios-singleimage/blog-fullwidth-grid/</link>
-		<pubDate>Sat, 14 Mar 2015 14:18:35 +0000</pubDate>
+		<title>Slider Image</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/porfolio/igor/</link>
+		<pubDate>Sun, 08 Mar 2015 08:34:34 +0000</pubDate>
 		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
-		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?page_id=288</guid>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?post_type=pi_portfolio&#038;p=246</guid>
 		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
+		<content:encoded><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>288</wp:post_id>
-		<wp:post_date>2015-03-14 14:18:35</wp:post_date>
-		<wp:post_date_gmt>2015-03-14 14:18:35</wp:post_date_gmt>
+		<wp:post_id>246</wp:post_id>
+		<wp:post_date>2015-03-08 08:34:34</wp:post_date>
+		<wp:post_date_gmt>2015-03-08 08:34:34</wp:post_date_gmt>
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>blog-fullwidth-grid</wp:post_name>
+		<wp:post_name>igor</wp:post_name>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>page</wp:post_type>
+		<wp:post_type>pi_portfolio</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="pi_portfolio_cats" nicename="icons"><![CDATA[ICONS]]></category>
+		<category domain="portfolio_skill" nicename="wiloke"><![CDATA[Wiloke]]></category>
+		<category domain="portfolio_skill" nicename="xpro"><![CDATA[Xpro]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_thumbnail_id</wp:meta_key>
+			<wp:meta_value><![CDATA[296]]></wp:meta_value>
+		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_edit_last</wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key>_wp_page_template</wp:meta_key>
-			<wp:meta_value><![CDATA[grid-blog.php]]></wp:meta_value>
+			<wp:meta_key>_pi_portfolio</wp:meta_key>
+			<wp:meta_value><![CDATA[a:3:{s:10:"media_type";s:7:"gallery";s:10:"video_link";s:0:"";s:8:"image_id";s:7:"142,143";}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Van Moutain</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/porfolio/van-moutain/</link>
+		<pubDate>Sun, 08 Mar 2015 08:35:40 +0000</pubDate>
+		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?post_type=pi_portfolio&#038;p=247</guid>
+		<description></description>
+		<content:encoded><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>247</wp:post_id>
+		<wp:post_date>2015-03-08 08:35:40</wp:post_date>
+		<wp:post_date_gmt>2015-03-08 08:35:40</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>van-moutain</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>pi_portfolio</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="portfolio_skill" nicename="evanto"><![CDATA[evanto]]></category>
+		<category domain="portfolio_skill" nicename="ky-phu"><![CDATA[Ky Phu]]></category>
+		<category domain="pi_portfolio_cats" nicename="mobile-app"><![CDATA[MOBILE APP]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_thumbnail_id</wp:meta_key>
+			<wp:meta_value><![CDATA[299]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
-			<wp:meta_key>_post_settings</wp:meta_key>
-			<wp:meta_value><![CDATA[a:6:{s:8:"image_bg";s:115:"http://wiloke.net/wordpress/arvios-singleimage/wp-content/themes/Arvios/admin/pi-assets/images/background-image.gif";s:13:"overlay_color";s:13:"rgba(0,0,0,0)";s:7:"sidebar";s:10:"no-sidebar";s:11:"post_author";s:7:"default";s:23:"portfolio_item_per_page";s:1:"8";s:15:"portfolio_style";s:6:"style1";}]]></wp:meta_value>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_pi_portfolio</wp:meta_key>
+			<wp:meta_value><![CDATA[a:3:{s:10:"media_type";s:7:"gallery";s:10:"video_link";s:0:"";s:8:"image_id";s:7:"215,213";}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Aviato design</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/porfolio/croawl-own/</link>
+		<pubDate>Sun, 08 Mar 2015 08:37:18 +0000</pubDate>
+		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?post_type=pi_portfolio&#038;p=248</guid>
+		<description></description>
+		<content:encoded><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>248</wp:post_id>
+		<wp:post_date>2015-03-08 08:37:18</wp:post_date>
+		<wp:post_date_gmt>2015-03-08 08:37:18</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>croawl-own</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>pi_portfolio</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="pi_portfolio_cats" nicename="mobile-app"><![CDATA[MOBILE APP]]></category>
+		<category domain="portfolio_skill" nicename="oniver"><![CDATA[Oniver]]></category>
+		<category domain="portfolio_skill" nicename="xpro"><![CDATA[Xpro]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_thumbnail_id</wp:meta_key>
+			<wp:meta_value><![CDATA[294]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_pi_portfolio</wp:meta_key>
+			<wp:meta_value><![CDATA[a:3:{s:10:"media_type";s:7:"gallery";s:10:"video_link";s:0:"";s:8:"image_id";s:7:"151,150";}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Video Vimeo</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/porfolio/aviato/</link>
+		<pubDate>Sun, 08 Mar 2015 08:38:31 +0000</pubDate>
+		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?post_type=pi_portfolio&#038;p=249</guid>
+		<description></description>
+		<content:encoded><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>249</wp:post_id>
+		<wp:post_date>2015-03-08 08:38:31</wp:post_date>
+		<wp:post_date_gmt>2015-03-08 08:38:31</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>aviato</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>pi_portfolio</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="pi_portfolio_cats" nicename="design"><![CDATA[Web Design]]></category>
+		<category domain="portfolio_skill" nicename="wiloke"><![CDATA[Wiloke]]></category>
+		<category domain="portfolio_skill" nicename="wordpress"><![CDATA[Wordpress]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_thumbnail_id</wp:meta_key>
+			<wp:meta_value><![CDATA[303]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_pi_portfolio</wp:meta_key>
+			<wp:meta_value><![CDATA[a:3:{s:10:"media_type";s:5:"video";s:10:"video_link";s:26:"http://vimeo.com/121736043";s:8:"image_id";s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Arvios theme</title>
+		<link>http://wiloke.net/wordpress/arvios-singleimage/porfolio/wood-design/</link>
+		<pubDate>Sun, 08 Mar 2015 08:39:26 +0000</pubDate>
+		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
+		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?post_type=pi_portfolio&#038;p=250</guid>
+		<description></description>
+		<content:encoded><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>250</wp:post_id>
+		<wp:post_date>2015-03-08 08:39:26</wp:post_date>
+		<wp:post_date_gmt>2015-03-08 08:39:26</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>open</wp:ping_status>
+		<wp:post_name>wood-design</wp:post_name>
+		<wp:status>publish</wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>pi_portfolio</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="portfolio_skill" nicename="aviato"><![CDATA[Aviato]]></category>
+		<category domain="portfolio_skill" nicename="oniver"><![CDATA[Oniver]]></category>
+		<category domain="pi_portfolio_cats" nicename="design"><![CDATA[Web Design]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_thumbnail_id</wp:meta_key>
+			<wp:meta_value><![CDATA[293]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_edit_last</wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_pi_portfolio</wp:meta_key>
+			<wp:meta_value><![CDATA[a:3:{s:10:"media_type";s:7:"gallery";s:10:"video_link";s:0:"";s:8:"image_id";s:7:"243,142";}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -7213,126 +7811,6 @@ To delete a comment, just log in and view the post&#039;s comments. There you wi
 			<wp:comment_parent>0</wp:comment_parent>
 			<wp:comment_user_id>0</wp:comment_user_id>
 		</wp:comment>
-	</item>
-	<item>
-		<title>Our Services</title>
-		<link>http://wiloke.net/wordpress/arvios-singleimage/services/38-2/</link>
-		<pubDate>Mon, 02 Mar 2015 06:37:34 +0000</pubDate>
-		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
-		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?post_type=pi_services&#038;p=38</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>38</wp:post_id>
-		<wp:post_date>2015-03-02 06:37:34</wp:post_date>
-		<wp:post_date_gmt>2015-03-02 06:37:34</wp:post_date_gmt>
-		<wp:comment_status>closed</wp:comment_status>
-		<wp:ping_status>closed</wp:ping_status>
-		<wp:post_name>38-2</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>pi_services</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_pi_services</wp:meta_key>
-			<wp:meta_value><![CDATA[a:4:{i:0;a:3:{s:4:"icon";s:17:"fa fa-lightbulb-o";s:7:"service";s:10:"Web Design";s:11:"small_intro";s:224:"Orem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus adipiscing eget augue at tristique. Mauris luctus aliquet nunc quis consectetur. Curabitur elit massa, consequat vel velit sit amet, scelerisque hendrerit mi.";}i:1;a:3:{s:4:"icon";s:12:"fa fa-laptop";s:7:"service";s:11:"Programming";s:11:"small_intro";s:224:"Orem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus adipiscing eget augue at tristique. Mauris luctus aliquet nunc quis consectetur. Curabitur elit massa, consequat vel velit sit amet, scelerisque hendrerit mi.";}i:2;a:3:{s:4:"icon";s:12:"fa fa-rocket";s:7:"service";s:5:"Print";s:11:"small_intro";s:224:"Orem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus adipiscing eget augue at tristique. Mauris luctus aliquet nunc quis consectetur. Curabitur elit massa, consequat vel velit sit amet, scelerisque hendrerit mi.";}i:3;a:3:{s:4:"icon";s:13:"fa fa-twitter";s:7:"service";s:10:"Mobile App";s:11:"small_intro";s:224:"Orem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus adipiscing eget augue at tristique. Mauris luctus aliquet nunc quis consectetur. Curabitur elit massa, consequat vel velit sit amet, scelerisque hendrerit mi.";}}]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Skills</title>
-		<link>http://wiloke.net/wordpress/arvios-singleimage/skill/skills/</link>
-		<pubDate>Mon, 02 Mar 2015 06:47:03 +0000</pubDate>
-		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
-		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?post_type=pi_skill&#038;p=47</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>47</wp:post_id>
-		<wp:post_date>2015-03-02 06:47:03</wp:post_date>
-		<wp:post_date_gmt>2015-03-02 06:47:03</wp:post_date_gmt>
-		<wp:comment_status>closed</wp:comment_status>
-		<wp:ping_status>closed</wp:ping_status>
-		<wp:post_name>skills</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>pi_skill</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_pi_skill</wp:meta_key>
-			<wp:meta_value><![CDATA[a:4:{i:0;a:2:{s:7:"percent";s:2:"90";s:5:"skill";s:9:"Wordpress";}i:2;a:2:{s:7:"percent";s:2:"85";s:5:"skill";s:6:"Design";}i:3;a:2:{s:7:"percent";s:2:"25";s:5:"skill";s:10:"Mobile App";}i:4;a:2:{s:7:"percent";s:2:"78";s:5:"skill";s:13:"Interface App";}}]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Pricing Table</title>
-		<link>http://wiloke.net/wordpress/arvios-singleimage/pricingtable/pricing-table/</link>
-		<pubDate>Mon, 02 Mar 2015 14:24:44 +0000</pubDate>
-		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
-		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?post_type=pi_pricingtable&#038;p=60</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>60</wp:post_id>
-		<wp:post_date>2015-03-02 14:24:44</wp:post_date>
-		<wp:post_date_gmt>2015-03-02 14:24:44</wp:post_date_gmt>
-		<wp:comment_status>closed</wp:comment_status>
-		<wp:ping_status>closed</wp:ping_status>
-		<wp:post_name>pricing-table</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>pi_pricingtable</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_pi_pricingtable</wp:meta_key>
-			<wp:meta_value><![CDATA[a:4:{i:0;a:7:{s:5:"title";s:5:"BASIC";s:8:"currency";s:1:"$";s:5:"price";s:2:"15";s:8:"duration";s:9:"per month";s:6:"offers";a:4:{i:0;s:14:"2GB Disk space";i:1;s:15:"100GB Bandwidth";i:2;s:10:"1 Database";i:3;s:6:"10 CMS";}s:11:"button_name";s:7:"SIGN UP";s:3:"url";s:1:"#";}i:1;a:8:{s:5:"title";s:12:"PROFESSIONAL";s:8:"currency";s:1:"$";s:5:"price";s:2:"60";s:8:"duration";s:9:"per month";s:6:"offers";a:4:{i:0;s:14:"3GB Disk space";i:1;s:15:"200GB Bandwidth";i:2;s:10:"2 Database";i:3;s:6:"10 CMS";}s:11:"button_name";s:7:"SIGN UP";s:3:"url";s:1:"#";s:9:"highlight";s:1:"1";}i:2;a:7:{s:5:"title";s:8:"STANDARD";s:8:"currency";s:1:"$";s:5:"price";s:2:"30";s:8:"duration";s:9:"per month";s:6:"offers";a:4:{i:0;s:14:"2GB Disk space";i:1;s:15:"150GB Bandwidth";i:2;s:10:"1 Database";i:3;s:6:"10 CMS";}s:11:"button_name";s:7:"SIGN UP";s:3:"url";s:1:"#";}i:3;a:7:{s:5:"title";s:8:"ADVANCED";s:8:"currency";s:1:"$";s:5:"price";s:2:"99";s:8:"duration";s:9:"per month";s:6:"offers";a:4:{i:0;s:14:"5GB Disk space";i:1;s:15:"400GB Bandwidth";i:2;s:10:"3 Database";i:3;s:6:"10 CMS";}s:11:"button_name";s:7:"SIGN UP";s:3:"url";s:1:"#";}}]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Testimonial</title>
-		<link>http://wiloke.net/wordpress/arvios-singleimage/testimonials/testimonial/</link>
-		<pubDate>Mon, 02 Mar 2015 14:33:47 +0000</pubDate>
-		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
-		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?post_type=pi_testimonials&#038;p=71</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>71</wp:post_id>
-		<wp:post_date>2015-03-02 14:33:47</wp:post_date>
-		<wp:post_date_gmt>2015-03-02 14:33:47</wp:post_date_gmt>
-		<wp:comment_status>closed</wp:comment_status>
-		<wp:ping_status>closed</wp:ping_status>
-		<wp:post_name>testimonial</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>pi_testimonials</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_pi_testimonials</wp:meta_key>
-			<wp:meta_value><![CDATA[a:3:{i:0;a:3:{s:11:"testimonial";s:158:"“Quisque cursus congue mi non faucibus. Aliquam a tellus in nulla maximus dapibus nec sed mi. Ut maximus nunc magna, dictum cursus leo imperdiet aliquet.”";s:6:"author";s:12:"Frank Miller";s:7:"website";s:22:"www.webdesignalley.org";}i:9451673;a:3:{s:11:"testimonial";s:252:"“Praesent metus urna, feugiat a placerat vel, elementum at leo. Quisque vel fermentum ipsum. Nulla at facilisis est, vel condimentum ligula. consectetur. Fusce sed purus eros. Vivamus rhoncus, ipsum in tempus fermentum, orci leo facilisis purus,..”";s:6:"author";s:10:"Rene Brown";s:7:"website";s:18:"www.rennebrown.com";}i:2504868;a:3:{s:11:"testimonial";s:158:"“Quisque cursus congue mi non faucibus. Aliquam a tellus in nulla maximus dapibus nec sed mi. Ut maximus nunc magna, dictum cursus leo imperdiet aliquet.”";s:6:"author";s:6:"Wiloke";s:7:"website";s:14:"www.wiloke.com";}}]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>Contact Form</title>
@@ -7915,191 +8393,6 @@ There are many variations of passages of Lorem Ipsum available, but the majority
 			<wp:comment_parent>2</wp:comment_parent>
 			<wp:comment_user_id>1</wp:comment_user_id>
 		</wp:comment>
-	</item>
-	<item>
-		<title>IGOR</title>
-		<link>http://wiloke.net/wordpress/arvios-singleimage/porfolio/igor/</link>
-		<pubDate>Sun, 08 Mar 2015 08:34:34 +0000</pubDate>
-		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
-		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?post_type=pi_portfolio&#038;p=246</guid>
-		<description></description>
-		<content:encoded><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>246</wp:post_id>
-		<wp:post_date>2015-03-08 08:34:34</wp:post_date>
-		<wp:post_date_gmt>2015-03-08 08:34:34</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>igor</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>pi_portfolio</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="pi_portfolio_cats" nicename="icons"><![CDATA[ICONS]]></category>
-		<category domain="portfolio_skill" nicename="wiloke"><![CDATA[Wiloke]]></category>
-		<category domain="portfolio_skill" nicename="xpro"><![CDATA[Xpro]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_thumbnail_id</wp:meta_key>
-			<wp:meta_value><![CDATA[295]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_pi_portfolio</wp:meta_key>
-			<wp:meta_value><![CDATA[a:3:{s:10:"media_type";s:7:"gallery";s:10:"video_link";s:0:"";s:8:"image_id";s:7:"142,143";}]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Van Moutain</title>
-		<link>http://wiloke.net/wordpress/arvios-singleimage/porfolio/van-moutain/</link>
-		<pubDate>Sun, 08 Mar 2015 08:35:40 +0000</pubDate>
-		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
-		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?post_type=pi_portfolio&#038;p=247</guid>
-		<description></description>
-		<content:encoded><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>247</wp:post_id>
-		<wp:post_date>2015-03-08 08:35:40</wp:post_date>
-		<wp:post_date_gmt>2015-03-08 08:35:40</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>van-moutain</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>pi_portfolio</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="portfolio_skill" nicename="evanto"><![CDATA[evanto]]></category>
-		<category domain="portfolio_skill" nicename="ky-phu"><![CDATA[Ky Phu]]></category>
-		<category domain="pi_portfolio_cats" nicename="mobile-app"><![CDATA[MOBILE APP]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_thumbnail_id</wp:meta_key>
-			<wp:meta_value><![CDATA[294]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_pi_portfolio</wp:meta_key>
-			<wp:meta_value><![CDATA[a:3:{s:10:"media_type";s:7:"gallery";s:10:"video_link";s:0:"";s:8:"image_id";s:7:"215,213";}]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Croawl Own</title>
-		<link>http://wiloke.net/wordpress/arvios-singleimage/porfolio/croawl-own/</link>
-		<pubDate>Sun, 08 Mar 2015 08:37:18 +0000</pubDate>
-		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
-		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?post_type=pi_portfolio&#038;p=248</guid>
-		<description></description>
-		<content:encoded><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>248</wp:post_id>
-		<wp:post_date>2015-03-08 08:37:18</wp:post_date>
-		<wp:post_date_gmt>2015-03-08 08:37:18</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>croawl-own</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>pi_portfolio</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="pi_portfolio_cats" nicename="mobile-app"><![CDATA[MOBILE APP]]></category>
-		<category domain="portfolio_skill" nicename="oniver"><![CDATA[Oniver]]></category>
-		<category domain="portfolio_skill" nicename="xpro"><![CDATA[Xpro]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_thumbnail_id</wp:meta_key>
-			<wp:meta_value><![CDATA[298]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_pi_portfolio</wp:meta_key>
-			<wp:meta_value><![CDATA[a:3:{s:10:"media_type";s:7:"gallery";s:10:"video_link";s:0:"";s:8:"image_id";s:7:"151,150";}]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Aviato</title>
-		<link>http://wiloke.net/wordpress/arvios-singleimage/porfolio/aviato/</link>
-		<pubDate>Sun, 08 Mar 2015 08:38:31 +0000</pubDate>
-		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
-		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?post_type=pi_portfolio&#038;p=249</guid>
-		<description></description>
-		<content:encoded><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>249</wp:post_id>
-		<wp:post_date>2015-03-08 08:38:31</wp:post_date>
-		<wp:post_date_gmt>2015-03-08 08:38:31</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>aviato</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>pi_portfolio</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="pi_portfolio_cats" nicename="design"><![CDATA[Web Design]]></category>
-		<category domain="portfolio_skill" nicename="wiloke"><![CDATA[Wiloke]]></category>
-		<category domain="portfolio_skill" nicename="wordpress"><![CDATA[Wordpress]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_thumbnail_id</wp:meta_key>
-			<wp:meta_value><![CDATA[297]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_pi_portfolio</wp:meta_key>
-			<wp:meta_value><![CDATA[a:3:{s:10:"media_type";s:7:"gallery";s:10:"video_link";s:0:"";s:8:"image_id";s:43:"https://www.youtube.com/watch?v=tKUvDMpLoaU";}]]></wp:meta_value>
-		</wp:postmeta>
-	</item>
-	<item>
-		<title>Wood Design</title>
-		<link>http://wiloke.net/wordpress/arvios-singleimage/porfolio/wood-design/</link>
-		<pubDate>Sun, 08 Mar 2015 08:39:26 +0000</pubDate>
-		<dc:creator><![CDATA[We are wiloke]]></dc:creator>
-		<guid isPermaLink="false">http://wiloke.net/wordpress/arvios-singleimage/?post_type=pi_portfolio&#038;p=250</guid>
-		<description></description>
-		<content:encoded><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>250</wp:post_id>
-		<wp:post_date>2015-03-08 08:39:26</wp:post_date>
-		<wp:post_date_gmt>2015-03-08 08:39:26</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>open</wp:ping_status>
-		<wp:post_name>wood-design</wp:post_name>
-		<wp:status>publish</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>pi_portfolio</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<category domain="portfolio_skill" nicename="aviato"><![CDATA[Aviato]]></category>
-		<category domain="portfolio_skill" nicename="oniver"><![CDATA[Oniver]]></category>
-		<category domain="pi_portfolio_cats" nicename="design"><![CDATA[Web Design]]></category>
-		<wp:postmeta>
-			<wp:meta_key>_thumbnail_id</wp:meta_key>
-			<wp:meta_value><![CDATA[296]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_edit_last</wp:meta_key>
-			<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_pi_portfolio</wp:meta_key>
-			<wp:meta_value><![CDATA[a:3:{s:10:"media_type";s:7:"gallery";s:10:"video_link";s:0:"";s:8:"image_id";s:7:"243,142";}]]></wp:meta_value>
-		</wp:postmeta>
 	</item>
 	<item>
 		<title>Slider</title>

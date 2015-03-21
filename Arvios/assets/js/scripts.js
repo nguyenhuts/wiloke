@@ -282,20 +282,7 @@ window.onload = piGoogleMap;
             $('.sub-menu').removeClass('translate');
         });
 
-        $('.do-you-have-an-ideas .item-link').on('click', '> a', function(evt) {
-           
-            var $anchor = $(this);
-            if ( hasThang($anchor.attr("href") ) )
-            {
-                evt.preventDefault();
-                var offset = $($anchor.attr('href')).offset();
-                $('html, body').stop().animate({
-                    scrollTop: offset.top
-                }, 400, 'easeInOutExpo');
-            }
-        });
-
-        $('.story-content').on('click', 'a', function(evt) {
+        $('.do-you-have-an-ideas .item-link, .story-content, .pi-header-button').on('click', '> a', function(evt) {
            
             var $anchor = $(this);
             if ( hasThang($anchor.attr("href") ) )
@@ -663,9 +650,6 @@ window.onload = piGoogleMap;
                 var srcImg = $(this).attr('src');
                 return '<div class="' + background +  '" style="background-image: url(' + srcImg + ')">';
             });
-        $('.home-slider')
-            .find('.item')
-            .append('<div class="bg-overlay"></div>');
     }     
     
     function piSwitchClientStyle()

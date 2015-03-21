@@ -415,9 +415,11 @@ function initialize() {
                 zoomControl: !0
             },
             g = new google.maps.Map(document.getElementById("map"), m);
+        var _marker = piImgs + 'marker.png';
         new google.maps.Marker({
             position: f,
-            map: g
+            map: g,
+            icon: _marker
         })
     }
 }
