@@ -699,27 +699,15 @@ window.onload = piGoogleMap;
     {
         if ( $("#twitter").length > 0 )
         {
-            var $container = $('.pi-fill-twitter');
-            $container.bind("loaded", function() {
-                $('.twitter-slider').owlCarousel({
-                    autoPlay: false,
-                    slideSpeed: 300,
-                    navigation: true,
-                    pagination: false,
-                    singleItem: true,
-                    autoHeight: true,
-                    transitionStyle: 'fade',
-                    navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']  
-                });
-            });
-
-            $container.tweet({
-                modpath: piAjaxUrl,
-                count: piNumberOfTweets,
-                dateFormat: '%d %B %Y',
-                loading_text: '<p class="text-center">loading Tweet...</p>',
-                username: piTwitterUsername,
-                template: '{text} {time} <a href="{reply_url}" target="_blank">{screen_name}</a>',
+            $('.twitter-slider').owlCarousel({
+                autoPlay: false,
+                slideSpeed: 300,
+                navigation: true,
+                pagination: false,
+                singleItem: true,
+                autoHeight: true,
+                transitionStyle: 'fade',
+                navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']  
             });
         }
     };
@@ -797,7 +785,7 @@ window.onload = piGoogleMap;
 
     function piPlaceholder()
     {
-        var $ph = $('input[type="search"], input[type="text"], input[type="url"], input[type="number"], input[type="email"], textarea');
+        var $ph = $('input[type="search"], input[type="text"], input[type="url"], input[type="email"], textarea');
         $ph.each(function() {
             var value = $(this).val();
             $(this).focus(function() {

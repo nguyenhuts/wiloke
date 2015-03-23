@@ -6,15 +6,8 @@
  * time: 12:40 PM
  */
 
-// $aOurServices = isset($this->aOptions['theme_options']['ourservices']) && !empty($this->aOptions['theme_options']['ourservices']) ? $this->aOptions['theme_options']['ourservices'] : '';
-
-
-
-// $getOptions = get_option("pi_save_theme_options");
-
-
-
 $aOptions        = self::$piOptions;
+$aWoocommerce    = isset($aOptions['woocommerce']) ? $aOptions['woocommerce'] : ''; 
 $aPostSettings   = isset($aOptions['posts_settings']) ? $aOptions['posts_settings'] : ''; 
 $aTestimonial    = isset($aOptions['testimonials']) ? $aOptions['testimonials'] : ''; 
 $aTwitter        = isset($aOptions['twitter']) ? $aOptions['twitter'] : '';
@@ -80,6 +73,9 @@ $adminImages = get_template_directory_uri()  . '/admin/pi-assets/images/';
                     <li><a href="#section"><i class="fa fa-laptop"></i><?php _e("Section", 'wiloke') ?></a></li>
                     <li><a href="#sectionbuilder"><i class="fa fa-laptop"></i><?php _e("Section Builder", 'wiloke') ?></a></li>
                     <li><a href="#postssettings"><i class="fa fa-file-zip-o"></i><?php _e("Posts Settings", 'wiloke') ?></a></li>
+                    <?php if ( is_plugin_active('woocommerce/woocommerce.php') ) : ?>
+                    <li><a href="#woocommerce"><i class="fa fa-money"></i><?php _e("Woocommerce", 'wiloke') ?></a></li>
+                    <?php endif; ?>
                     <li><a href="#pagenotfound"><i class="fa fa-file-zip-o"></i><?php _e("404", 'wiloke') ?></a></li>
                     <li><a href="#customcode"><i class="fa fa-code"></i><?php _e("Custom Code", 'wiloke') ?></a></li>
                     <li><a href="#rateit"><span></span><?php _e("Rate Arvios", 'wiloke') ?></a></li>
@@ -189,6 +185,20 @@ $adminImages = get_template_directory_uri()  . '/admin/pi-assets/images/';
                     </div>
                 </div>
             </div>
+
+            <?php if ( is_plugin_active('woocommerce/woocommerce.php') ) : ?>
+            <div id="woocommerce" class="inner-tabs-panel">
+                <div class="inner-content">
+                    <div class="container-12-fluid">
+                        <div class="container-12-row">
+                            <div class="large-12">
+                                <?php include( dirname(__FILE__) . '/tpl/woocommerce.php' ); ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <?php endif; ?>
 
             <div id="pagenotfound" class="inner-tabs-panel">
                 <div class="inner-content">

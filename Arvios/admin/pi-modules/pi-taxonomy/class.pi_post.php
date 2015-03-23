@@ -25,7 +25,7 @@ class piPosts extends piCore
         	$data = isset($_POST['custompost']) ? $_POST['custompost'] : array();
 	        $data = $this->pi_unslashed_before_update($data);
 	    	update_post_meta($postID, "custompost", $data);
-
+	    
 	    	$data = isset($_POST['post_settings']) ? $_POST['post_settings'] : array();
 	    	$data = $this->pi_unslashed_before_update($data);
 	    	update_post_meta($postID, "_post_settings", $data);

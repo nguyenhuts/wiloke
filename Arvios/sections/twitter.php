@@ -14,8 +14,7 @@ if ( apply_filters('pi_is_section_enable', 'twitter') ) :
             <?php apply_filters( 'pi_the_description', 'twitter' ); ?>  
         </div>
         <div class="st-body">
-            <div class="row pi-fill-twitter">
-            </div>
+           <?php pi_twitter_feed(); ?>
         </div>
     </div>
 </section>

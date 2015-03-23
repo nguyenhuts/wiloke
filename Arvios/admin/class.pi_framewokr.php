@@ -676,6 +676,15 @@ if ( !class_exists('piCore') )
 			include (PI_ADMIN_MD . 'pi-customize/class.customize.php');
 			$piCustomize = new piCustomize();
 
+			/*=========================================*/
+			/*	Woocommerce
+			/*=========================================*/
+			include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+			if ( is_plugin_active("woocommerce/woocommerce.php") )
+			{
+				include (PI_ADMIN_MD . 'pi-taxonomy/class.pi_product.php');
+				$piProduct = new piProduct;
+			}
 		}
 
 
@@ -694,6 +703,7 @@ if ( !class_exists('piCore') )
 				include ( 'pi-modules/pi-libs/twitter/tweet.php' );
 				$aAPI = array("consumer_key"=>$consumerKey, "consumer_secret"=>$consumerSecret, "user_token"=>$accessToken, "user_secret"=>$accessTokenSecret);
 				$ezTweet = new ezTweet($aAPI);
+				
 				$ezTweet->fetch();
 			}
 			die;
@@ -796,7 +806,8 @@ if ( !class_exists('piCore') )
 							</div>
 						</div>
 	                </div>
-
+					
+					<?php if ( $type !='product' ) : ?>
 	                <div class="pi-wrap-content">
 						<div class="clearfix pi-group">
 							<div class="pi-label">
@@ -824,6 +835,7 @@ if ( !class_exists('piCore') )
 							</div>
 						</div>
 	                </div>
+	            	<?php endif; ?>
 
 	                <?php 
 	                	if ( $type == 'page' ) :

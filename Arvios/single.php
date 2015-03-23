@@ -9,9 +9,7 @@
 			<div class="<?php pi_sidebar_class($sidebarPos) ?>">
 				<?php  while( have_posts() ) : the_post();  ?>
 				<div class="blog-single blog-list">
-
                     <div class="post post-single">
-
                     	<?php pi_post_media($post->ID); ?>
 						<div class="post-title">
                             <?php if (get_post_format()): ?>
@@ -50,7 +48,6 @@
 						<?php 
 							pi_post_author($post->post_author, $post->ID);
 						?>
-
 					</div>
                  	<!-- COMMENTS -->
 					<?php comments_template(); ?>

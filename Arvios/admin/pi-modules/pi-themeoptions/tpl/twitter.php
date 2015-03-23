@@ -69,10 +69,16 @@
                         <input type="text" class="form-control" name="theme_options[twitter][access_token]" value="<?php  echo isset($aTwitter['access_token']) ? esc_attr($aTwitter['access_token']) : ''; ?>">
                     </div>
                 </div>
-                 <div class="form-group">
+                <div class="form-group">
                     <label class="form-label"><?php _e('Access Token Secret', 'wiloke') ?></label>
                     <div class="controls">
                         <input type="text" class="form-control" name="theme_options[twitter][access_token_secret]" value="<?php  echo isset($aTwitter['title']) ? esc_attr($aTwitter['access_token_secret']) : ''; ?>">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label"><?php _e('Cache Interval', 'wiloke') ?></label>
+                    <div class="controls">
+                        <input type="text" class="form-control" name="theme_options[twitter][cache_interval]" value="<?php  echo isset($aTwitter['cache_interval']) ? esc_attr($aTwitter['cache_interval']) : 15; ?>">
                     </div>
                 </div>
             </div>

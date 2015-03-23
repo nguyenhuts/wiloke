@@ -62,6 +62,7 @@ function arvios_enqueue_script()
 if (function_exists('add_theme_support'))
 {   
     // Add Menu Support$thum 
+    add_theme_support( 'woocommerce' );
     add_theme_support('menus');
     add_theme_support('custom-header');
     add_theme_support('custom-background');
@@ -498,6 +499,8 @@ function pi_excerpt_length($length)
     }
     return $length;
 }
+
+
 
 function pi_auto_excerpt_more() 
 {
@@ -1530,11 +1533,11 @@ function pi_add_hidden($section, $child="")
 
 function pi_blog_header($postID="")
 {
-    $keep = false;$allow=false;$title="";
-    if ( is_single() || is_page() )
+    $keep = true;$allow=false;$title=""; $isWoocommerce=false;
+
+    if ( is_page() || is_single() )
     {
         $postMeta = get_post_meta($postID, "_post_settings", true);
-        
         if ( isset($postMeta['enable_custom_background']) )
         {
             if ( $postMeta['enable_header_background'] )
@@ -1543,54 +1546,94 @@ function pi_blog_header($postID="")
                 $img          = isset($postMeta['image_bg']) ? $postMeta['image_bg'] : 'http://placehold.it/1500x200&text=image';
                 $overlayColor = isset($postMeta['overlay_color']) ? $postMeta['overlay_color'] : 'rgba(0,0,0,0)';
             }
+            $keep = false;
+        }
+    }
+
+    if ( $keep )
+    {
+        if ( is_page() && is_page_template("default") )
+        {
+            global $post;
+            if ( has_shortcode($post->post_content, "woocommerce_cart") || has_shortcode($post->post_content, "woocommerce_checkout") || has_shortcode($post->post_content, "woocommerce_my_account") )
+            {
+                $isWoocommerce = true;
+            }
+        }elseif( is_post_type_archive('product') ||  is_tax("product_cat") || is_singular("product") )
+        {
+            $isWoocommerce = true;
+        }
+
+        if ( $isWoocommerce )
+        {
+            if ( isset(piThemeOptions::$piOptions['woocommerce']['enable']) && !empty(piThemeOptions::$piOptions['woocommerce']['enable']) )
+            {
+                $allow = true;
+            }
         }else{
-            $keep = true;
+            if ( isset(piThemeOptions::$piOptions['posts_settings']['enable']) && !empty(piThemeOptions::$piOptions['posts_settings']['enable']) )
+            {
+                $allow = true;
+            }
         }
-    }
 
-    if( $keep || is_page_template("masonry-layout.php") || is_page_template("blog-listing.php") )
-    {
-        if ( isset(piThemeOptions::$piOptions['posts_settings']['enable']) )
-        {
-           $allow        = true;
-           $img          = isset(piThemeOptions::$piOptions['posts_settings']['background']) ? piThemeOptions::$piOptions['posts_settings']['background'] : 'http://placehold.it/1500x200&text=image'; 
-           $overlayColor = isset(piThemeOptions::$piOptions['posts_settings']['overlay_color']) ? piThemeOptions::$piOptions['posts_settings']['overlay_color'] : 'rgba(0,0,0,0)';
-        }   
     }
-
-    if ( is_page_template("portfolio.php") )
-    {
-        $title = get_the_title($postID);
-    }else{
-        if ( isset(piThemeOptions::$piOptions['posts_settings']['title']) && !empty(piThemeOptions::$piOptions['posts_settings']['title']) )
-        {
-            $title = wp_unslash(piThemeOptions::$piOptions['posts_settings']['title']);
-        }
-    }
-
-    if ( is_search() )
-    {
-        $title =  sprintf( __( '<span class="text-center">Search Results for: <span class="pi-target">%s</span></span>', 'wiloke' ), get_search_query() );
-        $img          = isset(piThemeOptions::$piOptions['posts_settings']['background']) ? piThemeOptions::$piOptions['posts_settings']['background'] : 'http://placehold.it/1500x200&text=image'; 
-        $overlayColor = isset(piThemeOptions::$piOptions['posts_settings']['overlay_color']) ? piThemeOptions::$piOptions['posts_settings']['overlay_color'] : 'rgba(0,0,0,0)';
-        $allow = true;
-    }
-
     if ( $allow ) :
+        if ( is_page_template("portfolio.php") )
+        {
+            $title = get_the_title($postID);
+        }elseif( is_search() )
+        {
+            $title =  sprintf( __( '<span class="text-center">Search Results for: <span class="pi-target">%s</span></span>', 'wiloke' ), get_search_query() );
+        }else{
+            if ( $isWoocommerce )
+            {
+                $title =  isset(piThemeOptions::$piOptions['woocommerce']['title']) ? wp_unslash(piThemeOptions::$piOptions['woocommerce']['title']) : "";
+            }else{
+                $title =  isset(piThemeOptions::$piOptions['posts_settings']['title']) ? wp_unslash(piThemeOptions::$piOptions['posts_settings']['title']) : "";
+            }
+        }
+
+        if ( $keep )
+        {
+            if ( $isWoocommerce )
+            {
+                $img          = isset(piThemeOptions::$piOptions['woocommerce']['background']) ? piThemeOptions::$piOptions['woocommerce']['background'] : 'http://placehold.it/1500x200&text=image';
+                $overlayColor = isset(piThemeOptions::$piOptions['woocommerce']['overlay_color']) ? piThemeOptions::$piOptions['woocommerce']['overlay_color'] : 'rgba(0,0,0,0)';
+                
+            }else{
+                $img          = isset(piThemeOptions::$piOptions['posts_settings']['background']) ? piThemeOptions::$piOptions['posts_settings']['background'] : 'http://placehold.it/1500x200&text=image';
+                $overlayColor = isset(piThemeOptions::$piOptions['posts_settings']['overlay_color']) ? piThemeOptions::$piOptions['posts_settings']['overlay_color'] : 'rgba(0,0,0,0)';
+                
+            }
+        }
+            
+       
     ?>
-    <section class="blog-heading text-center">
-        <div class="bg-static" style="background-image:url(<?php echo esc_url($img); ?>)"></div>
-        <div class="bg-overlay" style="background-color:<?php echo esc_attr($overlayColor);  ?>"></div>
-        <div class="container">
-            <?php printf( (__('<h2 class="h1 text-uppercase">%s</h2>', 'wiloke')), $title ); ?>
-        </div>
-    </section>
+        <section class="blog-heading text-center">
+            <div class="bg-static" style="background-image:url(<?php echo esc_url($img); ?>)"></div>
+            <div class="bg-overlay" style="background-color:<?php echo esc_attr($overlayColor);  ?>"></div>
+            <div class="container">
+                <?php printf( (__('<h2 class="h1 text-uppercase">%s</h2>', 'wiloke')), $title ); ?>
+            </div>
+        </section>
     <?php 
     endif;
 }
 
 function pi_sidebar_pos($postID="")
-{
+{   
+    if ( is_page() && is_page_template("default") )
+    {
+
+        global $post;
+
+        if ( has_shortcode($post->content, 'woocommerce_checkout') )
+        {
+            return "no-sidebar";
+        }
+    }
+
     $allow = false; $con = true;
    
     if ( $postID != '' )
@@ -1606,7 +1649,12 @@ function pi_sidebar_pos($postID="")
     
     if ( $con )
     {
-        $sidebar = isset(piThemeOptions::$piOptions['posts_settings']['choosidebar']) ? piThemeOptions::$piOptions['posts_settings']['choosidebar'] : 'r-sidebar';
+        if ( is_post_type_archive('product') || is_singular("product") || is_tax("product_cat") )
+        {
+            $sidebar = isset(piThemeOptions::$piOptions['posts_settings']['choosidebar']) ? piThemeOptions::$piOptions['posts_settings']['choosidebar'] : 'r-sidebar';
+        }else{
+            $sidebar = isset(piThemeOptions::$piOptions['woocommerce']['choosidebar']) ? piThemeOptions::$piOptions['woocommerce']['choosidebar'] : 'r-sidebar';
+        }
     }
 
     return $sidebar;
@@ -1659,3 +1707,62 @@ function pi_aboutus_intro($piaData)
     <?php 
 }
 
+/*=========================================*/
+/*  Twitter Feed
+/*=========================================*/
+function pi_twitter_feed()
+{
+    if( empty(piThemeOptions::$piOptions['twitter']['consumer_key']) || empty(piThemeOptions::$piOptions['twitter']['consumer_secret']) || empty(piThemeOptions::$piOptions['twitter']['access_token']) || empty(piThemeOptions::$piOptions['twitter']['access_token_secret']) )
+    {
+        echo  "<p class='text-center'>[Please config twitter]</div>";
+    }else{
+        $output = "";
+        $path = get_template_directory() . '/admin/pi-modules/pi-libs/twitter/';
+
+
+        $limit    = !empty(piThemeOptions::$piOptions['number_of_tweets']) ? piThemeOptions::$piOptions['number_of_tweets'] : 4;
+        $username = !empty(piThemeOptions::$piOptions['username']) ? piThemeOptions::$piOptions['username'] : 'envato';
+
+        $consumerKey        = isset(piThemeOptions::$piOptions['twitter']['consumer_key']) ? trim(piThemeOptions::$piOptions['twitter']['consumer_key'])  : '';
+        $consumerSecret     = isset(piThemeOptions::$piOptions['twitter']['consumer_secret']) ? trim(piThemeOptions::$piOptions['twitter']['consumer_secret'])  : '';
+        $accessToken        = isset(piThemeOptions::$piOptions['twitter']['access_token']) ? trim(piThemeOptions::$piOptions['twitter']['access_token'])  : '';
+        $accessTokenSecret  = isset(piThemeOptions::$piOptions['twitter']['access_token_secret']) ? trim(piThemeOptions::$piOptions['twitter']['access_token_secret'])  : '';
+        $cacheInterval      = isset(piThemeOptions::$piOptions['twitter']['cache_interval']) ? (int)piThemeOptions::$piOptions['twitter']['cache_interval'] : 15;
+
+        require_once($path.'twitteroauth.php');
+        $twitter = new TwitterOAuth($consumerKey, $consumerSecret, $accessToken, $accessTokenSecret, $path, $cacheInterval);
+        $twitter->ssl_verifypeer=true;
+        $tweets = $twitter->get('statuses/user_timeline', array('screen_name' => $username, 'exclude_replies' => 'false', 'include_rts' => 'false', 'count' => $limit));
+
+        if ( !empty($tweets) )
+        {
+            $tweets = json_decode($tweets);
+
+            if(is_array($tweets) )
+            {
+                $output .= '<div class="twitter-slider">';
+                
+                if ( isset($tweets->errors) )
+                {   
+                    $output .= "Sorry! That page does not exist!";
+                }else{
+                    foreach($tweets as $control)
+                    {
+                        $status =   preg_replace('/http:\/\/([^\s]+)/i', '<a href="http://$1" target="_blank">$1</a>', $control->text);
+                        $output .= '<div class="twitter-item text-center"><p>' . $status . '</p></div>';
+                    }
+                }
+                $output .= '</div>';
+            }
+            
+        }else{
+            $output .= '<p class="text-center">Could not retrieve data from twitter!</div>';
+        }
+
+        echo $output;
+    }
+}
+
+/*=========================================*/
+/*  Woocomerce
+/*=========================================*/

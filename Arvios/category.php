@@ -4,13 +4,11 @@
 
     <!-- BLOG CONTENT -->
     <section class="blog-wrap">
-
         <div class="container">
             <div class="row">
                 <?php $sidebarPos = pi_sidebar_pos(); ?>
                 <div class="<?php pi_sidebar_class($sidebarPos) ?>">
                     <div class="blog-list">
-
                     	<?php 
                     	if ( have_posts() ) :
                     		while( have_posts() ) : the_post();
